@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.footer {
+    background: #a2332a; /* Dark red background */
+    color: white;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.logo-section{
+    flex: 1 1 auto; /* Allow the section to size dynamically */
+    max-width: 600px;
+}
+
+.newsletter {
+    margin-top: 10px;
+}
+
+.input-group {
+    display: flex;
+    margin-top: 5px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.input-group button {
+    background: #f7a721;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.input-group button:hover {
+    background: #d48c1b;
+}
+
+.contact-info{
+    flex: 1 1 auto;
+    margin-left: 40px;
+    width: 10%;
+}
+.quick-links {
+    flex: 1 1 auto; /* Allow the section to size dynamically */
+    max-width: 300px; /* Restrict the maximum width */
+    margin-left: 0; /* Remove negative margin */
+    margin-right: auto; /* Center-align if necessary */
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    align-items: left;
+}
+.quick-links ul {
+    margin-top: 10px;
+}
+
+.quick-links ul li {
+    margin-bottom: 5px;
+}
+
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.quick-links ul li a:hover {
+    text-decoration: underline;
+}
+.quick-links ul {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.quick-links ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 5px 0; /* Add space for the bar effect */
+}
+
+.quick-links ul li a.active {
+    color: #f7a721; /* Highlight active link */
+    font-weight: bold;
+    position: relative;
+}
+
+.quick-links ul li a.active::before,
+.quick-links ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #f7a721; /* Bar color */
+}
+
+.quick-links ul li a.active::before {
+    top: 0; /* Top bar */
+}
+
+.quick-links ul li a.active::after {
+    bottom: 0; /* Bottom bar */
+}
+
+.quick-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        padding: 0;
+    }
+    .quick-links{
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
