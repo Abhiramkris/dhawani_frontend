@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Search and Filter Section */
+        .search-filter {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .search-filter input {
+            padding: 10px;
+            width: 70%;
+            font-size: 1em;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .search-filter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-filter button:hover {
+            background-color: #0056b3;
+        }
+
+        .search-filter select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        /* Blog Cards */
+        .blog-layout {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .left-card {
+            flex: 2;
+        }
+
+        .right-cards {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .blog-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-card.large-card {
+            font-size: 1.2em;
+        }
+
+        /* Pagination */
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .pagination button:hover {
+            background-color: #0056b3;
+        }
+
+        .pagination span {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .blog-layout {
+                flex-direction: column;
+            }
+
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Our Blog</h1>
+            <p>Discover the latest articles, tips, and news from our team</p>
+        </header>
+
+        <!-- Search and Filter Section -->
+        <div class="search-filter">
+            <!-- Search by Keyword -->
+            <input type="text" id="search-input" placeholder="Search for keywords...">
+            <button id="search-btn">Search</button>
+
+            <!-- Sort Options -->
+            <select id="sort-options">
+                <option value="latest">Sort by Latest</option>
+                <option value="oldest">Sort by Oldest</option>
+                <option value="alphabetical">Sort by Alphabetical</option>
+            </select>
+        </div>
+
+        <!-- Blog Layout -->
+        <div id="blog-content">
+            <!-- Dynamic content will be rendered here -->
+        </div>
+
+        <!-- Pagination Section -->
+        <div class="pagination">
+            <button id="prev">Previous</button>
+            <span id="page-numbers"></span>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const articles = [
+            { title: "Blog Title 1", author: "Jane Doe", date: "2024-11-01", keywords: ["Keyword1", "Keyword2"], id: 1 },
+            { title: "Blog Title 2", author: "Sam Smith", date: "2024-11-05", keywords: ["Keyword3", "Keyword4"], id: 2 },
+            { title: "Blog Title 3", author: "Alex White", date: "2024-11-08", keywords: ["Keyword5", "Keyword6"], id: 3 },
+            { title: "Blog Title 4", author: "Sarah Parker", date: "2024-11-10", keywords: ["Keyword7", "Keyword8"], id: 4 },
+            { title: "Blog Title 5", author: "John Doe", date: "2024-11-12", keywords: ["Keyword9", "Keyword10"], id: 5 },
+            { title: "Blog Title 6", author: "Emma Watson", date: "2024-11-14", keywords: ["Keyword11", "Keyword12"], id: 6 },
+            { title: "Blog Title 7", author: "Mark Twain", date: "2024-11-16", keywords: ["Keyword13", "Keyword14"], id: 7 },
+            { title: "Blog Title 8", author: "Emily Bronte", date: "2024-11-18", keywords: ["Keyword15", "Keyword16"], id: 8 },
+            { title: "Blog Title 9", author: "Leo Tolstoy", date: "2024-11-20", keywords: ["Keyword17", "Keyword18"], id: 9 }
+        ];
+
+        const blogContent = document.getElementById("blog-content");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+        const pageNumbers = document.getElementById("page-numbers");
+        const searchButton = document.getElementById("search-btn");
+        const searchInput = document.getElementById("search-input");
+        const sortSelect = document.getElementById("sort-options");
+
+        let filteredArticles = articles;
+        let currentPage = 1;
+        const articlesPerPage = 6;
+        let totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+
+        function renderPage(page) {
+            blogContent.innerHTML = "";
+            const startIndex = (page - 1) * articlesPerPage;
+            const endIndex = startIndex + articlesPerPage;
+
+            const currentArticles = filteredArticles.slice(startIndex, endIndex);
+
+            currentArticles.forEach(article => {
+                const articleCard = document.createElement("div");
+                articleCard.className = "blog-card";
+                articleCard.innerHTML = `
+                    <h3><a href="blog-detail.html?id=${article.id}">${article.title}</a></h3>
+                    <p>Author: ${article.author}</p>
+                    <p>${article.date}</p>
+                `;
+                blogContent.appendChild(articleCard);
+            });
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            pageNumbers.textContent = `${currentPage} / ${totalPages}`;
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = currentPage === totalPages;
+        }
+
+        function sortArticles() {
+            const sortOption = sortSelect.value;
+
+            if (sortOption === "latest") {
+                filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+            } else if (sortOption === "oldest") {
+                filteredArticles.sort((a, b) => new Date(a.date) - new Date(b.date));
+            } else if (sortOption === "alphabetical") {
+                filteredArticles.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+            renderPage(currentPage);
+        }
+
+        searchButton.addEventListener("click", () => {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            filteredArticles = articles.filter(article => 
+                article.title.toLowerCase().includes(searchTerm) || 
+                article.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm))
+            );
+
+            currentPage = 1;
+            totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+            renderPage(currentPage);
+        });
+
+        sortSelect.addEventListener("change", sortArticles);
+
+        prevButton.addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+            }
+        });
+
+        nextButton.addEventListener("click", () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPage(currentPage);
+            }
+        });
+
+        // Initial render of the first page
+        renderPage(currentPage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Blog Title 1",
+        "author": "Jane Doe",
+        "date": "2024-11-01",
+        "content": [
+            {
+                "type": "title",
+                "value": "This is the first paragraph of the blog. It talks about various topics."
+            },
+            {
+                "type": "text",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla, felis non pretium tincidunt, purus sapien pharetra felis, sit amet sollicitudin nunc sapien id velit. Suspendisse potenti. Ut interdum, mi nec elementum ullamcorper, dui purus vestibulum nisl, et tempor orci tortor a justo. Mauris sollicitudin nibh et felis suscipit, ac dignissim urna volutpat. Nulla facilisi. Suspendisse a volutpat eros. Integer auctor, lorem sit amet feugiat posuere, mi felis dictum turpis, id elementum ipsum neque nec odio. Nam interdum nisl eu neque tincidunt, vel placerat nunc volutpat."            
+            },
+            {
+                "type": "quote",
+                "value": "This is an inspirational quote for Blog 1."
+            },
+            {
+                "type": "title",
+                "value": "Fall in LOve"
+            },
+            {
+                "type": "text",
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla, felis non pretium tincidunt, purus sapien pharetra felis, sit amet sollicitudin nunc sapien id velit. Suspendisse potenti. Ut interdum, mi nec elementum ullamcorper, dui purus vestibulum nisl, et tempor orci tortor a justo. Mauris sollicitudin nibh et felis suscipit, ac dignissim urna volutpat. Nulla facilisi. Suspendisse a volutpat eros. Integer auctor, lorem sit amet feugiat posuere, mi felis dictum turpis, id elementum ipsum neque nec odio. Nam interdum nisl eu neque tincidunt, vel placerat nunc volutpat."            
+            },
+            {
+                "type": "list",
+                "items": ["Item 1", "Item 2", "Item 3"]
+            }
+            
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Blog Title 2",
+        "author": "Sam Smith",
+        "date": "2024-11-05",
+        "content": [
+            {
+                "type": "text",
+                "value": "This is the second blog content, talking about new trends in technology."
+            },
+            {
+                "type": "quote",
+                "value": "This is a motivational quote for Blog 2."
+            },
+            {
+                "type": "list",
+                "items": ["Tech Trend 1", "Tech Trend 2", "Tech Trend 3"]
+            }
+        ]
+    }
+
+]

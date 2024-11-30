@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+
+<body>
+  <div class="imgheader">
+    <div class="headers aligncenterclassic">Blogs</div>
+  </div>
+  <div class="blog-container">
+    <!-- Filters Section -->
+    <div class="search-filter">
+      <!-- Search by Keyword -->
+      <input type="text" id="search-input" class="search-blog" placeholder="Search for keywords...">
+      <button id="search-btn">Search</button>
+
+      <!-- Sort Options -->
+      <select id="sort-options">
+        <option value="latest">Sort by Latest</option>
+        <option value="oldest">Sort by Oldest</option>
+        <option value="alphabetical">Sort by Alphabetical</option>
+      </select>
+    </div>
+    <br><br><br>
+    <!-- Blog Layout -->
+    <div id="blog-content">
+      <!-- Dynamic content will be rendered here -->
+    </div>
+
+    <!-- Pagination Section -->
+    <div class="pagination">
+      <button id="prev">Previous</button>
+      <span id="page-numbers"></span>
+      <button id="next">Next</button>
+    </div>
+  </div>
+
+  <script>
+    const articles = [{
+        title: "Blog Title 1",
+        author: "Jane Doe",
+        date: "2024-11-01",
+        keywords: ["hello", "Keyword2"],
+        imageUrl:"hel.jpg",
+        id: 1
+      },
+      {
+        title: "Blog Title 2",
+        author: "Sam Smith",
+        date: "2024-11-05",
+        keywords: ["Keyword3", "Keyword4"],
+        imageUrl:"hel.jpg",
+        id: 2
+      },
+      {
+        title: "Blog Title 3",
+        author: "Alex White",
+        date: "2024-11-08",
+        keywords: ["Keyword5", "Keyword6"],
+        id: 3
+      },
+      {
+        title: "Blog Title 4",
+        author: "Sarah Parker",
+        date: "2024-11-10",
+        keywords: ["Keyword7", "Keyword8"],
+        id: 4
+      },
+      {
+        title: "Blog Title 5",
+        author: "John Doe",
+        date: "2024-11-12",
+        keywords: ["Keyword9", "Keyword10"],
+        id: 5
+      },
+      {
+        title: "Blog Title 6",
+        author: "Emma Watson",
+        date: "2024-11-14",
+        keywords: ["Keyword11", "Keyword12"],
+        id: 6
+      },
+      {
+        title: "Blog Title 7",
+        author: "Mark Twain",
+        date: "2024-11-16",
+        keywords: ["Keyword13", "Keyword14"],
+        id: 7
+      },
+      {
+        title: "Blog Title 8",
+        author: "Emily Bronte",
+        date: "2024-11-18",
+        keywords: ["Keyword15", "Keyword16"],
+        id: 8
+      },
+      {
+        title: "Blog Title 9",
+        author: "Leo Tolstoy",
+        date: "2024-11-20",
+        keywords: ["Keyword17", "Keyword18"],
+        id: 9
+      }
+    ];
+
+    const blogContent = document.getElementById("blog-content");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+    const pageNumbers = document.getElementById("page-numbers");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-btn");
+    const sortSelect = document.getElementById("sort-options");
+
+    let currentPage = 1;
+    let filteredArticles = [...articles];
+    let isSearchActive = false;
+
+    function renderPage(page) {
+      blogContent.innerHTML = "";
+      const startIndex = (page - 1) * 6;
+      const endIndex = startIndex + 6;
+
+      if (page === 1) {
+        const bigCard = filteredArticles[0];
+        const bigCardDiv = document.createElement("div");
+        bigCardDiv.className = "blog-layout";
+        bigCardDiv.innerHTML = ` 
+                <div class="left-card">
+    <div class="blog-card large-card">
+        <a href="blog-detail.html?id=${bigCard.id}">
+            <div class="card-image">
+                <img src="${bigCard.imageUrl}" alt="${bigCard.title}" />
+            </div>
+            <h2>${bigCard.title}</h2>
+            <p>Author: ${bigCard.author}</p>
+            <p>${bigCard.date}</p>
+        </a>
+    </div>
+            </div>
+              <div class="right-cards"> 
+  ${filteredArticles.slice(1, 4).map(article => ` 
+    <div class="blog-card"> 
+      <a href="blog-detail.html?id=${article.id}"> 
+        <div class="card-image">
+          <img src="${article.imageUrl}" alt="${article.title}" />
+        </div>
+        <div class="content">
+          <h3>${article.title}</h3> 
+          <p>Author: ${article.author}</p>
+          <p>${article.date}</p>
+        </div>
+      </a> 
+    </div> 
+  `).join("")} 
+</div>
+            `;
+        blogContent.appendChild(bigCardDiv);
+      } else {
+        const gridDiv = document.createElement("div");
+        gridDiv.className = "blog-grid";
+        filteredArticles.slice(startIndex, endIndex).forEach(article => {
+          const card = document.createElement("div");
+          card.className = "blog-card";
+          card.innerHTML = ` 
+                    <a href="blog-detail.html?id=${article.id}"> 
+                        <h3>${article.title}</h3> 
+                        <p>Author: ${article.author}</p> 
+                        <p>${article.date}</p> 
+                    </a> 
+                `;
+          gridDiv.appendChild(card);
+        });
+        blogContent.appendChild(gridDiv);
+      }
+
+      renderPagination();
+    }
+
+    function renderPagination() {
+      const totalPages = Math.ceil(filteredArticles.length / 6);
+      pageNumbers.textContent = `${currentPage} / ${totalPages}`;
+      prevButton.disabled = currentPage === 1;
+      nextButton.disabled = currentPage === totalPages;
+    }
+
+    function sortArticles() {
+      const sortOption = sortSelect.value;
+
+      if (sortOption === "latest") {
+        filteredArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+      } else if (sortOption === "oldest") {
+        filteredArticles.sort((a, b) => new Date(a.date) - new Date(b.date));
+      } else if (sortOption === "alphabetical") {
+        filteredArticles.sort((a, b) => a.title.localeCompare(b.title));
+      }
+
+      renderPage(currentPage);
+    }
+
+    searchButton.addEventListener("click", () => {
+      if (!isSearchActive) {
+        // Search mode
+        const searchTerm = searchInput.value.toLowerCase();
+
+        filteredArticles = articles.filter(article =>
+          article.title.toLowerCase().includes(searchTerm) ||
+          article.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm))
+        );
+
+        currentPage = 1;
+        renderPage(currentPage);
+
+        // Change button to Cancel
+        searchButton.textContent = "Cancel";
+        isSearchActive = true;
+      } else {
+        // Cancel search - refresh the page
+        location.reload();
+      }
+    });
+
+    sortSelect.addEventListener("change", sortArticles);
+
+    prevButton.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+      }
+    });
+
+    nextButton.addEventListener("click", () => {
+      const totalPages = Math.ceil(filteredArticles.length / 6);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+      }
+    });
+
+    renderPage(currentPage);
+  </script>
+  <iframe id="footer" src="/footer.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
+
+  <script>
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
+</body>
+
+</html>
