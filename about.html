@@ -14,7 +14,7 @@
 <body>
 
     <!-- Main Container for Carousels -->
-    <div class="container mt-5">
+    <div class="container mt-5 aboutcarousel">
         <div class="row">
 
             <!-- Carousel 1 -->
@@ -236,6 +236,10 @@
 
 
 <style>
+
+    .aboutcarousel{
+        scale: .8;
+    }
     /* Make carousel images the same size */
 .carousel-item img {
     width: 100%;
@@ -249,7 +253,7 @@
 /* Ensure carousel items have the same height */
 .carousel-item {
     height: 400px;
-    /* Fixed height */
+
 }
 
 /* Position the control buttons below the carousels */
@@ -317,13 +321,11 @@ carouselLinks.forEach(link => {
 const prevButton = document.getElementById('prevButton');
 const nextButton = document.getElementById('nextButton');
 
-// Set the synchronized timing interval (e.g., 10 seconds)
-const syncInterval = 4000; // 10 seconds
+const syncInterval = 80;
 
 // Flag to prevent multiple transitions at once
 let isTransitioning = false;
 
-// Function to move all carousels in the same direction (with optional instant transition)
 function moveAllCarousels(direction, instant = false) {
     if (isTransitioning && !instant) return; // Prevent transition if already transitioning and not instant
     isTransitioning = true;
@@ -346,7 +348,7 @@ function moveAllCarousels(direction, instant = false) {
         // If it's an instant transition, immediately allow other transitions without delay
         setTimeout(() => {
             isTransitioning = false;
-        }, 300); // Short timeout for instant action
+        }, 80); // Short timeout for instant action
     }
 }
 
@@ -357,11 +359,6 @@ function autoSlideAllCarousels() {
     }, syncInterval);
 }
 
-// Event listeners for buttons
-prevButton.addEventListener('click', () => moveAllCarousels('prev', true)); // Instant transition on button click
-nextButton.addEventListener('click', () => moveAllCarousels('next', true)); // Instant transition on button click
 
-// Automatically slide carousels every syncInterval (10 seconds in this case)
-autoSlideAllCarousels();
 </script>
 </html>

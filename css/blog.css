@@ -197,12 +197,26 @@ body {
   margin-left: -20px;
 }
 }
+@media screen and (max-width: 1000px) {
+.blog-container{
+  scale: .7;
+  display: grid;
+  place-items: center;
+  margin-left: 10px;
+}
+.right-cards{
+  margin-left: 30px;
+}
+}
 
 /* Mobile View - Use background image */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   .blog-layout {
     flex-direction: column;
-    margin-left: 50px;
+  }
+  .blog-container{
+    scale: 1;
+    margin-left: 20px;
   }
 
   .large-card {
@@ -212,7 +226,7 @@ body {
   }
 
   .blog-card {
-    margin-left: 0;
+    margin-left: 25px;
     
   }
 
@@ -233,8 +247,8 @@ body {
 
   .right-cards .card-image {
     height: 120px;
-    width: 30vw;
-    margin-left:10px;
+    width: 40vw;
+    margin-left:-25px;
     margin-top: 6px;
     scale: .8;
   } 
