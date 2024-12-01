@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Detail</title>
-    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/public/css/blog.css">
 
     <style>
         /* Add your existing CSS here */
@@ -159,7 +159,7 @@
 
     <script>
         // Fetch blog data from JSON
-        fetch('data.json')
+        fetch('/public/data.json')
             .then(response => response.json())
             .then(articles => {
                 const urlParams = new URLSearchParams(window.location.search);
