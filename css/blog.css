@@ -47,7 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: -20px;
+  margin-left: -80px;
 }
 
 .blog-grid {
@@ -72,8 +72,9 @@ body {
 .large-card {
   position: relative;
   overflow: hidden;
-  height: 380px;
+  height: 430px;
   width: 70%;
+  min-width: 300px;
   margin-left: 90px;
 }
 
@@ -104,7 +105,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%;
+  min-width: 300px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -125,8 +126,8 @@ body {
   width: 50%; /* Adjust image size to 40% of the card */
   margin-right: 8px; /* Add space between image and text */
   padding-bottom: -10px;
-  position: relative;
   overflow: hidden;
+  margin-top: 14px;
 }
 
 .right-cards .card-image img {
@@ -140,17 +141,27 @@ body {
   width: 50%; /* The content takes the remaining space */
   text-align: left;
   margin-top: -110px;
-  margin-left: 200px;
+  margin-left: 170px;
   height: 30px;
 }
 
-.right-cards h2 {
-  margin-bottom: 100px;
+.right-cards .content h3 {
+  margin-top: 12px;
+  margin-left: 12px;
   color: green;
+  width: 95%;
+  max-height: 77px;
+  text-overflow: clip;
+  /* background-color: #0056b3; */
+  font-size: 15px;
+  text-overflow: hidden;
 }
 
 .right-cards .content p {
   color: #666;
+  font-size: 10px;
+  margin-top: -8px;
+  margin-left: 15px;
 }
 
 /* Pagination */
@@ -177,9 +188,18 @@ body {
   font-size: 1.2em;
   color: #333;
 }
+@media screen and (max-width: 1200px) {
+.right-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: -20px;
+}
+}
 
 /* Mobile View - Use background image */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .blog-layout {
     flex-direction: column;
     margin-left: 50px;
@@ -189,11 +209,11 @@ body {
     margin-left: -10px;
     margin-bottom: 10px;
     padding: 10px;
-    width: 90%;
   }
 
   .blog-card {
     margin-left: 0;
+    
   }
 
   .blog-grid {
@@ -202,8 +222,7 @@ body {
   }
 
   .left-card {
-    scale: .9;
-    margin-left: -40px;
+    margin-left: 1vw;
   }
 
   .right-cards .blog-card {
@@ -213,10 +232,14 @@ body {
   }
 
   .right-cards .card-image {
-    width: 100%;
-    height: 200px;
-    margin-right: 0;
-    margin-bottom: 10px;
+    height: 120px;
+    width: 30vw;
+    margin-left:10px;
+    margin-top: 6px;
+    scale: .8;
+  } 
+  .right-cards{
+    margin-left: 1vw;
   }
 
   .right-cards .card-image img {
@@ -227,6 +250,19 @@ body {
 
   .right-cards .content {
     width: 100%;
+    scale: .8;
+    margin-left: 20vw;
+    margin-top: -120px;
+  }
+  .right-cards .content h3{
+    width: 40vw;
+    margin-left: 6vw;
+  }
+  .right-cards .content p{
+    margin-left: 6vw;
+  }
+  .search-blog{
+ margin-right: 10px;
   }
 }
 

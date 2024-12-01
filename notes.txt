@@ -1,8 +1,11 @@
 comopinents to be made 
-
+iframe for tem members 
+cdn to be integrated 
+guithub page host to be integrated 
 
 
 to do list
 // abhiram 
 make the search list case independent 
 extra containe rin vlog for views and stuff
+reduce the gap btwn keft right

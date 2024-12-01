@@ -29,12 +29,12 @@
                 "type": "list",
                 "items": ["Item 1", "Item 2", "Item 3"]
             }
-            
+
         ]
     },
     {
         "id": 2,
-        "title": "Blog Title 2",
+        "title": "Blog Title 2 Blog Title 2 Blog Title 2",
         "author": "Sam Smith",
         "date": "2024-11-05",
         "content": [
