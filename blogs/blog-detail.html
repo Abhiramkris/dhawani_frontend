@@ -1,246 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Detail</title>
-  <link rel="stylesheet" href="/public/css/blog.css">
-
-  <style>
-    /* Add your existing CSS here */
-
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-
-    .blog-detail-container {
-      display: flex;
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      width: 80%;
-    }
-
-    .right-container {
-      flex: 2;
-      padding: 20px;
-      max-width: 70vw;
-    }
-
-    .blog-detail {
-      margin-bottom: 20px;
-    }
-
-    .blog-detail p {
-      color: grey;
-      font-size: 15px;
-      font-weight: 500;
-      width: 100%;
-    }
-
-    .blog-detail h3 {
-      font-size: 20px;
-      color: #0056b3;
-    }
-
-    .blog-detail ul {
-      margin-left: 60px;
-    }
-
-
-    .quote {
-      font-style: italic;
-      font-size: 24px;
-      margin-top: 20px;
-      color: black;
-      font-weight: 600;
-      text-transform: uppercase;
-
-    }
-
-    .subscribe-newsletter {
-      padding: 20px;
-      border-radius: 8px;
-      text-align: left;
-      width: 20vw;
-      display: inline-block;
-      margin-right: -6vw;
-    }
-
-    .subscribe-newsletter input[type="email"] {
-      width: 80%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    .subscribe-newsletter button {
-      width: 100%;
-      padding: 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .subscribe-newsletter button:hover {
-      background-color: #0056b3;
-    }
-
-    /* Share this section */
-    .share-this-blog {
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #f1f1f1;
-      border-radius: 8px;
-    }
-
-    .share-this-blog h4 {
-      margin-bottom: 10px;
-    }
-
-    .share-this-blog .share-buttons {
-      display: flex;
-      gap: 10px;
-    }
-
-    .share-this-blog .share-buttons a {
-      padding: 10px;
-      border-radius: 5px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .share-this-blog .share-buttons a:hover {
-      background-color: #0056b3;
-    }
-
-    .authname {
-      font-size: 20px;
-      margin-top: 18px;
-      margin-left: 5px;
-    }
-
-    @media (max-width: 800px) {
-      .blog-detail-container {
-        flex-direction: column;
-        padding: 10px;
-      }
-
-      .subscribe-newsletter {
-        width: 100%;
-        margin-top: 20px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <link rel="stylesheet" href="/public/css/blog.css">
 </head>
-
 <body>
 
-  <div class="imgheader">
-    <div class="headers aligncenterclassic" id="blogtitle"></div>
-  </div>
+    <div class="imgheader">
+        <div class="headers aligncenterclassic" id="blogtitle"></div>
+    </div>
 
-  <div class="blog-detail-container">
-    <div class="right-container">
-      <div id="blog-detail" class="blog-detail"></div>
-
-      <!-- Share this blog section -->
-      <div class="share-this-blog">
-        <h4>Share this blog</h4>
-        <div class="share-buttons">
-          <a href="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank">Facebook</a>
-          <a href="https://twitter.com/intent/tweet?url={url}" target="_blank">Twitter</a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url={url}" target="_blank">LinkedIn</a>
+    <div class="blog-detail-container">
+        <div class="right-container">
+            <div id="blog-detail" class="blog-detail"></div>
+            
+            <!-- Share this blog section -->
+            <div class="share-this-blog">
+                <h4>Share this blog</h4>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/intent/tweet?url={url}" target="_blank">Twitter</a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={url}" target="_blank">LinkedIn</a>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="subscribe-newsletter">
+            Follow us
+            <h5>Subscribe to our newsletter and receive a selection of cool articles every week</h5>
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+        </div>
     </div>
 
-    <div class="subscribe-newsletter">
-      Follow us
-      <h5>Subscribe to our newsletter and receive a selection of cool articles every week</h5>
-      <input type="email" placeholder="Enter your email" />
-      <button>Subscribe</button>
-    </div>
-  </div>
+    <script>
+        // Fetch blog data from JSON
+        fetch('/data.json')
+            .then(response => response.json())
+            .then(articles => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const articleId = parseInt(urlParams.get("id"));
 
-  <script>
-    // Fetch blog data from JSON
-    fetch('/public/data.json')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        // Your existing code
-      })
-      .catch(error => console.error('Error fetching data:', error));.then(response => response.json())
-      .then(articles => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const articleId = parseInt(urlParams.get("id"));
+                const article = articles.find(a => a.id === articleId);
 
-        const article = articles.find(a => a.id === articleId);
+                if (article) {
+                    const blogDetail = document.getElementById("blog-detail");
+        
+                    // Loop through the content and render each block
+                    article.content.forEach(contentBlock => {
+                        if (contentBlock.type === "title") {
+                            const p = document.createElement("h3");
+                            p.textContent = contentBlock.value;
+                            blogDetail.appendChild(p);
+                        } 
+                        else if (contentBlock.type === "text") {
+                            const p = document.createElement("p");
+                            p.textContent = contentBlock.value;
+                            blogDetail.appendChild(p);
+                        } 
+                        else if (contentBlock.type === "quote") {
+                            const blockquote = document.createElement("blockquote");
+                            blockquote.textContent = contentBlock.value;
+                            blockquote.classList.add("quote");
+                            blogDetail.appendChild(blockquote);
+                        } 
+                        else if (contentBlock.type === "list" && contentBlock.items) {
+                            const ul = document.createElement("ul");
+                            contentBlock.items.forEach(item => {
+                                const li = document.createElement("li");
+                                li.textContent = item;
+                                ul.appendChild(li);
+                            });
+                            blogDetail.appendChild(ul);
+                        }
+                    });
 
-        if (article) {
-          const blogDetail = document.getElementById("blog-detail");
+                    // Update share links
+                    const url = window.location.href; // Get current blog post URL
+                    document.querySelectorAll('.share-buttons a').forEach(link => {
+                        link.href = link.href.replace('{url}', encodeURIComponent(url));
+                    });
 
-          // Loop through the content and render each block
-          article.content.forEach(contentBlock => {
-            if (contentBlock.type === "title") {
-              const p = document.createElement("h3");
-              p.textContent = contentBlock.value;
-              blogDetail.appendChild(p);
-            } else if (contentBlock.type === "text") {
-              const p = document.createElement("p");
-              p.textContent = contentBlock.value;
-              blogDetail.appendChild(p);
-            } else if (contentBlock.type === "quote") {
-              const blockquote = document.createElement("blockquote");
-              blockquote.textContent = contentBlock.value;
-              blockquote.classList.add("quote");
-              blogDetail.appendChild(blockquote);
-            } else if (contentBlock.type === "list" && contentBlock.items) {
-              const ul = document.createElement("ul");
-              contentBlock.items.forEach(item => {
-                const li = document.createElement("li");
-                li.textContent = item;
-                ul.appendChild(li);
-              });
-              blogDetail.appendChild(ul);
-            }
-          });
+                } else {
+                    document.getElementById("blog-detail").innerHTML = "<p>Article not found.</p>";
+                }
 
-          // Update share links
-          const url = window.location.href; // Get current blog post URL
-          document.querySelectorAll('.share-buttons a').forEach(link => {
-            link.href = link.href.replace('{url}', encodeURIComponent(url));
-          });
+                // Update the header title
+                const blogTitle = document.getElementById("blogtitle");
+                blogTitle.innerHTML = `${article.title} <br> <p class="authname">by ${article.author} ----</p>`;
+            })
+            .catch(error => {
+                console.error("Error fetching the blog data:", error);
+                document.getElementById("blog-detail").innerHTML = "<p>Error loading blog data.</p>";
+            });
+    </script>
+<iframe id="footer" src="/footer.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
 
-        } else {
-          document.getElementById("blog-detail").innerHTML = "<p>Article not found.</p>";
-        }
-
-        // Update the header title
-        const blogTitle = document.getElementById("blogtitle");
-        blogTitle.innerHTML = `${article.title} <br> <p class="authname">by ${article.author} ----</p>`;
-      })
-      .catch(error => {
-        console.error("Error fetching the blog data:", error);
-        document.getElementById("blog-detail").innerHTML = "<p>Error loading blog data.</p>";
-      });
-  </script>
-  <iframe id="footer" src="/footer.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
-
-  <script>
+<script>
     function resizeIframe(iframe) {
-      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
     }
-  </script>
+</script>
 </body>
-
 </html>

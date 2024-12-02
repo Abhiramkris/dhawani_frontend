@@ -14,6 +14,13 @@ body {
   width: 80%;
 }
 
+
+.blog-grid1{
+  display: flex;
+  gap: 8%;
+  margin: auto;
+}
+
 /* Header Section */
 .header {
   text-align: center;
@@ -33,13 +40,13 @@ body {
 /* Blog Cards */
 .blog-layout {
   display: flex;
-  gap: 0;
-  margin-left: -30px;
-  margin-bottom: 30px;
+  gap: 0px;
+  place-content: center;
 }
 
 .left-card {
   flex: 2;
+  max-width: 470px;
 }
 
 .right-cards {
@@ -47,14 +54,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: -80px;
+  max-width: 400px;
 }
 
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 20px;
 }
 
 .blog-card {
@@ -73,9 +78,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 430px;
-  width: 70%;
-  min-width: 300px;
-  margin-left: 90px;
+  width: 400px;
 }
 
 .card-image {
@@ -114,14 +117,62 @@ body {
   text-decoration: none;
   height: 130px;
 }
+
+.blog-card1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 300px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 180px;
+  margin: auto; /* Centers the div */
+}
+.blog-container1{
+  min-width: 300px;
+  width: 70%;
+}
+.blog-card1 .content1{
+  width: 50%; /* The content takes the remaining space */
+  text-align: left;
+  margin-top: -14x0px;
+  margin-left: 55%;
+  height: 30px;
+
+}
+.blog-card1 .content1 h3{
+  margin-top: 12px;
+  color: green;
+  width: 95%;
+  max-height: 77px;
+  text-overflow: clip;
+  /* background-color: #0056b3; */
+  font-size: 15px;
+  text-overflow: hidden;
+}
+
+.blog-card1 .content1 p{
+  color: #666;
+  font-size: 10px;
+  margin-top: -8px;
+}
 .right-cards{
   height: 60%;
 }
+
 .blog-card a{
   text-decoration: none;
   display: block;
 }
 
+.blog-card1 a{
+  text-decoration: none;
+  display: block;
+}
 .right-cards .card-image {
   width: 50%; /* Adjust image size to 40% of the card */
   margin-right: 8px; /* Add space between image and text */
@@ -188,57 +239,93 @@ body {
   font-size: 1.2em;
   color: #333;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1330px) {
 .right-cards {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-left: -20px;
+  margin: auto;
 }
+.blog-container{
+  margin: auto;
 }
-@media screen and (max-width: 1000px) {
+.blog-container1{
+scale: .8;
+}
+.blog-grid1{
+  display: flex;
+  gap: 1px;
+}
+.blog-card1{
+  margin:auto;
+}
+
+}
+@media screen and (max-width: 1140px) {
 .blog-container{
   scale: .7;
   display: grid;
   place-items: center;
-  margin-left: 10px;
+margin: auto;
 }
-.right-cards{
-  margin-left: 30px;
+  
+.blog-grid1{
+  flex-wrap: wrap;
+  width: 130%;
+  gap: 40px;
 }
+.blog-card1{
+display: flex;
+flex-direction: row;
+scale: 1.2;
+margin-left: -80px;
+flex-wrap: nowrap;
+}
+
+
 .right-cards .content{
   margin-left: 150px;
 }
+
 }
+
 
 /* Mobile View - Use background image */
 @media screen and (max-width: 600px) {
   .blog-layout {
     flex-direction: column;
+    margin: auto;
+    place-content: center;
+    scale: .8;
+  }
+  .blog-grid1{
+    flex-direction: column;
+    margin:auto;
+    width: 100%;
+    gap: 0px;
   }
   .blog-container{
     scale: 1;
-    margin-left: -50px;
+    margin-left: -40px;
+  }
+  .blog-container1{
+    scale: .7;
+    margin-left: 120px;
+    margin-top: -20px;
   }
   .large-card {
     margin-bottom: 10px;
     padding: 10px;
-  }
-
-  .blog-card {
-    margin-left: 25px;
-    
+    margin-left: 10px;
   }
 
   .blog-grid {
     grid-template-columns: 1fr;
-    margin-left: 20%;
+    margin:auto;
+    place-content: center;
   }
 
-  .left-card {
-    margin-left: 20%;
-  }
 
   .right-cards .blog-card {
     flex-direction: column;
@@ -256,7 +343,6 @@ body {
   .right-cards{
     display: grid;
     place-items: center;
-    margin-left: 20%;
   }
 
   .right-cards .card-image img {
@@ -269,7 +355,6 @@ body {
     width: 50%;
     scale: .8;
     margin-top: -120px;
-    margin-left: 40%;
   }
   
   .search-blog{
@@ -323,4 +408,124 @@ body {
 #search-btn {
   margin-left: -70px;
   margin-right: 4vw;
+}
+
+
+/* blog deatils */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.blog-detail-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+}
+.right-container {
+  flex: 2;
+  padding: 20px;
+  max-width: 70vw;
+}
+.blog-detail {
+  margin-bottom: 20px;
+}
+
+.blog-detail p{
+color: grey;
+font-size: 15px;
+font-weight: 500;
+width: 100%;
+}
+.blog-detail h3{
+font-size: 20px;
+color: #0056b3;
+}
+.blog-detail ul{
+margin-left: 60px;
+}
+
+
+.quote {
+  font-style: italic;
+  font-size: 24px;
+  margin-top: 20px;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+.subscribe-newsletter {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  width: 20vw;
+  display: inline-block;
+  margin-right: -6vw;
+}
+.subscribe-newsletter input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.subscribe-newsletter button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subscribe-newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* Share this section */
+.share-this-blog {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+.share-this-blog h4 {
+  margin-bottom: 10px;
+}
+.share-this-blog .share-buttons {
+  display: flex;
+  gap: 10px;
+}
+.share-this-blog .share-buttons a {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.share-this-blog .share-buttons a:hover {
+  background-color: #0056b3;
+}
+.authname {
+  font-size: 20px;
+  margin-top: 18px;
+  margin-left: 5px;
+}
+
+@media (max-width: 800px) {
+  .blog-detail-container {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .subscribe-newsletter {
+      width: 100%;
+      margin-top: 20px;
+  }
 }

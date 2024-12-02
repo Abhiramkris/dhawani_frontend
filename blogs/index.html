@@ -50,7 +50,7 @@
         id: 1
       },
       {
-        title: "Blog Title 2 Blog Title 2Blog Title 2 Blog Title 2Blog Title 2 2 Blog Title 2Blog Title 22 Blog Title 2Blog Title 2",
+        title: "Blog Title 2 Blog Title 2Blog Title 2 Blog Title 2Blog Title 2 2 Blog Title",
         author: "Sam Smith",
         date: "2024-11-05",
         keywords: ["Keyword3", "Keyword4"],
@@ -66,7 +66,7 @@
         id: 3
       },
       {
-        title: "Blog Title 4 didnt expect this from you and all",
+        title: "Blog Title 4 didnt go to long blog title",
         author: "Sarah Parker",
         date: "2024-11-10",
         imageUrl:"/public/img/hel0.jpg",
@@ -74,7 +74,7 @@
         id: 4
       },
       {
-        title: "Blog Title 5",
+        title: "Blog Title 5 already exists in the blog title",
         author: "John Doe",
         date: "2024-11-12",
         imageUrl:"/public/img/hel0.jpg",
@@ -82,7 +82,7 @@
         id: 5
       },
       {
-        title: "Blog Title 6",
+        title: "Blog Title 6 already exists in the blog title",
         author: "Emma Watson",
         date: "2024-11-14",
         imageUrl:"/public/img/hel0.jpg",
@@ -90,7 +90,7 @@
         id: 6
       },
       {
-        title: "Blog Title 7",
+        title: "Blog Title 7 Blog Title 5 Blog Title 5Blog Title 5",
         author: "Mark Twain",
         date: "2024-11-16",
         imageUrl:"/public/img/hel0.jpg",
@@ -98,7 +98,7 @@
         id: 7
       },
       {
-        title: "Blog Title 8",
+        title: "Blog Title 8 already exists in the blog title",
         author: "Emily Bronte",
         date: "2024-11-18",
         imageUrl:"/public/img/hel0.jpg",
@@ -106,7 +106,7 @@
         id: 8
       },
       {
-        title: "Blog Title 9",
+        title: "Blog Title 9 already exists in the blog title",
         author: "Leo Tolstoy",
         date: "2024-11-20",
         imageUrl:"/public/img/hel0.jpg",
@@ -163,7 +163,7 @@
       </a> 
     </div> 
   `).join("")} 
-</div>
+</div> </div>
             `;
         blogContent.appendChild(bigCardDiv);
       } else {
@@ -171,16 +171,21 @@
         gridDiv.className = "blog-grid";
         filteredArticles.slice(startIndex, endIndex).forEach(article => {
           const card = document.createElement("div");
-          card.className = "blog-card";
+          // card.className = "blog-card";
+          gridDiv.className = "blog-grid1";
           card.innerHTML = ` 
+          <div class="blog-container1">
+            <div class="right-cards">
+            <div class="blog-card1">
                     <a href="blog-detail.html?id=${article.id}"> 
                        <div class="card-image">
-          <img src="${article.imageUrl}" alt="${article.title}" />
+           <img src="${article.imageUrl}" alt="${article.title}" />
         </div>
+         <div class="content1">
                         <h3>${article.title}</h3> 
-                        <p>Author: ${article.author}</p> 
+                        <p>Author: ${article.author}</p>  </div>
                     </a> 
-                `;
+               </div> </div> `;
           gridDiv.appendChild(card);
         });
         blogContent.appendChild(gridDiv);
@@ -251,7 +256,7 @@
 
     renderPage(currentPage);
   </script>
-  <iframe id="footer" src="/public/footer.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
+  <iframe id="footer" src="/footer.html" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
 
   <script>
     function resizeIframe(iframe) {
