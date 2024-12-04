@@ -26,3 +26,15 @@ reduce the gap btwn keft right
     if0_37825737 user
     ftpupload.net hostname
         pasword
+
+       <p class="card-tag">${item.tag}</p>
+
+
+
+    
+  <!-- First Carousel -->
+  
+
+
+
+

@@ -3,9 +3,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fefcfc;
   overflow-x: hidden;
 }
+
+
 
 .blog-container {
   max-width: 1200px;
@@ -295,15 +296,16 @@ body {
 @media screen and (max-width: 630px) {
   .blog-layout {
     flex-direction: column;
-    margin: auto;
     place-content: center;
-    scale: 1;
+    align-content: center;
   }
 
   .large-card{
- margin-left: -84px;
- scale: .9;
+ margin-left: 0px;
+ width: 80%;
+ min-width: 250px;
   }
+
   .right-cards{
     margin: 0;
   }
@@ -311,9 +313,13 @@ body {
   .search-filter{
     display: none;
   }
+  .left-card .card-image{
+    height: 200px;
+  }
+  .large-card{
+    height: 300px;
+  }
 
- 
-  
 }
 
 /* Image Header */
@@ -341,14 +347,15 @@ body {
 
 .search-filter {
   width: 100%;
-  margin: 0 auto;
+  margin-top: 30px  ;
   display: flex;
+  margin-left: -30px;
   justify-content: center;
   align-items: center;
 }
 
 .search-blog {
-  width: 50%;
+  width: 400px;
   height: 40px;
   border-radius: 8px;
   border: 1px solid #53435B4F;
@@ -359,13 +366,17 @@ body {
   align-items: center;
   gap: 8px;
 }
-.sortimg{
+.sortimg1{
+  scale: .5;
+}
+.sortimg2{
   scale: .5;
 }
 
+
+
 #search-input {
   padding: 8px;
-  width: 25vw;
   height: 25px;
   border-radius: 4px;
 }
@@ -383,6 +394,7 @@ body {
 }
 
 .sort-button {
+  display: flex;
   background-color: white;
   border: 1px solid #53435B4F;
   color: #53435BCC;
@@ -390,6 +402,8 @@ body {
   cursor: pointer;
   position: absolute;
   width: 100px;
+  height:40px;
+  border-radius: 4px;
   margin-top: -20px;
 }
 
@@ -502,31 +516,52 @@ color: #53435B;
 .subscribe-newsletter button:hover {
   background-color: #c35a0f;
 }
-.latestblogs{
+
+
+.latestblogs {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin: auto;
-}
-.latestblogs:hover{
-  background-image: url("/public/img/blogss.png");
-  border-radius: 20px;
+  gap: 20px; /* Adds a gap between the blogs */
 }
 
-.blogs{
+.blogs {
   width: 100%;
   height: 150px;
   border-radius: 20px;
+  background-color: black; /* Default background color */
+  transition: background-image 0.3s, color 0.3s;
 }
-.blogtext{
+
+.blogs.active {
+  background-image: url("/public/img/blogss.png");
+  color: white; /* Ensures active card text color is white */
+}
+
+.blogs.active .blogtext {
+  color: white;
+}
+
+.blogs:hover {
+  background-image: url("/public/img/blogss.png");
+  color: white;
+}
+
+.blogs:hover .blogtext {
+  color: white; /* Ensures only hovered card's text turns white */
+}
+
+.blogtext {
   width: 80%;
   margin-top: 20px;
-  color: white;
-margin-left: 20px;
-font-size: 12px;
-font-family: "Manrope", sans-serif;
-
+  margin-left: 20px;
+  font-size: 12px;
+  font-family: "Manrope", sans-serif;
+  color: black; /* Default text color */
 }
+
+
 /* Share this section */
 .share-this-blog {
   margin-top: 20px;
@@ -555,6 +590,10 @@ font-family: "Manrope", sans-serif;
   margin-top: 18px;
   margin-left: 5px;
 }
+.sortdis{
+  margin-top: 10px;
+}
+
 
 @media (max-width: 800px) {
   .blog-detail-container {
@@ -567,4 +606,22 @@ font-family: "Manrope", sans-serif;
       margin-top: 20px;
       display: none;
   }
+}
+
+@media screen and (max-width: 630px) {
+  .search-blog{
+    max-width: 150px;
+  }
+
+  .sort-button{
+    max-width: 40px;
+  }
+  .sort-options{
+    scale: .7 ;
+    width: 100px;
+    margin-left: -14px;
+  }
+.sortimg2, .sortdis{
+  display: none;
+}
 }

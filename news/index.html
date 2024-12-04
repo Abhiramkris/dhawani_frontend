@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter</title>
+  <link rel="stylesheet" href="/public/css/newstyles.css">
+</head>
+
+<body>
+  <div class="newsletter-container">
+    <div class="left-container">
+      <h1>Newsletter</h1>
+      <p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    </div>
+    <div class="right-container" id="rightContainer"></div>
+  </div>
+  <div class="pagination">
+    <button id="prevPage">Previous</button>
+    <button id="nextPage">Next</button>
+  </div>
+  <script>
+    const rightContainer = document.getElementById("rightContainer");
+const prevPage = document.getElementById("prevPage");
+const nextPage = document.getElementById("nextPage");
+
+let currentPage = 1;
+const cardsPerPage = 3;
+
+async function fetchData() {
+  const response = await fetch("/datanews.json");
+  return response.json();
+}
+
+function renderCards(data) {
+  rightContainer.innerHTML = "";
+  const start = (currentPage - 1) * cardsPerPage;
+  const end = start + cardsPerPage;
+  const currentCards = data.slice(start, end);
+
+  currentCards.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    const hrr=document.createElement("div");
+    hrr.className="hrr";
+    card.onclick = () => {
+      window.location.href = item.url;
+    };
+
+    card.innerHTML = `
+      <img src="${item.image}" alt="Image">
+      <div class="card-text">
+            <h4>${item.title}</h4>
+      </div> 
+    `;
+      hrr.innerHTML = `<hr>`;
+   
+    rightContainer.appendChild(card);
+    rightContainer.appendChild(hrr);  
+  });
+}
+
+function updatePagination(data) {
+  prevPage.disabled = currentPage === 1;
+  nextPage.disabled = currentPage === Math.ceil(data.length / cardsPerPage);
+}
+
+async function init() {
+  const data = await fetchData();
+
+  renderCards(data);
+  updatePagination(data);
+
+  prevPage.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderCards(data);
+      updatePagination(data);
+    }
+  });
+
+  nextPage.addEventListener("click", () => {
+    if (currentPage < Math.ceil(data.length / cardsPerPage)) {
+      currentPage++;
+      renderCards(data);
+      updatePagination(data);
+    }
+  });
+}
+
+init();
+  </script>
+</body>
+</html>

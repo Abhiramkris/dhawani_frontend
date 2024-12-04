@@ -1,0 +1,44 @@
+[
+    {
+      "date": "2024-12-01",
+      "title": "Lorem ipsum dolor dolor sit amet, consectetur adipiscing Lorem ipsum dolor dolor sit amet, consectetur adipiscing ",
+      "image": "https://via.placeholder.com/100",
+      "tag": "Technology",
+      "url": "https://example.com/news1"
+    },
+    {
+      "date": "2024-12-02",
+      "title": "Lorem ipsum dolor dolor sit amet, consectetur adipiscing Lorem ipsum dolor dolor sit amet, consectetur adipiscing ",
+      "image": "https://via.placeholder.com/100",
+      "tag": "Science",
+      "url": "https://example.com/news2"
+    },
+    {
+      "date": "2024-12-03",
+      "title": "Lorem ipsum dolor dolor sit amet, consectetur adipiscing Lorem ipsum dolor dolor sit amet, consectetur adipiscing ",
+      "image": "https://via.placeholder.com/100",
+      "tag": "Health",
+      "url": "https://example.com/news3"
+    },
+    {
+      "date": "2024-12-04",
+      "title": "News Headline 4",
+      "image": "https://via.placeholder.com/100",
+      "tag": "Business",
+      "url": "https://example.com/news4"
+    },
+    {
+      "date": "2024-12-05",
+      "title": "News Headline 5",
+      "image": "https://via.placeholder.com/100",
+      "tag": "Sports",
+      "url": "https://example.com/news5"
+    },
+    {
+      "date": "2024-12-06",
+      "title": "News Headline 6",
+      "image": "https://via.placeholder.com/100",
+      "tag": "Entertainment",
+      "url": "https://example.com/news6"
+    }
+  ]

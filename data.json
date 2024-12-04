@@ -51,6 +51,10 @@
         "date": "2024-11-05",
         "content": [
             {
+                "type":"title",
+                "value":"Eu ridiculus fringilla aenean"
+            },
+            {
                 "type": "text",
                 "value": "This is the second blog content, talking about new trends in technology."
             },

@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .newsletter-container {
+    display: flex;
+    padding: 20px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 100px;
+    gap: 50px;
+
+  }
+  
+  .left-container {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .left-container h1 {
+    font-size: 65px;
+    color: #811622;
+    /* add popins here  */
+  }
+  
+  .left-container p {
+    font-size: 18px;
+    color: #53435B;
+    width: 90%;
+    font-family: "Manrope", sans-serif;
+    margin-top: -20px;
+  }
+  
+  .right-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+  .card img {
+    min-width: 130px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #00000033;
+    border-radius: 15px;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    max-width: 60%;
+  }
+  .card-text p{
+    margin-left: -10px;
+  }
+
+  .card-text  h4{
+    width: 100%;
+  }
+  
+  .card-tag {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    align-self: first baseline;
+    scale: .7;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  @media screen and (max-width: 908px) {
+    .newsletter-container{
+        flex-direction: column;
+        width: 90%;
+       }
+
+    .left-container{
+        width: 100%;
+        scale: 1;
+        margin-right: auto;  
+        margin-left: 6dvw;
+    }
+
+    .left-container h1 {
+        font-size: 30px;
+    }
+    .left-container p {
+        font-size: 12px;
+        margin-top: 10px;
+        width: 80%;
+       
+    }
+    .right-container{
+        width: 80%;
+        text-align: left;
+        margin-right: auto;    
+        margin-left: -25px;  
+    }
+    .card img{
+        margin-right:auto;
+        width: 150px;
+
+    }
+    .card{
+        width: 150%;
+        scale: .7;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+    hr{
+        margin-top: -50px;
+        width: 140px;
+    }
+  }
