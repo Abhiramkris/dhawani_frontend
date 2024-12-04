@@ -9,3 +9,20 @@ to do list
 make the search list case independent 
 extra containe rin vlog for views and stuff
 reduce the gap btwn keft right
+
+ <div class="search-filter">
+      <!-- Search by Keyword -->
+      <input type="text" id="search-input" class="search-blog" placeholder="Search">
+      <button id="search-btn">dd</button>
+
+      <!-- Sort Options -->
+      <select id="sort-options">
+        <option value="latest">Latest</option>
+        <option value="oldest">Oldest</option>
+        <option value="alphabetical"></option>Alphabetic</option>
+      </select>
+    </div>
+
+    if0_37825737 user
+    ftpupload.net hostname
+        pasword

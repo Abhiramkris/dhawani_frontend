@@ -6,28 +6,40 @@
         "date": "2024-11-01",
         "content": [
             {
-                "type": "title",
-                "value": "This is the first paragraph of the blog. It talks about various topics."
+                "type": "text",
+                "value": "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button detail cotton blend cute functional. Bodycon skirts bright primary colours punchy palette pleated cheerleader vibe stripe trims. Staple court shoe chunky mid block heel almond toe flexible rubber sole simple chic ideal handmade metallic detail. Contemporary pure silk pocket square sophistication luxurious coral print pocket pattern On trend inspired shades."
             },
             {
                 "type": "text",
-                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla, felis non pretium tincidunt, purus sapien pharetra felis, sit amet sollicitudin nunc sapien id velit. Suspendisse potenti. Ut interdum, mi nec elementum ullamcorper, dui purus vestibulum nisl, et tempor orci tortor a justo. Mauris sollicitudin nibh et felis suscipit, ac dignissim urna volutpat. Nulla facilisi. Suspendisse a volutpat eros. Integer auctor, lorem sit amet feugiat posuere, mi felis dictum turpis, id elementum ipsum neque nec odio. Nam interdum nisl eu neque tincidunt, vel placerat nunc volutpat."            
+                "value": "Striking pewter studded epaulettes silver zips inner drawstring waist channel urban edge single-breasted jacket. Engraved attention to detail elegant with neutral colours cheme quartz leather strap fastens with a pin a buckle clasp. Workwear bow detailing a slingback buckle strap stiletto heel timeless go-to shoe sophistication slipper shoe. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous."            
             },
             {
                 "type": "quote",
-                "value": "This is an inspirational quote for Blog 1."
-            },
-            {
-                "type": "title",
-                "value": "Fall for web development"
+                "value": "Knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral."
             },
             {
                 "type": "text",
-                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla, felis non pretium tincidunt, purus sapien pharetra felis, sit amet sollicitudin nunc sapien id velit. Suspendisse potenti. Ut interdum, mi nec elementum ullamcorper, dui purus vestibulum nisl, et tempor orci tortor a justo. Mauris sollicitudin nibh et felis suscipit, ac dignissim urna volutpat. Nulla facilisi. Suspendisse a volutpat eros. Integer auctor, lorem sit amet feugiat posuere, mi felis dictum turpis, id elementum ipsum neque nec odio. Nam interdum nisl eu neque tincidunt, vel placerat nunc volutpat."            
+                "value": "Foam padding in the insoles leather finest quality staple flat slip-on design pointed toe off-duty shoe. Black knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design."
+            },
+            {
+                "type": "text",
+                "value": "Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."            
+            },
+            {
+                "type":"title",
+                "value":"Eu ridiculus fringilla aenean"
+            },
+            {
+                "type": "text",
+                "value": "Sociis consequat adipiscing sit curabitur donec sem luctus cras natoque vulputate dolor eget dapibus. Nec vitae eros ullamcorper laoreet dapibus mus ac ante viverra. A aenean sit augue curabitur et parturient nisi sed enim. Nulla nec quis sit quisque sem commodo ultricies neque. Lorem eget venenatis dui ante luctus ultricies tellus montes. Quis in sapien tempus."            
             },
             {
                 "type": "list",
-                "items": ["Item 1", "Item 2", "Item 3"]
+                "items": ["Crisp fresh iconic elegant timeless clean perfume", "Neck straight sharp silhouette and dart detail", "Machine wash cold slim fit premium stretch selvedge denim comfortable low waist"]
+            },
+            {
+                "type": "text",
+                "value": "See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design."            
             }
 
         ]

@@ -8,6 +8,7 @@ body {
     background: #a2332a; /* Dark red background */
     color: white;
     padding: 20px 10px;
+    background-image: url("/public/img/sitemap-footer 1.png");
 }
 
 .footer-content {
