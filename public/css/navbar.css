@@ -1,0 +1,172 @@
+/* Resetting margins */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+
+}
+
+.topcontainerlinks {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 0;
+    background-color: #811622;
+    height: 30px;
+    width: 100%;
+    color: white;
+    gap: 5px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.topcontainerlinks p {
+    margin: 0;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    gap: 15px;
+    color: #53435BCC;
+}
+
+#nav-logo {
+    margin-right: 50px;
+}
+
+/* Logo alignment */
+#nav-logo-toggle {
+    display: none;
+    position: absolute;
+    left: 20px;
+    align-items: center;
+}
+
+/* Toggle button for small screens */
+#nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: absolute;
+    right: 20px;
+}
+
+#nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #53435BCC;
+    transition: all 0.3s ease;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #53435BCC;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #811622;
+}
+
+/* Active link styles */
+.nav-links a.active {
+    color: #811622;
+    font-weight: bold;
+    border-top: 3px solid #811622;
+}
+
+.nav-links a.active {
+    color: #811622;
+    font-weight: bold;
+    border-bottom: 3px solid #811622;
+}
+
+/* Nav button */
+#nav-btn button {
+    margin-left: 50px;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #F58634;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+@media(max-width:1084px) {
+    #nav-logo {
+        margin-right: 0px;
+    }
+
+    #nav-btn button {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 975px) {
+    #nav-logo {
+        display: none;
+    }
+
+    #nav-logo-toggle {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        align-items: center;
+    }
+
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #nav-toggle {
+        display: flex;
+    }
+
+    #nav-btn {
+        margin-top: 10px;
+    }
+
+    #nav-btn button {
+        margin-left: 18px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .topcontainerlinks p {
+        margin: 0;
+        font-size: xx-small;
+    }
+}

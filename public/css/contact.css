@@ -1,0 +1,108 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+#inner-para {
+    font-size: 14px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    /* Adjust based on your design */
+    overflow: hidden;
+    background: linear-gradient(to bottom, #811624, #BB031B);
+}
+
+.inner-top {
+    padding: 30px;
+    color: white;
+}
+
+#inner-top-heading {
+    line-height: 65px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+#calendar-incontainer {
+    top: -10px;
+    display: flex;
+    position: relative;
+    left: 140px;
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    width: 350px;
+    height: 300px;
+
+    /* Full viewport height */
+    /* Optional: Background color for contrast */
+}
+
+#calendar-incontainer iframe {
+    /* Adjust width as a percentage of the container */
+    width: 540px;
+    /* Optional: Set a maximum width */
+    height: 60%;
+    /* Adjust height as a percentage of the container */
+    height: 440px;
+    /* Optional: Set a maximum height */
+    border: none;
+
+    /* Optional: Add a shadow for better aesthetics */
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+}
+
+
+.contact-middle-area {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    padding: 200px;
+    padding-top: 230px;
+}
+
+#middle-area-head {
+    margin-left: 40px;
+    height: 380px;
+    width: 380px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 40px;
+    font-weight: 700;
+    color: #811622;
+
+}
+
+#middle-area-head p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+#middle-area-head hr {
+    margin-left: -245px;
+    margin-top: 125px;
+    /* Adds spacing between the paragraph and the line */
+    border: none;
+    /* Removes default border styling */
+    height: 4px;
+    /* Sets the thickness of the line */
+    background-color: #F58634;
+    /* Sets the color of the line */
+    width: 35px;
+    /* Adjust the width of the line */
+    opacity: 1;
+}

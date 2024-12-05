@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Detail</title>
   <link rel="stylesheet" href="/public/css/blog.css">
-
+  <link rel="stylesheet" href="/public/css/navbar.css">
 </head>
 <style>
   body {
@@ -14,7 +14,41 @@
   }
 </style>
 
+
+
 <body>
+  <div id="navbarframe">
+    <div class="topcontainerlinks">
+      <p>partnership@dhwaniris.com |</p>
+      <p>careers@dhwaniris.com</p>
+    </div>
+
+    <div class="navbar">
+      <a href="#logo" id="nav-logo-toggle"><img src="" alt="logo"></a>
+
+      <!-- Hamburger Menu Toggle -->
+      <div id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#logo" id="nav-logo"><img src="" alt="logo"></a>
+        <a href="#home" class="nav-link navtextmain">Home</a>
+        <a href="#about" class="nav-link navtextmain">About Us</a>
+        <a href="#services" class="nav-link navtextmain">Solutions</a>
+        <a href="#careers" class="nav-link navtextmain">Careers</a>
+        <a href="#resources" class="nav-link navtextmain">Resources</a>
+        <a href="#contactus" class="nav-link navtextmain">Contact Us</a>
+        <div id="nav-btn">
+          <button>Book A Session</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <div class="imgheader">
     <div class="headers aligncenterclassic" id="blogtitle"></div>
@@ -40,7 +74,8 @@
       <h5 class="greytext">Subscribe to our newsletter and receive a selection of cool articles every week</h5>
       <input type="email" placeholder="Enter your email" />
       <button>Subscribe</button>
-      <h5 class="greytext"> <input type="checkbox"> By checking this box, you confirm that you have read and are agreeing to our terms of use regarding the storage of the data submitted through this form. </h5>
+      <h5 class="greytext"> <input type="checkbox"> By checking this box, you confirm that you have read and are
+        agreeing to our terms of use regarding the storage of the data submitted through this form. </h5>
       <h3 style="font-family:Manrope, sans-serif; font-size: 20px; line-height: 33px;font-weight: 500;">The Latest</h3>
 
       <div class="latestblogs">
@@ -125,14 +160,16 @@
         document.getElementById("blog-detail").innerHTML = "<p>Error loading blog data.</p>";
       });
   </script>
-  <iframe id="footer" src="/footer.html?active=resources" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
+  <iframe id="footer" src="/footer.html?active=resources" style="width: 100%; border: none;"
+    onload="resizeIframe(this)"></iframe>
 
   <script>
     function resizeIframe(iframe) {
       iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
     }
   </script>
-</script>
+  </script>
+  <script src="/public/js/navbar.js"></script>
 </body>
 
 </html>
