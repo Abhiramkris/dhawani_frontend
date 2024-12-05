@@ -10,22 +10,24 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
     margin-top: 20px;
 }
 
 .storycont{
-    background-color: red;
+    margin-top: 30px;
     margin-right: auto;
+    scale: 1.1;
 }
 .text1{
     width: 200%;
 }
 .landimg1{
-    background-color: green;
-    width: 35%;
+    background-image: url("/public/img/about1.png");
+    width: 30%;
     height: 200px;
     border-radius: 20px;
+    background-size: 110%;
+    object-fit: cover;
 }
 
 .story1, .story2{
@@ -35,17 +37,19 @@
 }
 .story2{
     margin-top: -30px;
-    margin-left: 310px;
+    margin-left: 280px;
 }
 
 .storycontent{
     max-width: 60%;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 .landimg2{
-    background-color: black;
-    width: 400px;
+    background-image: url("/public/img/aboyt2.png");
+    width: 800px;
+    background-position: -45px center;
+    background-size: 122%;
     height: 200px;
     border-radius: 20px;
 }
