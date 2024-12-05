@@ -67,7 +67,7 @@ html {
 
 
 .contact-middle-area {
-    height: 100vh;
+    height: 720px;
     align-items: center;
     display: flex;
     padding: 200px;
@@ -105,4 +105,25 @@ html {
     width: 35px;
     /* Adjust the width of the line */
     opacity: 1;
+}
+
+
+#form-frame {
+    top: 620px;
+    position: absolute;
+    left: 600px;
+    height: 100px;
+    width: 600px;
+    overflow: hidden;
+}
+
+#form-container {
+    height: 900px;
+    width: 90px;
+    overflow: hidden;
+}
+
+#form-frame iframe {
+    overflow: hidden;
+    height: 100%;
 }
