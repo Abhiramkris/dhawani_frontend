@@ -175,27 +175,26 @@ background-color: gray;
     height: 500px;
 }
 
-.
-.carousel-inner {
+.carouse-inner {
   display: flex;
 }
 
-.carousel-item {
+.carouse-item {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.carousel-item .card {
+.carouse-item .card {
   flex: 1 1 23%; /* Each card takes up roughly 23% of the width */
   margin: 0 10px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carouse-control-prev-icon, .carouse-control-next-icon {
   background-color: black;
 }
 
-.carousel-overlay {
+.carouse-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -210,12 +209,12 @@ background-color: gray;
   padding: 10px;
 }
 
-.carousel-overlay .name {
+.carouse-overlay .name {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.carousel-overlay .position {
+.carouse-overlay .position {
   font-size: 1rem;
   font-style: italic;
 }
