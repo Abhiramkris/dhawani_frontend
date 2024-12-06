@@ -19,3 +19,41 @@ margin-top: 15px;
     margin: auto;
     margin-top: 30px;
     }
+    
+.solutionlanding{
+    width: 100%;
+    height: 100dvh;
+    background-color: red;
+
+}
+.solutioncontainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.solutiontitle{
+    font-size: 55px;
+    /* add popins here */
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.solutionsubtitle{
+    font-weight: 600;
+    margin-top: 14px;
+    font-size: 18px;
+}
+
+.imgcontsln{
+    width: 80%;
+    /* max-width: 800px; */
+    background-color: #F58634;
+    height: 460px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}

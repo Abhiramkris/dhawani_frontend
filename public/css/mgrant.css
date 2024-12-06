@@ -1,0 +1,40 @@
+.twocard{
+    width: 90vw;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 3%;
+
+}
+.card1{
+    width: 55%;
+    height: 350px;
+    background-color: black;
+    border-radius: 20px;
+}
+.card2{
+    width: 55%;
+    height: 350px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.textincard{
+    position: absolute;
+    color: aliceblue;
+    margin-left: 35px;
+    margin-top: 280px;
+    font-size: 18px;
+}
+
+.keyfeatures{
+    margin-top: 130px;
+    width: 100%;
+    /* bg url here */
+}
+
+.keycontainer{
+    width: 90%;
+    
+}
