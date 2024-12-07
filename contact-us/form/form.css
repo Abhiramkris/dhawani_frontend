@@ -21,12 +21,12 @@ input {
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 425px;
+    width: 500px;
     background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0 10px 20px 0 rgba(#999, .25);
     padding: .75rem;
+
 }
 
 
@@ -67,7 +67,10 @@ input {
     color: #8597a3;
     position: absolute;
     top: 1.5rem;
+    font-size: 30px;
     transition: .25s ease;
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 .input-field {
@@ -76,8 +79,10 @@ input {
     background-color: transparent;
     border-bottom: 2px solid #eee;
     font: inherit;
-    font-size: 1.125rem;
-    padding: .25rem 0;
+    font-size: 20px;
+    padding-top: 40px;
+    font-weight: 300;
+    width: auto;
 
     &:focus,
     &:valid {
@@ -90,6 +95,7 @@ input {
         }
     }
 }
+
 
 .action {
     margin-top: 2rem;
@@ -126,7 +132,7 @@ input {
 
 /* Scaling Wrapper */
 .scaling-wrapper {
-    transform: scale(0.8);
+    transform: scale(0.7);
     /* Adjust the scaling factor here */
     transform-origin: center;
     /* Keeps the scaling centered */
@@ -135,17 +141,33 @@ input {
     padding: 1rem;
 }
 
+
+@media(max-width:1084px) {
+    .scaling-wrapper {
+        transform: scale(0.5);
+    }
+}
+
+
 /* To make it responsive */
 @media (max-width: 768px) {
     .scaling-wrapper {
-        transform: scale(0.7);
+        transform: scale(0.5);
         /* Reduce the size for smaller screens */
     }
 }
 
+
+
 @media (max-width: 576px) {
+
+    .card {
+        bottom: 230px;
+        right: 200px;
+    }
+
     .scaling-wrapper {
-        transform: scale(0.8);
+        transform: scale(0.5);
         /* Further reduce for very small screens */
     }
 }

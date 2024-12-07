@@ -1,9 +1,8 @@
-
-.bg1{
+.bg1 {
     background-image: url("");
 }
 
-.landingcontainer{
+.landingcontainer {
     width: 80%;
     height: 40%;
     display: flex;
@@ -13,15 +12,17 @@
     margin-top: 20px;
 }
 
-.storycont{
+.storycont {
     margin-top: 30px;
     margin-right: auto;
-    scale: 1.1;
+    scale: .8;
 }
-.text1{
+
+.text1 {
     width: 200%;
 }
-.landimg1{
+
+.landimg1 {
     background-image: url("/public/img/about1.png");
     width: 30%;
     height: 200px;
@@ -30,22 +31,24 @@
     object-fit: cover;
 }
 
-.story1, .story2{
+.story1,
+.story2 {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.story2{
+
+.story2 {
     margin-top: -30px;
     margin-left: 280px;
 }
 
-.storycontent{
+.storycontent {
     max-width: 60%;
     margin-top: 45px;
 }
 
-.landimg2{
+.landimg2 {
     background-image: url("/public/img/aboyt2.png");
     width: 800px;
     background-position: -45px center;
@@ -54,66 +57,67 @@
     border-radius: 20px;
 }
 
-.bg2{
+.bg2 {
     background-color: #F7E2D1;
 }
 
 
-.aboutcarousel{
+.aboutcarousel {
     scale: .8;
 }
+
 /* Make carousel images the same size */
 .carousel-item img {
-width: 100%;
-/* Full width */
-height: 400px;
-/* Fixed height for consistency */
-object-fit: cover;
-/* Ensures images cover the space without stretching */
+    width: 100%;
+    /* Full width */
+    height: 400px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    /* Ensures images cover the space without stretching */
 }
 
 /* Ensure carousel items have the same height */
 .carousel-item {
-height: 400px;
+    height: 400px;
 
 }
 
 /* Position the control buttons below the carousels */
 .carousel-controls {
-display: flex;
-justify-content: center;
-position: relative;
-top: 20px;
-z-index: 10;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    z-index: 10;
 }
 
 .carousel-control-btn {
-background-color: rgba(0, 0, 0, 0.5);
-/* Semi-transparent background */
-border: none;
-border-radius: 5px;
-padding: 10px 20px;
-color: white;
-font-size: 18px;
-cursor: pointer;
-transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover effect for buttons */
 .carousel-control-btn:hover {
-background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Space between buttons */
 .carousel-control-prev {
-margin-right: 10px;
+    margin-right: 10px;
 }
 
 .carousel-control-next {
-margin-left: 10px;
+    margin-left: 10px;
 }
 
-.iconsvalue{
+.iconsvalue {
     display: flex;
     gap: 100px;
     margin: auto;
@@ -121,19 +125,20 @@ margin-left: 10px;
     justify-content: center;
     margin-top: 50px;
 }
-.icoon{
+
+.icoon {
     width: 70px;
     height: 70px;
     background-color: red;
 }
 
-.cvalue{
-width: 100%;
-height: 400px;
-background-color: gray;
+.cvalue {
+    width: 100%;
+    height: 400px;
+    background-color: gray;
 }
 
-.bg4{
+.bg4 {
     background-color: red;
     width: 80%;
     margin: auto;
@@ -145,7 +150,7 @@ background-color: gray;
     flex-wrap: wrap;
 }
 
-.bix1{
+.bix1 {
     flex: 1 1 32%;
     height: 400px;
     background-color: gray;
@@ -153,7 +158,7 @@ background-color: gray;
     margin-top: 50px;
 }
 
-.bix2{
+.bix2 {
     flex: 1 1 30%;
     height: 400px;
     background-color: gray;
@@ -161,64 +166,67 @@ background-color: gray;
     margin-top: 50px;
 }
 
-.bix3{
+.bix3 {
     flex: 1 1 25%;
     height: 400px;
     background-color: gray;
     box-sizing: border-box;
     margin-top: 50px;
 }
-.dialougs{
+
+.dialougs {
     width: 60%;
     margin-top: 70px;
     margin-left: 35%;
 }
 
-.teamwork{
+.teamwork {
     width: 100%;
     height: 500px;
 }
 
 .carouse-inner {
-  display: flex;
+    display: flex;
 }
 
 .carouse-item {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .carouse-item .card {
-  flex: 1 1 23%; /* Each card takes up roughly 23% of the width */
-  margin: 0 10px;
+    flex: 1 1 23%;
+    /* Each card takes up roughly 23% of the width */
+    margin: 0 10px;
 }
 
-.carouse-control-prev-icon, .carouse-control-next-icon {
-  background-color: black;
+.carouse-control-prev-icon,
+.carouse-control-next-icon {
+    background-color: black;
 }
 
 .carouse-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: linear-gradient(to top, orange, transparent);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, orange, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
 }
 
 .carouse-overlay .name {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .carouse-overlay .position {
-  font-size: 1rem;
-  font-style: italic;
+    font-size: 1rem;
+    font-style: italic;
 }
