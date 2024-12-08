@@ -56,10 +56,10 @@
       <div class="solutiontitle">mGRANT</div>
       <div class="solutionsubtitle">From data management to digital platforms, we’ve got you covered.<br>
         Solve all your challenges in one platform, like - <span style="color: #F58634;">managing multiple projects</span></div>
-      <div class="imgcontsln"></div>
+      <div class="imgcontsln">
+        <img src="/public/img/mgrant/mgrantscreen.png" class="imgcontsln" alt="">
+      </div>
     </div>
-    <div class="imggrafit"></div>
-    <div class="imggrafit2"></div>
   </div>
   <br><br>
   <div class="twocard">
@@ -194,237 +194,245 @@
               </div>
             </div>
           </div>
-          <script>
-          const timelineSection = document.querySelector('.timeline-section');
-const timelineItems = document.querySelectorAll('.timeline-item');
-const progressLine = document.querySelector('.progress-line');
-
-function animateTimeline() {
-  let index = 0;
-
-  function animateNext() {
-    if (index < timelineItems.length) {
-      const currentItem = timelineItems[index];
-      const icon = currentItem.querySelector('.icon');
-      const text = currentItem.querySelector('p');
-
-      // Activate the current item
-      currentItem.classList.add('active');
-      icon.classList.add('active');
-      text.style.color = '#f00';
-
-      // Extend the progress line
-      progressLine.style.height = `${(index + 1) * 60}px`;
-
-      index++;
-      setTimeout(animateNext, 1000); // Delay before animating the next item
-    }
-  }
-
-  animateNext();
-}
-
-// IntersectionObserver to start animation only when the section becomes visible
-const observer = new IntersectionObserver(
-  (entries) => {
-    const entry = entries[0];
-    if (entry.isIntersecting) {
-      animateTimeline();
-      observer.disconnect(); // Stop observing after the animation starts
-    }
-  },
-  { threshold: 0.5 } // Trigger when 50% of the section is visible
-);
-
-observer.observe(timelineSection);
-          </script>
-
-          <div class="changingcont" id="container2">
-            <div class="selectorimg">img2</div>
-            <div class="selectorbullet"></div>
-          </div>
-
-          <div class="changingcont" id="container3">
-            <div class="selectorimg"></div>
-            <div class="selectorbullet"></div>
-          </div>
-
-          <div class="changingcont" id="container4">
-            <div class="selectorimg"></div>
-            <div class="selectorbullet"></div>
-          </div>
-
-          <div class="changingcont" id="container5">
-            <div class="selectorimg"></div>
-            <div class="selectorbullet"></div>
-          </div>
         </div>
-
         <script>
-          function showcontainer(containerid, clickedcard) {
-            console.log(containerid);
+          const timelineSection = document.querySelector('.timeline-section');
+          const timelineItems = document.querySelectorAll('.timeline-item');
+          const progressLine = document.querySelector('.progress-line');
 
-            // Hide all containers
-            const containers = document.querySelectorAll('.changingcont');
-            containers.forEach(container => container.classList.remove('active'));
+          function animateTimeline() {
+            let index = 0;
 
-            // Show the targeted container
-            const targetContainer = document.getElementById(containerid);
-            if (targetContainer) {
-              targetContainer.classList.add('active');
-            } else {
-              console.log("Container not found");
+            function animateNext() {
+              if (index < timelineItems.length) {
+                const currentItem = timelineItems[index];
+                const icon = currentItem.querySelector('.icon');
+                const text = currentItem.querySelector('p');
+
+                // Activate the current item
+                currentItem.classList.add('active');
+                icon.classList.add('active');
+                text.style.color = '#f00';
+
+                // Extend the progress line
+                progressLine.style.height = `${(index + 1) * 60}px`;
+
+                index++;
+                setTimeout(animateNext, 1000); // Delay before animating the next item
+              }
             }
 
-            // Remove active class from all cards
-            const cards = document.querySelectorAll('.selectorcard');
-            cards.forEach(card => card.classList.remove('active'));
-
-            // Add active class to the clicked card
-            clickedcard.classList.add('active');
+            animateNext();
           }
+
+          // IntersectionObserver to start animation only when the section becomes visible
+          const observer = new IntersectionObserver(
+            (entries) => {
+              const entry = entries[0];
+              if (entry.isIntersecting) {
+                animateTimeline();
+                observer.disconnect(); // Stop observing after the animation starts
+              }
+            }, {
+              threshold: 0.5
+            } // Trigger when 50% of the section is visible
+          );
+
+          observer.observe(timelineSection);
         </script>
-      </div>
-    </div> <br> <br> <br> <br> <br>
-    <div class="dhnititle">usecase<br>
-      <div class="titlehr"></div> <br>
-    </div>
-    <div class="usecase">
-      <div class="imgusecase">
-        <div class="contentusecase">Student Learning & Assessments</div>
-      </div>
-      <div class="imgusecase">
-        <div class="contentusecase">Malnutrition Tracking & Reporting</div>
-      </div>
-      <div class="imgusecase">
-        <div class="contentusecase">Volunteer - ESOP <br>Tracking</div>
-      </div>
-      <div class="imgusecase">
-        <div class="contentusecase">Facility (School/ Health/ Centre) Audits</div>
-      </div>
-      <div class="imgusecase">
-        <div class="contentusecase">RFP Led Partner <br>Onboarding</div>
-      </div>
-      <div class="imgusecase">
-        <div class="contentusecase">Multi-donor Partner Grant Management</div>
-      </div>
 
-    </div>
-
-    <br> <br> <br> <br> <br> <br>
-    <div class="impactstory">
-      <div class="dhnititle">Real Impact, Real Stories<br>
-        <div class="titlehr"></div> <br>
-      </div>
-
-
-      <div class="impact">
-        <div class="rightimpact">
-          <div class="imapctimg3">hui</div>
-          <div class="imapctimg2"></div>
+        <div class="changingcont" id="container2">
+          <div class="selectorimg">img2</div>
+          <div class="selectorbullet"></div>
         </div>
-        <div class="leftimpact">
-          <div class="impactcontent"></div>
+
+        <div class="changingcont" id="container3">
+          <div class="selectorimg"></div>
+          <div class="selectorbullet"></div>
         </div>
-      </div> <br> <br> <br> <br>
 
-      <div class="countingcont">
-        <div> <span class="countelement">1000+ </span><span class="counttext">organizations</span></div>
-        <div> <span class="countelement">20+ </span> <span class="counttext">CSRs/ Donors </span></div>
+        <div class="changingcont" id="container4">
+          <div class="selectorimg"></div>
+          <div class="selectorbullet"></div>
+        </div>
 
-      </div> <br> <br> <br>
-
-
-    </div>
-
-
-
-
-    <div class="solcard"> <br>
-      <div style="position:absolute;text-align: center; margin: auto;"> <br>
-        <div class="dhnititle">Flexible Solutions for You!
-          <div class="titlehr"></div>
+        <div class="changingcont" id="container5">
+          <div class="selectorimg"></div>
+          <div class="selectorbullet"></div>
         </div>
       </div>
-      <div class="sol1">
-        <div class="solcont">
-          <h2>SAAS/ License Based</h2>
-        </div>
-        <ul style="margin-top: 30px;">
-          <li>Subscription model</li>
-          <li>Enterprise and project-level license</li>
-          <li>No user-based limit</li>
-          <li>Flexible price package</li>
-          <li>Customisation</li>
-          <li>Support while setting up</li>
-        </ul>
-        <div class="solnimg"></div>
-      </div>
-      <div class="sol2">
-        <div class="solcont">
-          <h2>Client Ownership</h2>
-        </div>
-        <ul style="margin-top: 30px;">
-          <li>Client hosts on their own server.</li>
-          <li>Future customisation possibility.</li>
-          <li>1 year support and maintenance</li>
-          <li>Additional AMC contract after a year.</li>
-          <li>End-to-end process of onboarding</li> <br>
-        </ul>
-        <div class="solnimg" style="margin-top: 38px;"></div>
-      </div>
-    </div>
-
-
-    <div class="keyfeatures">
-      <div class="dhnititle">Post Launch Support<br>
-        <div class="titlehr"></div> <br>
-      </div>
-
-      <div class="launchiconscontainer">
-        <div class="launchicons2">
-          <div class="icons"></div>
-          <div class="iconstext">Dedicated Project manager & Data Analysis Support</div>
-        </div>
-        <div class="launchicons1">
-          <div class="icons"></div>
-          <div class="iconstext">Bug Fixing & Issue Resolution</div>
-        </div>
-        <div class="launchicons1">
-          <div class="icons"></div>
-          <div class="iconstext">hgfal</div>
-        </div>
-        <div class="launchicons1">
-          <div class="icons"></div>
-          <div class="iconstext">hgfal</div>
-        </div>
-        <div class="launchicons1">
-          <div class="icons"></div>
-          <div class="iconstext">hgfal</div>
-        </div>
-        <div class="launchicons1">
-          <div class="icons"></div>
-          <div class="iconstext">hgfal</div>
-        </div>
-      </div>
-
-      <br> <br> <br> <br> <br>
-
-      <div class="lastcontainer">
-        <div>
-
-        </div>
-      </div>
-
-
-
-      <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
 
       <script>
-        function resizeIframe(iframe) {
-          iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        function showcontainer(containerid, clickedcard) {
+          console.log(containerid);
+
+          // Hide all containers
+          const containers = document.querySelectorAll('.changingcont');
+          containers.forEach(container => container.classList.remove('active'));
+
+          // Show the targeted container
+          const targetContainer = document.getElementById(containerid);
+          if (targetContainer) {
+            targetContainer.classList.add('active');
+          } else {
+            console.log("Container not found");
+          }
+
+          // Remove active class from all cards
+          const cards = document.querySelectorAll('.selectorcard');
+          cards.forEach(card => card.classList.remove('active'));
+
+          // Add active class to the clicked card
+          clickedcard.classList.add('active');
         }
       </script>
+    </div>
+  </div>
+
+  <br> <br> <br> <br> <br>
+
+  <div class="dhnititle">usecase<br>
+    <div class="titlehr"></div> <br>
+  </div>
+  <div class="usecase">
+    <div class="imgusecase">
+      <div class="contentusecase">Student Learning & Assessments</div>
+    </div>
+    <div class="imgusecase">
+      <div class="contentusecase">Malnutrition Tracking & Reporting</div>
+    </div>
+    <div class="imgusecase">
+      <div class="contentusecase">Volunteer - ESOP <br>Tracking</div>
+    </div>
+    <div class="imgusecase">
+      <div class="contentusecase">Facility (School/ Health/ Centre) Audits</div>
+    </div>
+    <div class="imgusecase">
+      <div class="contentusecase">RFP Led Partner <br>Onboarding</div>
+    </div>
+    <div class="imgusecase">
+      <div class="contentusecase">Multi-donor Partner Grant Management</div>
+    </div>
+
+  </div>
+
+  <br> <br> <br> <br> <br> <br>
+
+
+  <div class="impactstory">
+    <div class="dhnititle">Real Impact, Real Stories<br>
+      <div class="titlehr"></div> <br>
+    </div>
+
+
+    <div class="impact">
+      <div class="rightimpact">
+        <div class="imapctimg3">hui</div>
+        <div class="imapctimg2"></div>
+      </div>
+      <div class="leftimpact">
+        <div class="impactcontent"></div>
+      </div>
+    </div> <br> <br> <br> <br>
+
+    <div class="countingcont">
+      <div> <span class="countelement">1000+ </span><span class="counttext">organizations</span></div>
+      <div> <span class="countelement">20+ </span> <span class="counttext">CSRs/ Donors </span></div>
+
+    </div> <br> <br> <br>
+
+
+  </div>
+
+
+
+
+  <div class="solcard"> <br>
+    <div class="muft"> <br>
+      <div class="dhnititle">Flexible Solutions for You!
+        <div class="titlehr"></div>
+      </div>
+    </div>
+    <div class="sol1">
+      <div class="solcont">
+        <h2>SAAS/ License Based</h2>
+      </div>
+      <ul style="margin-top: 30px;">
+        <li>Subscription model</li>
+        <li>Enterprise and project-level license</li>
+        <li>No user-based limit</li>
+        <li>Flexible price package</li>
+        <li>Customisation</li>
+        <li>Support while setting up</li>
+      </ul>
+      <div class="solnimg"></div>
+    </div>
+    <div class="sol2">
+      <div class="solcont">
+        <h2>Client Ownership</h2>
+      </div>
+      <ul style="margin-top: 30px;">
+        <li>Client hosts on their own server.</li>
+        <li>Future customisation possibility.</li>
+        <li>1 year support and maintenance</li>
+        <li>Additional AMC contract after a year.</li>
+        <li>End-to-end process of onboarding</li> <br>
+      </ul>
+      <div class="solnimg"></div>
+    </div>
+  </div>
+
+
+  <div class="keyfeatures1">
+    <div class="dhnititle">Post Launch Support<br>
+      <div class="titlehr"></div> <br>
+    </div>
+
+    <div class="launchiconscontainer">
+      <div class="launchicons2">
+        <div class="icons"><img src="/public/img/mgrant/dedicated manager & data analysis.png" alt="icons for fearture" class="icons"></div>
+        <div class="iconstext">Dedicated Project manager & Data Analysis Support</div>
+      </div>
+      <div class="launchicons1">
+        <div class="icons"><img src="/public/img/mgrant/cloud-computing 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="iconstext">Legacy Data Upload</div>
+      </div>
+      <div class="launchicons1">
+        <div class="icons"><img src="/public/img/mgrant/user trainings 1 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="iconstext">User Trainings</div>
+      </div>
+      <div class="launchicons1">
+        <div class="icons"><img src="/public/img/mgrant/cloud-computing 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="iconstext">NGO Team Co-ordination</div>
+      </div>
+      <div class="launchicons1">
+        <div class="icons"><img src="/public/img/mgrant/bug fixing 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="iconstext">Bug Fixing & Issue Resolution</div>
+      </div>
+      <div class="launchicons1">
+        <div class="icons"><img src="/public/img/mgrant/feature enhancements 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="iconstext">Feature Enhancements</div>
+      </div>
+    </div>
+  </div> 
+
+  <br> <br> <br> <br> <br>
+
+  <div class="lastcontainer">
+    <div>
+
+    </div>
+  </div>
+
+
+
+  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
+
+  <script>
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
 </body>
 
 </html>
