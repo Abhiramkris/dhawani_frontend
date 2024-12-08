@@ -32,6 +32,13 @@ html {
     font-weight: 600;
 }
 
+#arrow-down {
+    position: absolute;
+    top: 430px;
+    margin: 10px 30px;
+    height: 150px;
+    width: 150px;
+}
 
 #calendar-incontainer {
     top: -10px;
@@ -77,7 +84,7 @@ html {
 #middle-area-head {
     margin-left: 40px;
     height: 380px;
-    width: 380px;
+
     display: flex;
     align-items: flex-start;
     font-size: 40px;
@@ -108,22 +115,118 @@ html {
 }
 
 
-#form-frame {
-    top: 620px;
-    position: absolute;
-    left: 600px;
-    height: 100px;
-    width: 600px;
-    overflow: hidden;
-}
-
 #form-container {
-    height: 900px;
-    width: 90px;
-    overflow: hidden;
+    width: auto;
+    margin: auto;
+    position: relative;
+    left: 500px;
+    bottom: 250px;
 }
 
-#form-frame iframe {
-    overflow: hidden;
-    height: 100%;
+
+@media (max-width:1280px) {
+    #form-container {
+        left: 400px;
+
+    }
+}
+
+
+
+@media(max-width:1084px) {
+
+    #inner-top-heading {
+        line-height: 50px;
+    }
+
+    .top {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+
+    #calendar-incontainer {
+        top: 150px;
+        margin-right: 250px;
+        height: 250px;
+    }
+
+    #arrow-down {
+        top: 120px;
+        left: 300px;
+        height: 90px;
+        width: 90px;
+    }
+
+    #arrow-up {
+        display: none;
+    }
+
+
+    .contact-middle-area {
+        display: flex;
+        flex-direction: column;
+        padding: 90px;
+    }
+
+    #middle-area-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    #form-container {
+        left: 0px;
+        bottom: 300px;
+
+    }
+}
+
+@media(max-width:650px) {
+    #inner-top-heading {
+        font-size: 30px;
+
+        br {
+            display: none;
+        }
+    }
+
+    #inner-para {
+        font-size: 10px;
+    }
+
+    #calendar-incontainer {
+        left: 120px;
+        margin-top: 50px;
+        top: 10%;
+        height: 10px;
+        width: 100px;
+
+    }
+
+    #arrow-down {
+        top: 170px;
+        left: 150px;
+    }
+
+    #form-container {
+        left: 20px;
+        right: 90px;
+        bottom: 230px;
+        height: 90px;
+        width: 100%;
+
+    }
+
+    #middle-area-head {
+        width: 100%;
+    }
+
+    #middle-area-head hr {
+        margin-top: 0px;
+        margin-left: -200px;
+    }
+
 }

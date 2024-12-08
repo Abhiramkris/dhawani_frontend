@@ -10,6 +10,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="/public/css/navbar.css">
     <link rel="stylesheet" href="/public/css/contact.css">
+    <link rel="stylesheet" href="./form/form.css">
 </head>
 
 <body>
@@ -53,12 +54,11 @@
                 aliquet odio mattis.
             </p>
         </div>
-        <img src="/public/img/Highlight_06.png" alt="arrow down"
-            style="position: absolute; top: 430px; margin:10px 30px; height: 150px; width: 150px;">
-        <img src="/public/img/Arrow_09.png" alt="arrow down"
+        <img src="/public/img/Highlight_06.png" alt="arrow down" id="arrow-down">
+        <img src="/public/img/Arrow_09.png" alt="arrow down" id="arrow-up"
             style="position: absolute; top: 100px; left: 640px; margin:30px 20px; height: 150px; width: 150px;">
         <div id="calendar-incontainer">
-            <iframe src="/calender/calender.html" frameborder="0" style="overflow: hidden;"></iframe>
+            <img src="../public/img/Sidebar.png" style=" margin-top: 60px; height: 300px;" alt="calender">
         </div>
 
     </div>
@@ -68,8 +68,36 @@
             <p>Get in touch <br> with us</p>
             <hr />
             <div id="form-container">
-                <iframe id="form-frame" src="form/form.html" frameborder="0" width="90" height="0"
-                    scrolling="no"></iframe>
+                <div class="scaling-wrapper">
+                    <div class="card">
+                        <form class="card-form">
+                            <div class="input">
+                                <input type="text" class="input-field" value="" required />
+                                <label class="input-label">Name</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" class="input-field" value="" required />
+                                <label class="input-label">Email</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" class="input-field" required />
+                                <label class="input-label">General Inquiry</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" class="input-field" required />
+                                <label class="input-label">Subject</label>
+                            </div>
+                            <div class="input">
+                                <input type="textarea" class="input-field" required id="textarea" />
+                                <label class="input-label">Message</label>
+                            </div>
+                            <div class="action">
+                                <button class="action-button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
