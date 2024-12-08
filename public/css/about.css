@@ -65,6 +65,7 @@
 
 .bg2 {
     background-color: #F7E2D1;
+    display: none;
 }
 
 
@@ -123,6 +124,8 @@
     margin-left: 10px;
 }
 
+
+
 .iconsvalue {
     display: flex;
     gap: 100px;
@@ -157,6 +160,13 @@
 }
 
 @media(max-width:1084px) {
+    .titlehr {}
+
+
+    .dhnititle p {
+        font-size: 10px;
+    }
+
     .cvalue {
         height: 80vh;
     }
@@ -171,63 +181,94 @@
         margin-top: 30px;
     }
 
-    .cvalue {
-        .icoon {
-            display: flex;
-            flex-wrap: wrap;
-            width: 40px;
-            height: 20px;
-        }
+    .icoon {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1px;
+        height: 1px;
+    }
 
-        .icoon p {
-            display: flex;
-            margin-top: 16px;
-            font-size: 10.8px;
-        }
+    .icoon p {
+        display: flex;
+        margin-top: 16px;
+        font-size: 10.8px;
     }
 }
 
 
+
 .bg4 {
+    background-image: url(/public/img/codifyformatter\ \(13\).png);
+    background-size: cover;
     background-color: red;
     width: 80%;
     margin: auto;
-    height: 500px;
+    height: 400px;
     border-radius: 20px;
     margin-top: 50px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
+
+
 }
 
 .bix1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4%;
     flex: 1 1 32%;
     height: 400px;
-    background-color: gray;
+    color: white;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 2%;
+}
+
+#quotes-logo {
+    color: white;
+    flex: 0.2 0.2 10%;
+    height: 70px;
+    width: 70px;
+
+    box-sizing: border-box;
 }
 
 .bix2 {
+    position: relative;
+
     flex: 1 1 30%;
-    height: 400px;
+    height: 50vh;
     background-color: gray;
+    background-image: url(/public/img/IMG_3120-removebg-preview\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    box-sizing: border-box;
+    margin-top: 5.5%;
+}
+
+.bix3 {
+
+    color: white;
+    flex: 1 1 25%;
+    height: 400px;
     box-sizing: border-box;
     margin-top: 50px;
 }
 
-.bix3 {
-    flex: 1 1 25%;
-    height: 400px;
-    background-color: gray;
-    box-sizing: border-box;
-    margin-top: 50px;
+#dialougs1 {
+    margin-left: 35%;
+    margin-top: -30%;
+    width: 100%;
 }
 
 .dialougs {
     width: 60%;
     margin-top: 70px;
     margin-left: 35%;
+    font-size: 12px;
 }
 
 .teamwork {
