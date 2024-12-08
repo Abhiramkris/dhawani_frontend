@@ -1,5 +1,5 @@
 .twocard{
-    width: 90vw;
+    width: 87%;
     height:300px;
     display: flex;
     justify-content: center;
@@ -9,13 +9,13 @@
 }
 .card1{
     width: 55%;
-    height: 350px;
+    height: 400px;
     background-color: black;
     border-radius: 20px;
 }
 .card2{
     width: 55%;
-    height: 350px;
+    height: 400px;
     background-color: black;
     border-radius: 20px;
 }
@@ -24,17 +24,384 @@
     position: absolute;
     color: aliceblue;
     margin-left: 35px;
-    margin-top: 280px;
+    margin-top: 320px;
     font-size: 18px;
 }
 
 .keyfeatures{
     margin-top: 130px;
     width: 100%;
+    background-image: url("");
     /* bg url here */
 }
 
 .keycontainer{
     width: 90%;
-    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 8px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
 }
+
+.keycard{
+    margin-bottom: 1px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 255, 170);
+}
+
+.keycard h3{
+    color: #F58634;
+    line-height: 20px;
+    margin-top: 30px;
+}
+
+
+.keycard h8{
+    position: absolute;
+    font-size: 12px;
+    width: 160px;
+    text-align: left;
+    margin-top: -5px;
+}
+
+@media (max-width: 1000px) {
+    .keycontainer{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .keycard h3{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .keycard h8{
+        width: 30%;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .keycontainer{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+ }
+
+.feature{
+    background-color: #F7E2D1;
+    width: 100%;
+    height: 700px;
+}
+.feacont{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.selector{
+background-color: black;
+margin-top: 30px;
+width: 40%;
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+.selector2{
+    width: 60%;
+}
+.selectorcard{
+    width: 40%;
+    height: 90px;
+    background-color: olivedrab;
+    margin: auto;
+
+}
+
+.selectorimg{
+    width: 70%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.changingcont{
+    display: none;
+}
+.changingcont.active{
+    display: block;
+}
+.changingcont {
+    display: none;
+  }
+
+  .changingcont.active {
+    display: block;
+  }
+
+  .selectorcard {
+    cursor: pointer;
+  }
+
+  .selectorcard.active {
+    background-color: #ddd; 
+  }
+
+  /* gptcode */
+
+  .timeline {
+    position: relative;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start position (slightly below) */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .timeline-item.active {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('your-image-url.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    z-index: 2;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .icon.active {
+    filter: brightness(1.2); /* Highlight effect */
+  }
+  
+  .timeline-item p {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .progress-line {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 2px;
+    background-color: #ddd;
+    height: 0;
+    z-index: 1;
+    transition: height 0.5s ease-out;
+  }
+
+  
+
+
+
+.usecase{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.contentusecase::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: white;
+    margin-left: -10px;
+}
+.contentusecase{
+    margin-left: 30px;
+    width: 65%;
+    margin-top: 40px;
+    color: white;
+}
+
+.imgusecase{
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+
+.impactstory{
+    width: 70%;
+    margin: auto;
+}
+.impact{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.leftimpact{
+    height: 400px;
+    width: 40%;
+    background-color: aqua;
+}
+
+.rightimpact{
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    gap: 20px;
+}
+
+.imapctimg3, .imapctimg2{
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+
+.countingcont{
+    display: flex;
+    gap: 20%;
+margin: auto;
+margin-left: 7vw;
+}
+
+.countelement{
+    color: #F5863480;
+    font-weight: 800;
+    font-size: 5rem;
+    font-family: "Manrope", sans-serif;
+}
+
+.counttext{
+  font-size: 25px;
+    position: relative;
+    bottom: 28px;
+    left: 20px;
+}
+
+
+.solcard{
+    background-color: #F7E2D1;
+    width: 100%;
+    gap: 40px;
+    height: 700px;
+    display: flex;
+    margin: auto;
+    justify-content: center;    
+}
+.sol1, .sol2{
+    width: 25%;
+    height: 500px;
+    background-color: white;
+    margin-top: 150px;
+    border-radius: 20px;
+    font-family: "Manrope", sans-serif;
+}
+
+.solcont{
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.solcont::after{
+content: '';
+width: 30px;
+height: 3px;
+background-color: #F58634;
+position: absolute;
+margin-top: -14px;
+}
+
+ul{
+list-style: none;
+}
+
+li{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+li::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url('/public/img/Close button.png');
+    position: absolute;
+    margin-left: -30px;
+    background-repeat: no-repeat;
+    scale: .7;
+}
+
+.solnimg{
+    width: 85%;
+    height: 170px;
+    background-color: black;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.launchiconscontainer{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+.launchicons1{
+width: 150px;
+height: 130px;
+background-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.launchicons2{
+    width: 230px;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.icons{
+    width: 80px;
+    height: 80px;
+    background-color: green;
+}
+.iconstext{
+    color: aliceblue;
+    text-align: center;
+}
+
