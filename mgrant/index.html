@@ -338,19 +338,54 @@
 
     <div class="impact">
       <div class="rightimpact">
-        <div class="imapctimg3">hui</div>
+        <div class="imapctimg3">
+          <div class="child"></div>
+        </div>
         <div class="imapctimg2"></div>
       </div>
       <div class="leftimpact">
         <div class="impactcontent"></div>
       </div>
     </div> <br> <br> <br> <br>
-
     <div class="countingcont">
-      <div> <span class="countelement">1000+ </span><span class="counttext">organizations</span></div>
-      <div> <span class="countelement">20+ </span> <span class="counttext">CSRs/ Donors </span></div>
+      <div>
+        <span class="countelement" data-target="1000">0</span><br>
+        <span class="counttext">organizations</span>
+      </div>
+      <div>
+        <span class="countelement" data-target="20">0</span><br>
+        <span class="counttext">CSRs/ Donors</span>
+      </div>
+    </div>
 
-    </div> <br> <br> <br>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".countelement");
+
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const current = +counter.innerText;
+
+            // Speed of the animation
+            const increment = target / 90; // Adjust divisor to control speed
+
+            if (current < target) {
+              counter.innerText = Math.ceil(current + increment);
+              setTimeout(updateCount, 10); // Delay in ms
+            } else {
+              counter.innerText = target + "+"; // Append "+" after reaching the target
+            }
+          };
+
+          updateCount();
+        });
+      });
+
+
+    </script>
+  </div> <br> <br> <br>
 
 
   </div>

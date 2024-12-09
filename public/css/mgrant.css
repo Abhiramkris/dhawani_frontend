@@ -259,6 +259,7 @@
 
 .feacont {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 100px;
     width: 80%;
@@ -274,6 +275,7 @@
     flex-direction: column;
     gap: 2px;
 }
+
 
 .selector2 {
     width: 60%;
@@ -464,6 +466,12 @@
     background-color: blue;
 }
 
+
+.child {
+    width: 50%;
+    background-color: red;
+}
+
 @media (max-width: 1000px) {
     .impactstory {
         width: 100%;
@@ -478,12 +486,17 @@
 
 .countingcont {
     display: flex;
-    gap: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
     margin: auto;
     margin-left: 7vw;
+    margin-right: 10vw;
 }
 
 .countelement {
+    display: flex;
+    justify-content: flex-start;
     color: #F5863480;
     font-weight: 800;
     font-size: 5rem;
@@ -491,10 +504,10 @@
 }
 
 .counttext {
-    font-size: 25px;
+    top: 50%;
+    font-size: 21px;
     position: relative;
-    bottom: 28px;
-    left: 20px;
+    bottom: 25px;
 }
 
 
