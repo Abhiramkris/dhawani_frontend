@@ -1,31 +1,183 @@
-.twocard{
+.twocard {
     width: 87%;
-    height:300px;
+    height: 90vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: auto;
     gap: 3%;
 
 }
-.card1{
+
+.card1 {
+    background-image: url(/public/img/Rectangle\ 3800.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* For layering child elements */
     width: 55%;
-    height: 400px;
+    height: 340px;
     background-color: black;
     border-radius: 20px;
+    overflow: hidden;
+    /* Prevent overflow during animation */
+    transition: background-color 0.5s ease;
+    /* Smooth color transition */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
 }
-.card2{
+
+.textincard {
+    padding-bottom: 10%;
+    position: relative;
+    z-index: 2;
+    /* Ensures this text is above the base background */
+    font-size: 24px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Smooth text disappearance */
+}
+
+/* Overlay for hover effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    /* New background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    /* Smooth slide-in */
+    z-index: 1;
+    /* Layer above the default background */
+}
+
+.animated-text {
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.5s ease;
+    /* Smooth fade-in */
+}
+
+/* Hover Effect */
+.card1:hover {
+    background-color: orange;
+    /* Change background color */
+}
+
+.card1:hover .textincard {
+    transform: translateY(-100%);
+    /* Move text out of view */
+    opacity: 0;
+    /* Fade out */
+}
+
+.card1:hover .overlay {
+    transform: translateX(-100%);
+    /* Slide overlay in from right to center */
+}
+
+.card1:hover .animated-text {
+    opacity: 1;
+    /* Fade in new text */
+}
+
+
+
+.card2 {
+    background-image: url(/public/img/5fa07a867643b2884190777494a58647.jpeg);
+    background-size: cover;
+    position: relative;
+    /* For layering child elements */
     width: 55%;
-    height: 400px;
-    background-color: rgb(76, 5, 5);
+    height: 340px;
+    background-color: navy;
     border-radius: 20px;
+    overflow: hidden;
+    /* Prevent overflow during animation */
+    transition: background-color 0.5s ease;
+    /* Smooth color transition */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
 }
-@media (max-width: 700px) {
-    
 
+.card2 .textincard {
+    position: relative;
+    z-index: 2;
+    /* Ensures this text is above the base background */
+
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    /* Smooth text disappearance */
+}
+
+/* Overlay for hover effect */
+.card2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    background-color: teal;
+    /* New background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    /* Smooth slide-in */
+    z-index: 1;
+    /* Layer above the default background */
+}
+
+.card2 .animated-text {
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.5s ease;
+    /* Smooth fade-in */
+}
+
+/* Hover Effect */
+.card2:hover {
+    background-color: teal;
+    /* Change background color */
+}
+
+.card2:hover .textincard {
+    transform: translateY(-100%);
+    /* Move text out of view */
+    opacity: 0;
+    /* Fade out */
+}
+
+.card2:hover .overlay {
+    transform: translateX(-100%);
+    /* Slide overlay in from right to center */
+}
+
+.card2:hover .animated-text {
+    opacity: 1;
+    /* Fade in new text */
 }
 
 
-.textincard{
+
+
+@media (max-width: 700px) {}
+
+
+.textincard {
     position: absolute;
     color: aliceblue;
     margin-left: 35px;
@@ -33,25 +185,25 @@
     font-size: 18px;
 }
 
-.keyfeatures{
+.keyfeatures {
     margin-top: 130px;
     width: 100%;
     background-image: url("/public/img/mgrant/Frame.png");
     /* bg url here */
 }
 
-.keycontainer{
+.keycontainer {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 8px;
     position: relative;
     margin: auto;
     justify-content: center;
 }
 
-.keycard{
+.keycard {
     margin-bottom: 1px;
     width: 100%;
     height: 150px;
@@ -59,14 +211,14 @@
     background-color: white;
 }
 
-.keycard h3{
+.keycard h3 {
     color: #F58634;
     line-height: 20px;
     margin-top: 30px;
 }
 
 
-.keycard h8{
+.keycard h8 {
     position: absolute;
     font-size: 12px;
     width: 160px;
@@ -75,16 +227,17 @@
 }
 
 @media (max-width: 1000px) {
-    .keycontainer{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(4,1fr);
+    .keycontainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 
-    .keycard h3{
+    .keycard h3 {
         font-size: 18px;
         line-height: 18px;
     }
-    .keycard h8{
+
+    .keycard h8 {
         width: 30%;
         font-size: 12px;
         line-height: 12px;
@@ -92,37 +245,41 @@
 }
 
 @media (max-width: 500px) {
-    .keycontainer{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,1fr);
+    .keycontainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
- }
+}
 
-.feature{
+.feature {
     background-color: #F7E2D1;
     width: 100%;
-    height: 700px;
+    height: 800px;
 }
-.feacont{
+
+.feacont {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 100px;
     width: 80%;
     margin: auto;
     justify-content: center;
 }
-.selector{
-background-color: black;
-margin-top: 30px;
-width: 40%;
-display: flex;
-flex-direction: column;
-gap: 2px;
+
+.selector {
+    background-color: black;
+    margin-top: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
-.selector2{
+
+.selector2 {
     width: 60%;
 }
-.selectorcard{
+
+.selectorcard {
     width: 40%;
     height: 90px;
     background-color: olivedrab;
@@ -130,81 +287,89 @@ gap: 2px;
 
 }
 
-.selectorimg{
+.selectorimg {
     width: 70%;
     height: 50px;
     background-color: aqua;
 }
 
-.changingcont{
-    display: none;
-}
-.changingcont.active{
-    display: block;
-}
 .changingcont {
     display: none;
-  }
+}
 
-  .changingcont.active {
+.changingcont.active {
     display: block;
-  }
+}
 
-  .selectorcard {
+.changingcont {
+    display: none;
+}
+
+.changingcont.active {
+    display: block;
+}
+
+.selectorcard {
     cursor: pointer;
-  }
+}
 
-  .selectorcard.active {
-    background-color: #ddd; 
-  }
+.selectorcard.active {
+    background-color: #ddd;
+}
 
-  /* gptcode */
+/* gptcode */
 
-  .timeline {
+.timeline {
     position: relative;
     padding: 20px;
     width: 300px;
-  }
-  
-  .timeline-item {
+}
+
+.timeline-item {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     position: relative;
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start position (slightly below) */
+    opacity: 0;
+    /* Start hidden */
+    transform: translateY(20px);
+    /* Start position (slightly below) */
     transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .timeline-item.active {
-    opacity: 1; /* Make visible */
-    transform: translateY(0); /* Move to original position */
-  }
-  
-  .icon {
+}
+
+.timeline-item.active {
+    opacity: 1;
+    /* Make visible */
+    transform: translateY(0);
+    /* Move to original position */
+}
+
+.icon {
     width: 40px;
     height: 40px;
-    background-image: url('your-image-url.jpg'); /* Replace with your image */
+    background-image: url('your-image-url.jpg');
+    /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-shrink: 0;
     z-index: 2;
     transition: filter 0.3s ease-in-out;
-  }
-  
-  .icon.active {
-    filter: brightness(1.2); /* Highlight effect */
-  }
-  
-  .timeline-item p {
+}
+
+.icon.active {
+    filter: brightness(1.2);
+    /* Highlight effect */
+}
+
+.timeline-item p {
     margin-left: 15px;
     font-size: 16px;
     color: #333;
     transition: color 0.3s;
-  }
-  
-  .progress-line {
+}
+
+.progress-line {
     position: absolute;
     top: 10px;
     left: 20px;
@@ -213,17 +378,17 @@ gap: 2px;
     height: 0;
     z-index: 1;
     transition: height 0.5s ease-out;
-  }
-
-  
+}
 
 
 
-.usecase{
+
+
+.usecase {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -232,13 +397,13 @@ gap: 2px;
 
 @media (max-width: 800px) {
     .usecase {
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    width: 100%;
-}
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+    }
 }
 
-.contentusecase::before{
+.contentusecase::before {
     content: '';
     position: absolute;
     width: 1px;
@@ -246,14 +411,15 @@ gap: 2px;
     background-color: white;
     margin-left: -10px;
 }
-.contentusecase{
+
+.contentusecase {
     margin-left: 30px;
     width: 65%;
     margin-top: 40px;
     color: white;
 }
 
-.imgusecase{
+.imgusecase {
     width: 100%;
     height: 300px;
     background-color: green;
@@ -261,11 +427,12 @@ gap: 2px;
 }
 
 
-.impactstory{
+.impactstory {
     width: 70%;
     margin: auto;
 }
-.impact{
+
+.impact {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -275,13 +442,13 @@ gap: 2px;
     margin: auto;
 }
 
-.leftimpact{
+.leftimpact {
     height: 400px;
     width: 40%;
     background-color: aqua;
 }
 
-.rightimpact{
+.rightimpact {
     height: 400px;
     width: 50%;
     display: flex;
@@ -290,55 +457,59 @@ gap: 2px;
     gap: 20px;
 }
 
-.imapctimg3, .imapctimg2{
+.imapctimg3,
+.imapctimg2 {
     height: 200px;
     width: 100%;
     background-color: blue;
 }
 
 @media (max-width: 1000px) {
-.impactstory{
-    width: 100%;
-}
-.countingcont{
-    scale: .67;
-    margin: auto;
-    justify-content: center;
-}
+    .impactstory {
+        width: 100%;
+    }
+
+    .countingcont {
+        scale: .67;
+        margin: auto;
+        justify-content: center;
+    }
 }
 
-.countingcont{
+.countingcont {
     display: flex;
     gap: 20%;
-margin: auto;
-margin-left: 7vw;
+    margin: auto;
+    margin-left: 7vw;
 }
 
-.countelement{
+.countelement {
     color: #F5863480;
     font-weight: 800;
     font-size: 5rem;
     font-family: "Manrope", sans-serif;
 }
 
-.counttext{
-  font-size: 25px;
+.counttext {
+    font-size: 25px;
     position: relative;
     bottom: 28px;
     left: 20px;
 }
 
 
-.solcard{
+.solcard {
     background-color: #F7E2D1;
     width: 100%;
     gap: 40px;
     height: auto;
     display: flex;
     margin: auto;
-    justify-content: center;    
+    justify-content: center;
 }
-.sol1, .sol2{
+
+.sol1,
+.sol2 {
     width: 25%;
     height: 500px;
     background-color: white;
@@ -348,38 +519,40 @@ margin-left: 7vw;
     margin-bottom: 50px;
 }
 
-.solcont{
+.solcont {
     font-weight: 700;
     margin-left: 30px;
     margin-top: 30px;
 }
-.solcont::after{
-content: '';
-width: 30px;
-height: 3px;
-background-color: #F58634;
-position: absolute;
-margin-top: -14px;
+
+.solcont::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #F58634;
+    position: absolute;
+    margin-top: -14px;
 }
 
-ul{
-list-style: none;
+ul {
+    list-style: none;
 }
 
-li{
+li {
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 12px;
     position: relative;
     padding-left: 20px;
 }
-.muft{
+
+.muft {
     position: absolute;
     text-align: center;
     margin: auto;
 }
 
-li::before{
+li::before {
     content: '';
     width: 30px;
     height: 30px;
@@ -390,7 +563,7 @@ li::before{
     scale: .7;
 }
 
-.solnimg{
+.solnimg {
     width: 85%;
     height: 170px;
     background-color: black;
@@ -401,36 +574,39 @@ li::before{
 
 
 @media (max-width: 1300px) {
-    .muft{
+    .muft {
         position: relative;
     }
-.solcard{
-    display: block;
-    height: 1300px;
-    justify-content: center;
-    margin: 0 auto;
-}
-.sol1, .sol2{
-    width: 70%; 
-    justify-content: center;
-    margin: auto;
-    max-width: 350px;
+
+    .solcard {
+        display: block;
+        height: 1300px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .sol1,
+    .sol2 {
+        width: 70%;
+        justify-content: center;
+        margin: auto;
+        max-width: 350px;
+    }
+
+    .sol1 {
+        margin-top: 70px;
+    }
+
+    .sol2 {
+        margin-top: -10px;
+    }
+
+    .solcont h2 {
+        padding-top: 50px;
+    }
 }
 
-.sol1{
-    margin-top: 70px;
-}
-
-.sol2{
-    margin-top: -10px;
-}
-
-.solcont h2{
-    padding-top: 50px; 
-}
-}
-
-.launchiconscontainer{
+.launchiconscontainer {
     width: 100%;
     display: flex;
     gap: 20px;
@@ -440,21 +616,23 @@ li::before{
     height: auto;
 }
 
-.launchicons1{
-width: 150px;
-height: 130px;
-display: flex;
-flex-direction: column;
-align-items: center;
+.launchicons1 {
+    width: 150px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 1000px) {
-.launchicons1, .launchicons2{
-    width: 100px;
-}
+
+    .launchicons1,
+    .launchicons2 {
+        width: 100px;
+    }
 }
 
-.launchicons2{
+.launchicons2 {
     width: 230px;
     height: 130px;
     display: flex;
@@ -463,14 +641,14 @@ align-items: center;
 }
 
 
-.icons{
+.icons {
     width: 80px;
     height: 80px;
 }
-.iconstext{
+
+.iconstext {
     color: #53435B;
     text-align: center;
     padding-top: 15px;
     /* at 860 make icons haveapding  */
 }
-

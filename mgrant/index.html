@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/public/css/mgrant.css">
   <link rel="stylesheet" href="/public/css/navbar.css">
   <link rel="stylesheet" href="/public/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 <style>
   body {
@@ -55,7 +57,8 @@
     <div class="solutioncontainer">
       <div class="solutiontitle">mGRANT</div>
       <div class="solutionsubtitle">From data management to digital platforms, we’ve got you covered.<br>
-        Solve all your challenges in one platform, like - <span style="color: #F58634;">managing multiple projects</span></div>
+        Solve all your challenges in one platform, like - <span style="color: #F58634;">managing multiple
+          projects</span></div>
       <div class="imgcontsln">
         <img src="/public/img/mgrant/mgrantscreen.png" class="imgcontsln" alt="">
       </div>
@@ -65,9 +68,17 @@
   <div class="twocard">
     <div class="card1">
       <div class="textincard">Grant Management</div>
+      <div class="overlay">
+        <div class="animated-text">Empowering Projects</div>
+      </div>
     </div>
+
+
     <div class="card2">
       <div class="textincard">Donor Management</div>
+      <div class="overlay">
+        <div class="animated-text">Empowering Projects</div>
+      </div>
     </div>
   </div>
 
@@ -158,7 +169,7 @@
       </div> <br> <br>
       <div class="feacont">
         <div class="selector">
-          <div class="selectorcard active" onclick="showcontainer('container1',this)"></div>
+          <div class="selectorcard active" onclick="showcontainer('container1',this)">Hello</div>
           <div class="selectorcard" onclick="showcontainer('container2',this)"></div>
           <div class="selectorcard" onclick="showcontainer('container3',this)"></div>
           <div class="selectorcard" onclick="showcontainer('container4',this)"></div>
@@ -234,8 +245,8 @@
                 observer.disconnect(); // Stop observing after the animation starts
               }
             }, {
-              threshold: 0.5
-            } // Trigger when 50% of the section is visible
+            threshold: 0.5
+          } // Trigger when 50% of the section is visible
           );
 
           observer.observe(timelineSection);
@@ -390,19 +401,23 @@
 
     <div class="launchiconscontainer">
       <div class="launchicons2">
-        <div class="icons"><img src="/public/img/mgrant/dedicated manager & data analysis.png" alt="icons for fearture" class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/dedicated manager & data analysis.png" alt="icons for fearture"
+            class="icons"></div>
         <div class="iconstext">Dedicated Project manager & Data Analysis Support</div>
       </div>
       <div class="launchicons1">
-        <div class="icons"><img src="/public/img/mgrant/cloud-computing 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/cloud-computing 1.png" alt="icons for fearture" class="icons">
+        </div>
         <div class="iconstext">Legacy Data Upload</div>
       </div>
       <div class="launchicons1">
-        <div class="icons"><img src="/public/img/mgrant/user trainings 1 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/user trainings 1 1.png" alt="icons for fearture" class="icons">
+        </div>
         <div class="iconstext">User Trainings</div>
       </div>
       <div class="launchicons1">
-        <div class="icons"><img src="/public/img/mgrant/cloud-computing 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/cloud-computing 1.png" alt="icons for fearture" class="icons">
+        </div>
         <div class="iconstext">NGO Team Co-ordination</div>
       </div>
       <div class="launchicons1">
@@ -410,11 +425,12 @@
         <div class="iconstext">Bug Fixing & Issue Resolution</div>
       </div>
       <div class="launchicons1">
-        <div class="icons"><img src="/public/img/mgrant/feature enhancements 1.png" alt="icons for fearture" class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/feature enhancements 1.png" alt="icons for fearture"
+            class="icons"></div>
         <div class="iconstext">Feature Enhancements</div>
       </div>
     </div>
-  </div> 
+  </div>
 
   <br> <br> <br> <br> <br>
 
@@ -426,7 +442,8 @@
 
 
 
-  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
+  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"
+    onload="resizeIframe(this)"></iframe>
 
   <script>
     function resizeIframe(iframe) {
