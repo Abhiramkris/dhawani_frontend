@@ -645,8 +645,13 @@ li::before {
     }
 }
 
+<<<<<<< Updated upstream
 .launchicons2 {
     width: 230px;
+=======
+.launchicons2{
+    width: 180px;
+>>>>>>> Stashed changes
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -664,4 +669,15 @@ li::before {
     text-align: center;
     padding-top: 15px;
     /* at 860 make icons haveapding  */
+<<<<<<< Updated upstream
 }
+=======
+}
+
+@media (max-width: 1000px) {
+    .launchicons1, .launchicons2{
+        margin-bottom: 50px;
+        scale: .8;
+    }
+}
+>>>>>>> Stashed changes
