@@ -11,7 +11,7 @@
             },
             {
                 "type": "text",
-                "value": "Striking pewter studded epaulettes silver zips inner drawstring waist channel urban edge single-breasted jacket. Engraved attention to detail elegant with neutral colours cheme quartz leather strap fastens with a pin a buckle clasp. Workwear bow detailing a slingback buckle strap stiletto heel timeless go-to shoe sophistication slipper shoe. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous."            
+                "value": "Striking pewter studded epaulettes silver zips inner drawstring waist channel urban edge single-breasted jacket. Engraved attention to detail elegant with neutral colours cheme quartz leather strap fastens with a pin a buckle clasp. Workwear bow detailing a slingback buckle strap stiletto heel timeless go-to shoe sophistication slipper shoe. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous."
             },
             {
                 "type": "quote",
@@ -23,50 +23,451 @@
             },
             {
                 "type": "text",
-                "value": "Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."            
+                "value": "Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."
             },
             {
-                "type":"title",
-                "value":"Eu ridiculus fringilla aenean"
+                "type": "title",
+                "value": "Eu ridiculus fringilla aenean"
             },
             {
                 "type": "text",
-                "value": "Sociis consequat adipiscing sit curabitur donec sem luctus cras natoque vulputate dolor eget dapibus. Nec vitae eros ullamcorper laoreet dapibus mus ac ante viverra. A aenean sit augue curabitur et parturient nisi sed enim. Nulla nec quis sit quisque sem commodo ultricies neque. Lorem eget venenatis dui ante luctus ultricies tellus montes. Quis in sapien tempus."            
+                "value": "Sociis consequat adipiscing sit curabitur donec sem luctus cras natoque vulputate dolor eget dapibus. Nec vitae eros ullamcorper laoreet dapibus mus ac ante viverra. A aenean sit augue curabitur et parturient nisi sed enim. Nulla nec quis sit quisque sem commodo ultricies neque. Lorem eget venenatis dui ante luctus ultricies tellus montes. Quis in sapien tempus."
             },
             {
                 "type": "list",
-                "items": ["Crisp fresh iconic elegant timeless clean perfume", "Neck straight sharp silhouette and dart detail", "Machine wash cold slim fit premium stretch selvedge denim comfortable low waist"]
+                "items": [
+                    "Crisp fresh iconic elegant timeless clean perfume",
+                    "Neck straight sharp silhouette and dart detail",
+                    "Machine wash cold slim fit premium stretch selvedge denim comfortable low waist"
+                ]
             },
             {
                 "type": "text",
-                "value": "See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design."            
+                "value": "See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design."
             }
-
         ]
     },
     {
         "id": 2,
-        "title": "Blog Title 2 Blog Title 2 Blog Title 2",
-        "author": "Sam Smith",
+        "title": "mGrant: Streamlining Grant-Making and Project Management for Social Sector Pioneers",
+        "author": "Gitesh Aggarwal",
         "date": "2024-11-05",
         "content": [
             {
-                "type":"title",
-                "value":"Eu ridiculus fringilla aenean"
+                "type": "title",
+                "value": "Dhwani RIS:Revolutionising Tech4Good"
             },
             {
                 "type": "text",
-                "value": "This is the second blog content, talking about new trends in technology."
+                "value": "Are you a social sector organisation facing the challenge of keeping track of the multitude of email threads for ensuring complete due diligence, tracking of achievements against various KPIs, and documentation involved with your various projects? Is your project data scattered everywhere, rendering you unable to collate last-mile impact?"
             },
             {
-                "type": "quote",
-                "value": "This is a motivational quote for Blog 2."
+                "type": "title",
+                "value": "mGrant: A Journey of Evolution"
+            },
+            {
+                "type": "text",
+                "value": "Our journey began with an ambitious partnership with an FMCG major. This collaboration birthed mGrant, a platform designed to simplify and streamline grant management. mGrant is a platform&nbsp; that enables organisations to manage their funds, proposals, engage with grantees, and track their philanthropic and social impact. It is an all-in-one platform for CSRs, NGOs, Foundations, social enterprises, and other organisations looking to manage multiple funding resources and partnerships while achieving set targets."
+            },
+            {
+                "type": "text",
+                "value": "Here’s how Dhwani fulfills the varied purposes of CSRs, NGOs, and foundations in managing grants and donors:"
+            },
+            {
+                "type": "text",
+                "value": "Our delivery approach is centred around a client-focused model. We work closely with our clients to deeply understand their unique needs and assess model the client would operate under to accordingly  configure mGrant to their specific requirements. This approach has been instrumental in our ability to serve a diverse clientele effectively."
+            },
+            {
+                "type": "title",
+                "value": "Addressing Challenges through Key Features of mGrant"
+            },
+            {
+                "type": "text",
+                "value": "With mGrant, our goal is to provide comprehensive solutions to address these challenges through a diverse range of features and use cases that make our platform a certified all-in-one solution for all enterprises. This all-in-one solution addresses issues such as tracking multiple documents, conducting due diligence through emails, reviewing the performance of multiple projects simultaneously, and streamlining communication between donors and partners. Additionally, mGrant alleviates the hassle of filing MCA compliances, standardizing annual reports, collecting scattered project data, managing proposals efficiently, and consolidating information on KPIs, donors, NGOs, and vendors."
+            },
+            {
+                "type": "text",
+                "value": "Throughout our journey, mGrant has worked with a diverse array of clients, spanning both non-profit organisations like Dasra, Smile Foundation, Access Development Foundation, UNICEF – Yuwaah!, and Charities Aid Foundation, as well as corporate giants including Mahindra, Godrej, Amazon, HDFC Bank, LIC, CAF, HT Parekh Foundation, and many more. Our platform has provided a consolidated digital interface with the following salient features:"
             },
             {
                 "type": "list",
-                "items": ["Tech Trend 1", "Tech Trend 2", "Tech Trend 3"]
+                "items": [
+                    "Streamlined Fund Management: mGrant allows you to seamlessly manage funds from multiple sources, ensuring transparency and smooth operations into various projects",
+                    "Financial Reporting: mGrant helps you provide clear insights into your project and organisation’s financial health through tracking project plans, commitments, disbursements, allocations, and utilisation of tranches all in one place.",
+                    "Impact Reporting: As per the Monitoring and Evaluation (M&E) framework, clients can track the LFA (activity, output, outcome, and impact) indicators of their various projects in real time through aggregated numbers/ on-ground surveys.",
+                    "Flexible Reporting Frequency: Reports can be generated on an annual, quarterly, or monthly basis, whichever suits the needs of your organisation the best.",
+                    "Consolidated Document Repository : All reports are organised in a centralised location for ease of access and streamlining project documentation with relevant approvals and expiry dates in place",
+                    "Robust Data Security: At mGrant, we hold the data security of our clients in the utmost priority and are hence committed to adhering to the strictest security guidelines to safeguard your data. Our platform has already been verified under the OWASP Guidelines, Amazon Web Services, ISO 27001, and most recently, the VAPT assessment by an authorised third party.",
+                    "Configurable User Management: Access permissions may be customised across primarily three views designed for three types of user roles, i.e., the Admin, the Partner Admin, and the Partner Field Executive with configurable approval matrices for upto 4 levels",
+                    "Mobile Application Offering: The mGrant platform is also available as a mobile app with offline capability and multilingual support in order to support the needs of the development sector organisations that we tend to work with."
+                ]
+            },
+            {
+                "type": "text",
+                "value": " Access Options: mGrant is accessible on an annual subscription basis and it may be hosted on cloud or on premises as well."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "mForm Integration : mForm is a one stop platform encapsulating dashboards, easy data migration, survey builder, training session data collection and visualization platform designed with efficient task management capabilities to address your specific data collection needs which can be seamlessly integrated with mGrant.",
+                    " Alerts & Notifications  : Notifications can be triggered seamlessly through mGrant’s notification centre to keep the NGOs as well as the organisation users stay updated about the due digilience process of the proposal submission or onboarding, ensuring real time updates.",
+                    "Annual Action Plan : mGrant has a focused compliance on the Annual Action Plan, which mandates CSR Committee of the company to provide for modes of utilisation of funds.",
+                    "Proposal module : mGrant allows the organisations to float proposals and receive the submissions from multiple NGOs, allowing them to shortlist and award the proposals all in one place.",
+                    "Partner profile : mGrant allows seamless onboarding of the NGO and third-party vendor partners, ensuring all the crucial information is captured in one place"
+                ]
+            },
+            {
+                "type": "text",
+                "value": "At Dhwani RIS, mGrant’s journey over the past four years is a testament to the transformative power of technology for organisational and social impact. MGrant serves as evidence towards Dhwani’s commitment towards delivering the highest standards and seamless technological solutions, as exemplified by our recent milestone of successfully passing the VAPT  (Vulnerability Assessment and Penetration Test) assessment. This achievement underscores our dedication to uncompromising security standards and maintaining the highest levels of excellence."
+            },
+            {
+                "type": "text",
+                "value": "Our doors are always open for organisations that share our vision for a more sustainable, equitable, and tech-driven future. If you are a non-profit or development sector organisation looking to maximise your impact and streamline grant management, feel free to reach out to us at "
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Navigating the Intersection of Usability and Accessibility: Crafting Inclusive Digital Experiences",
+        "author": "Abhinav Tyagi",
+        "date": "2024-11-05",
+        "content": [
+            {
+                "type": "text",
+                "value": "Two fundamental concepts stand out in the ever-changing field of digital design and development: usability and accessibility. Despite their frequent interchangeability, they stand for different but related aspects of developing inclusive and meaningful digital experiences. We explore the depths of accessibility and usability in this investigation, recognizing their distinctions, and importance, and identifying ways to combine them for the benefit of all users."
+            },
+            {
+                "type": "title",
+                "value": "Understanding Usability:"
+            },
+            {
+                "type": "text",
+                "value": "The foundation of user experience (UX) design is usability, which focuses on how quickly and simply users can engage with a digital good or service. The effectiveness, efficiency, and satisfaction with which users accomplish their objectives within a system are at the heart of usability. It includes features like a simple layout, helpful feedback, straightforward navigation, and efficient interactions. Users can complete activities with the least amount of difficulty when a design is useful, which increases user pleasure and engagement."
+            },
+            {
+                "type": "title",
+                "value": "Exploring Accessibility:"
+            },
+            {
+                "type": "text",
+                "value": "Conversely, accessibility builds on the concepts of usability to guarantee that all users—including those with disabilities—can perceive, operate, and comprehend digital experiences. It includes design factors that account for a range of disabilities, including those related to vision, hearing, movement, or cognition. Regardless of a person’s talents or limits, accessibility removes barriers and gives everyone equal access to information and functions."
+            },
+            {
+                "type": "title",
+                "value": "The Interplay Between Usability and Accessibility: "
+            },
+            {
+                "type": "text",
+                "value": "Although accessibility and usability have different functions, they both aim to improve the user experience. These two ideas work well together to create interfaces that are inclusive of a wide range of user demands and preferences while yet being simple to use. For the vast majority of users, a usable design may be simple and effective, yet it may unintentionally leave those with disabilities out. On the other hand, while an accessible design could benefit those with impairments, it might compromise the usability of the design for a larger audience."
+            },
+            {
+                "type": "title",
+                "value": "Strategies for Harmonizing Usability and Accessibility:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Inclusive Design Thinking: Adopt a user-centred approach that, from the beginning of the design process, takes into account the various demands and viewpoints of users. Include user scenarios and user personas that cover a broad spectrum of situations and skill levels.",
+                    "Clear Communication: Make sure the information is presented in a clear, succinct, and comprehensible way by using simple language and offering substitute formats, such as captions or transcripts for multimedia content.",
+                    "Flexible Interaction: Create user interfaces that provide a variety of ways to complete tasks while taking into account assistive devices, various input methods, and navigation preferences.",
+                    "Consistent Design Patterns: All users will benefit from predictability and a reduction in cognitive burden when design patterns and conventions are established and followed consistently",
+                    "Continuous Evaluation and Improvement: Test designs frequently on a variety of user groups, including people with disabilities, and make adjustments based on feedback to improve accessibility and usability."
+                ]
+            },
+            {
+                "type": "title",
+                "value": "Conclusion:"
+            },
+            {
+                "type": "text",
+                "value": "Usability and accessibility are guiding concepts that form the core of the user experience in the digital sphere, not just boxes to be checked off. We take the first steps toward diversity, empathy, and empowerment when we embrace both usability and accessibility in our design activities. In order to guarantee that no user is left behind in the pursuit of flawless interaction and deep connection, let us work to create digital environments that not only delight and engage but also embrace the rich tapestry of human variation."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Relevance of UI/UX for Non Profits and Social Impact sector in India.",
+        "author": "Priyanshu Pandey",
+        "date": "2024-11-05",
+        "content": [
+            {
+                "type": "text",
+                "value": "Exhibit 1: Your NGO/CSR is passionate about a cause. You pitch your people first program, go through the usuals right from pitching, due diligence, documentation, finalizing budget, approvals, and start working on the project to make it a success. Realizing the reach and quantum of the initiative, the requirement for a website, mobile application, and grant management tool springs up, and it is managed somehow. The series of challenges begin because UI/UX was not considered as an important aspect while forming the said resources."
+            },
+            {
+                "type": "text",
+                "value": "The website has all the information, but it was a struggle to figure out the story, program details, mission and vision, and most importantly contact page. No proper navigation menu, cluttered content, poorly done infographics and data, haphazard order of elements, and long loading time were common for both the mobile app and grant management tool."
+            },
+            {
+                "type": "text",
+                "value": "The donors, funders, project implementation team, and field workers find the app and the grant management tool difficult to access. It fails to serve the purpose; instead of making the process lucid, it became time-consuming. And this is where UI/UX comes into the picture. Social impact organizations and non-profits need profound, to-the-point, simplified UI/UX for all their technical products."
+            },
+            {
+                "type": "text",
+                "value": "UI/UX reads for User interface / User experience, and in layman’s terms, it is the interior design for your application or website. It helps your target audience gain a certain experience and reach their desired information through the right placement of content, layout, fonts, style, what goes where, on each page from the navigation bar."
+            },
+            {
+                "type": "text",
+                "value": "Whether you are a CSR/funding agency disbursing and tracking grants on grant management tools like mGrant mForm, it works wonders for you when your audience engages with your initiative through tech, and optimized UI/UX design is the simplest way to it. A good UI/UX will help retain the old supporters and acquire a new ones. It is always better to achieve the best UI/UX in the first go by investing a little more time, resources, and effort. This will ensure smooth function and prioritize the projects for the communities better.What all basics you should keep in mind while auditing your website/application for its UI/UX:"
+            },
+            {
+                "type": "title",
+                "value": "Understanding user needs "
+            },
+            {
+                "type": "To create impactful websites and mobile applications, it is essential to first understand the needs and preferences of the target users. Conducting thorough user research enables UX designers to gather insights into the challenges faced by individuals, communities, and organizations in the social sector. This knowledge forms the foundation for designing intuitive and user-friendly interfaces that address specific pain points and deliver value.",
+                "value": "To create impactful websites and mobile applications, it is essential to first understand the needs and preferences of the target users. Conducting thorough user research enables UX designers to gather insights into the challenges faced by individuals, communities, and organizations in the social sector. This knowledge forms the foundation for designing intuitive and user-friendly interfaces that address specific pain points and deliver value."
+            },
+            {
+                "type": "text",
+                "value": "Are all the pages dynamic and mobile-friendly? Is the load speed good or does it need any optimisation?    "
+            },
+            {
+                "type": "title",
+                "value": "Simplifying complex processes "
+            },
+            {
+                "type": "text",
+                "value": "Think from the perspective of a new user who has no idea what your organization is, the key initiatives, mission and vision, values, donate and volunteer pages, leadership, etc. On visiting your mobile app or website, will they be able to access this information easily without any hassle?"
+            },
+            {
+                "type": "text",
+                "value": "Donation or grant management, due diligence, volunteer coordination, or resource allocation are the most common complex issues for social sector organizations to simplify."
+            },
+            {
+                "type": "text",
+                "value": "UX designers can simplify these processes by breaking them down into smaller, more manageable steps. By employing clear and concise design elements, including well-structured forms, content hierarchy, logical navigation, and visual cues, users can easily understand and complete tasks, resulting in a more positive user experience."
+            },
+            {
+                "type": "title",
+                "value": "Promoting accessibility and inclusivity"
+            },
+            {
+                "type": "text",
+                "value": "Accessibility and inclusivity are of paramount importance for social impact and development sector institutions. UX should ensure that the interface accommodates users with diverse abilities, devices, internet connectivity, and locations. This can be achieved through features such as scalable fonts, alternative text for images, keyboard accessibility, and disability support. Additionally, incorporating multilingual support and considering cultural nuances fosters inclusivity and expands mobile applications or websites to reach a broader audience. "
+            },
+            {
+                "type": "title",
+                "value": "Emphatical visual storytelling  "
+            },
+            {
+                "type": "text",
+                "value": "Visual storytelling works as a powerful tool to reach people. Aesthetics are important, but equally essential to prioritize functionality too with UX. By utilizing compelling visuals, such as photographs and videos, the resource can evoke emotions and create empathy among users. Sharing success stories, showcasing the impact of donations or interventions, and highlighting the beneficiaries’ journeys can inspire users and influential stakeholders to engage more deeply with the cause and contribute to the mission."
+            },
+            {
+                "type": "text",
+                "value": "Additionally, using CTA (call to action) for page redirection and following website accessibility guidelines is an unsaid rule."
+            },
+            {
+                "type": "title",
+                "value": "Iterative design and continuous improvement "
+            },
+            {
+                "type": "text",
+                "value": "Flexibility and adaptability will always be the foremost requirement for an up-to-date UI/UX. Embracing an iterative design process that allows for continuous improvement based on user feedback and evolving needs is essential to stay topical with operations. Regular A/B testing, diverse user persona and interviews, and data analysis can provide valuable insights to refine and optimize the resource’s UX over time, ensuring its long-term effectiveness."
+            },
+            {
+                "type": "text",
+                "value": "Behavior data can help in understanding what design changes work better to improve UX. Some of the most common metrics are session duration, pages per session, return traffic, and submission rate like form submissions to solicit donations, volunteers, program or newsletter signups, etc.  "
+            },
+            {
+                "type": "text",
+                "value": "The most mainstream approach uses quantitative data to track progress as gathering qualitative information is time-consuming and expensive. Qualitative data can surely inform about the high bounce rate but can’t decipher if it is happening due to page format or sheer confusion, a user faces while accessing the page/ section.   "
+            },
+            {
+                "type": "text",
+                "value": "Analytics tools like Google Analytics,Mixpanel,Adobe Analytics,Smartlook and Hotjar will help tracking performance of pages, interaction, time spent, user journey, and overall growth. Analytics presents evidence for the vitality of any resources UI/UX design.   "
+            },
+            {
+                "type": "text",
+                "value": "The need for positive change is ever-present in the social impact sector, UX design plays a crucial role in creating impactful mobile applications, dashboards, and websites. By understanding user needs, simplifying complex processes, promoting accessibility, utilizing visual storytelling, and embracing iterative design, UI/UX can contribute significantly to the success of social impact projects and initiatives. By creating user-friendly interfaces and enhancing the overall user experience, we can bridge gaps, and empower individuals and organizations to make a tangible difference in the communities. "
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "AWS x Dhwani’s Tech for Good workshop:Unleashing social impact through Technovation  ",
+        "author": "Priyanshu Pandey",
+        "date": "2024-11-05",
+        "content": [
+            {
+                "type": "text",
+                "value": "In today’s rapidly evolving digital landscape, as a civic organisation / non-profit organisations staying updated with the latest technology trends is crucial. Amazon Web Services (AWS) India and Dhwani RIS collaborated for the Tech for Good workshop, bringing more than 50 development sector organisation under one roof for knowledge sharing, skill development, and fostering innovation. Passionate individuals from diverse backgrounds took the platform to learn, collaborate, and explore new possibilities. Amazon Web Services and Dhwani highlighted the significance of tech solutions, key elements like data collection tools, CSR grant management applications, uses of dashboards, chatbots and the transformative experiences it offers. "
+            },
+            {
+                "type": "text",
+                "value": "The most unique purpose and set of objectives for this workshop were advancing the understanding of the already available free tools in the market and how to utilise them better accordingly. "
+            },
+            {
+                "type": "text",
+                "value": "Shobhit Mathur, Lead – Partnerships, Dhwani RIS along with Pranjali Khare, Business Development Manager, NPO at AWS India, flagged off the event by setting the tone and discussing the emerging industry trends. Taking into consideration that participants came with different levels of expertise, ranging from beginners to seasoned professionals, the aim was to cater to their needs effectively. Common challenges and pain points for using digital sources were focused on. It was also found that issues mostly arise when the top-to-bottom approach does not work and there is a lack of desire to use technology by the people working in the field. "
+            },
+            {
+                "type": "text",
+                "value": "The solution to this relies on improving technological acquaintance through gradual guidance, step-by-step training, workshops, introducing linguistic changes, and making the data collection process more lucid and less complicated. "
+            },
+            {
+                "type": "text",
+                "value": "Swapnil Aggarwal, Director, Dhwani RIS took the discussion to the next level. With his years of expertise and practical experience, he dissected the most debated question of “to build or to buy?” He invigorated the question mark, “Do we really need a dashboard or an app for data acquisition, decoding, and analysing field surveys, or could it be done in house?” "
+            },
+            {
+                "type": "text",
+                "value": "In this scenario, time-saving and better-resulting “over-the-counter” applications can come in handy for initiatives. Here, the tech tools formulated specifically for social impact projects come into play: open-source data collection software like MForm,, end-to-end grant management tools like MGrant , dashboards for collected databases, and the use of ChatBots. Alternative field engagement and interaction tools and how to use features on WhatsApp to empower beneficiaries. "
+            },
+            {
+                "type": "text",
+                "value": "Gaps were bridged through practical applications and case studies that demonstrate how technology is transforming the development sector. Success stories showcased real-life examples of leveraging technology to solve complex problems and drive impact value. The session concluded with theory and real-world implementation challenges, inspiring participants to think critically and creatively.  "
+            },
+            {
+                "type": "text",
+                "value": "Sujai J, Solutions Architect – Non-Profits, AWS (Amazon Web Services) India delivered an in-depth session on how nonprofits can avail of beneficial products from AWS India. Distinguishing features were shared with the participants, with an emphasis on hands-on learning regarding decision-making when it comes to procuring cloud, machine learning, and artificial intelligence services. This immersive session enabled to gain a deeper understanding of how nonprofits can keep pace with current technology offerings and improve the outflow."
+            },
+            {
+                "type": "text",
+                "value": "A tech workshop is incomplete without practical applications and case studies that demonstrate how technology is transforming social impact. The use case activity brought the overall learning into practice and enabled cross learning, networking and teamwork. Participants were engaged via a situation and were expected to create the best possible tech solution for implementing the program; prompt was to bring their learning into action. All the groups presented very interesting proposals by combining their real-world experience and technology to solve the complex social issue with its solid foundational way forward.       "
+            },
+            {
+                "type": "text",
+                "value": "85% of the attendees rated the workshop excellent and their experience to be immersive. Development professionals from pioneer organisations appreciated the in-person interaction. The highlight of the event was healthy collaborative engagement, tech adoption and niche learning, business development, networking and lots of delicious meals!   "
+            },
+            {
+                "type": "text",
+                "value": "AWS x Dhwani Tech4Good workshop offered a transformative learning experience, empowering participants to unlock their potential, embrace innovation, and keep pace with the ever-evolving technology landscape. As the world continues to embrace digital transformation, Dhwani stands strong on its vision to empower grassroot level social organisations with technology-driven solutions. "
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "From Paper to Progress: How mForm is Streamlining Data Collection",
+        "author": "Nihaan Mohammed",
+        "date": "2024-11-05",
+        "content": [
+            {
+                "type": "text",
+                "value": "I was sitting, taking in the Friday evening air – wondering how long I would sleep this weekend – 8 hours? or 9 hours? 12? Well, now that was a mystery I was eager to solve. But then Ravi, my manager, came and said, “Nihaan, You have to go to Gujarat for SuPoshan Training. “From when?” – I asked; “Sunday Morning is the flight – you’ll return Tuesday Night” was the reply, killing my delightful mystery."
+            },
+            {
+                "type": "text",
+                "value": "So on Sunday, strapped and packed for the flight, ready to train the SuPoshan Sanginis (Field level workers) in the mForm V2 application (DRIS’s flagship data collection product). Now you may have two questions, as follows:"
+            },
+            {
+                "type": "title",
+                "value": "What is SuPoshan?"
+            },
+            {
+                "type": "text",
+                "value": "SuPoshan is a program by the Adani Foundation, along with Adani Wilmar, wherein they primarily focus on alleviating malnutrition of 0-5-year-old children across the country. Starting from Gujarat, which has the lowest stats for the same, they have expanded all across the country. At the forefront of this, are Sanginis, who like ASHA workers are natives of the village who volunteer (they receive a stipend for their services) to perform all activities which I have mentioned above."
+            },
+            {
+                "type": "title",
+                "value": "And mForm?"
+            },
+            {
+                "type": "text",
+                "value": "mForm V2 is the upgrade or evolution of the mForm application which is currently used by multiple leading organizations in the country. Unlike Avatar, the sequel of mForm is actually better than the first one. It is primarily used by organizations for data collection, where then they later visualize the data using the in-built dashboard or connect it with external sources to play around with the data as they wish"
+            },
+            {
+                "type": "text",
+                "value": "Answering the question, I come back to the present; which is a mystery (read: sleep) derived me, catching a plane, then a cab, then a train, and then a tuk-tuk to reach the final location. The location? Gurudeshwar, Gujarat – right beside the towering Statue of Unity. Two days of training Sanginis in Rajpipla and Dediapada (sites in Narmada District, Gujarat) awaited me. What I expected was a tedious two days of training, where I would explain each and every aspect of the application, and hope they understand the flow and process to implement it when the time comes."
+            },
+            {
+                "type": "text",
+                "value": "The Reality? I learned more than I came to train them for (No, this is not because I did not train well). The SuPoshan Officer (they are the supervisor/trainer/support system of the Sanginis on the ground) along with the Sanginis opened my eyes to the transformative nature of fieldwork. When fieldwork comes to your mind, what do you think? Natives of the village scramble to adopt digital devices in their daily lives, in order to achieve the objectives of some English-speaking project managers by tippy-tapping numbers into their devices one by one. Instead, here I found women, who would come together, travel long distances (on scooters, buses, or alternative vehicles) to attend the training, compare the application to their existing ones, Critique and suggest better form scripting styles and questions, and discuss with me (A mediocre Hindi speaking south Indian) the landscape of their work, and how mForm would loop into it. It was the day I "
+            },
+            {
+                "type": "text",
+                "value": "Having worked on an earlier application for the last 2 years, the Sanginis (as mentioned above) were able to point out the benefits and caveats of using the mForm application, after one round of training (People in my office took more time to learn how to get coffee from the coffee machine – though in their defence the coffee machine did sometimes forget it is a coffee machine and starts pouring water instead of milk). These points and my own make it possible for me to put down the following updated features of mForm (there are much more but well keeping them to a minimum so I don’t sound like a credit card salesman."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Modern Navigation and UI: Resembling Instagram’s profile view, and Whatsapp instant data(message) filling functionality, mForm brings out so many comparative laterals to modern apps that it makes it easier for a first-time user to understand the flow and makes them want  to fill it.",
+                    "Indicator and in Mobile Dashboard: One gap that the mForm app aims to bring is allowing the end user to visualize the summary of the data they have filled in, which is reported on the upper levels. Mobile dashboards (which have cards/charts) allow the user to do exactly that, keeping the data collection, and the data flow highly transparent from bottom to top. This way the end user knows what they are filling, in and the direct output generated.",
+                    "Offline Functionality: Considering not every pocket of the world is still accessible by the internet (Sorry Starlink does not count yet) All features of mForm remain functional and are even faster when one fills the data offline. This allows the user to fill in the data anytime, anywhere,",
+                    "Safety of Data: The data flow from bottom to top remains transparent, but only to the users within the organization. Features like data encryption and Multi-tenancy (one system that has separate databases for each organization) give you the power to who has access to the data."
+                ]
+            },
+            {
+                "type": "text",
+                "value": "mForm V2 brings a culmination of the above-mentioned features and more, which complements the current (like Sanginis) workforce on the field for the development sector – willing, knowledgeable, hardworking, cohesive, and empowered. Giving those wings, to the end user – allowing them to view their efforts to be converted into real-life impact, is the end objective of mForm."
+            },
+            {
+                "type": "text",
+                "value": "This blog is part of our Tech Tuesdays Series curated for CTO For Non-Profits Community."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Using Technology to Simplify Data Analysis: A Case Study on How it Saves Time and Effort",
+        "author": "Suprava Koley",
+        "date": "March 7, 2023",
+        "content": [
+            {
+                "type": "text",
+                "value": "Anyone who has worked on a field project in the social sector will tell you that it is extremely hard work and that it is full of uncertainty and extremely complex. They will also tell you that everyday work(contrary to popular belief) is often mundane and full of manual processes that are tedious but necessary."
+            },
+            {
+                "type": "text",
+                "value": "We found ourselves in a similar situation while working on the Bolo English Project. The project aimed to strengthen the spoken English of children in low-income private schools across 5 states. We were working with close to 300+ schools, 5000 teachers, and 68,000 students. To do this we leveraged a mobile application on which children could take two minutes of gamified lessons and thereby strengthen their spoken English."
+            },
+            {
+                "type": "text",
+                "value": "The program was taking place during Covid. Thus, traditional routes of field engagement were not possible. To drive engagement among students to use the mobile application; we realized that we will need to leverage data in form of weekly school reports, School Engagement Lists and Student Certificates. This allowed the stakeholders to be aware of their progress and also remain motivated enough to finish the program."
+            },
+            {
+                "type": "text",
+                "value": "The challenge that the team faced, was towards crunching this very data into usable formats of reports and certificates. It used to take the team anywhere between 40 hours (5 full working days) hours per week to create school and teacher reports for 300 schools and 5000+ teachers. Needless to say, a lot of the program team’s time was spent crunching data vs time on training teachers or conducting Spoken English Webinars."
+            },
+            {
+                "type": "text",
+                "value": "It was during this time that they realised that they had to find a better solution towards this. Technology has become an indispensable tool in the social sector, enabling organizations to reach more people, solve problems more efficiently, and create greater impact. Thus, we reached out to Dhwani RIS to help us create a solution for this."
+            },
+            {
+                "type": "text",
+                "value": "We broke down the requirement into 4 requirements."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "School Reports – Showcasing the student’s progress at a teacher and school level.",
+                    "Live Dashboard – To show the overall progress of the program. It was used by multiple stakeholders such as the program team, the senior leadership team and the donors alike.",
+                    "Student Certificates – For successfully completing the program and showing progress.",
+                    "School Engagement list – To track schools’ progress across different geographies."
+                ]
+            },
+            {
+                "type": "text",
+                "value": "The program data was available to us in form of a single excel sheet that had to be uploaded with updated data. All the different analyses and visualizations had to be created with that one data source which was ever-changing. Given below is the technical approach that was leveraged to create this."
+            },
+            {
+                "type": "text",
+                "value": "1) Program Dashboard: We implemented charts and cards using charts to show the count of teachers and students in this program and their performance statewide and grade-wise. The dashboard was made on PHP. We could have used power BI which is a commercial product that requires a subscription or license fee. PHP is a highly scalable language that can handle large amounts of data and traffic. The requirement needed us to manage high levels of data and had multiple skip-level logics and customizations. Thus, it became the natural choice."
+            },
+            {
+                "type": "text",
+                "value": "2) School Engagement List – This list was to be used by the program team to prioritize their support to schools and teachers to drive engagement among schools. Thus, a categorization method was created for schools. Those with the highest number of students who had completed the course were put in the Gold, Silver and Bronze categories respectively. To do this analysis, we used MySQL queries which are very helpful when implementing case-wise data fetching."
+            },
+            {
+                "type": "text",
+                "value": "3) Reports: The schools often have multiple changes that take place throughout the year. For eg: Teachers are regularly reassigned to different grades. This created an issue as it was impossible to track and update changes of 30,000 students and teachers manually every week. Thus, we created the concept of master data. We stored data in the master data table in two categories, one is the part where the primary data of a student is stored (name, email, school, teacher) and another is the variable part that changes depending upon the student’s weekly test performances. By doing this we reduced the amount of data stored and data redundancy."
+            },
+            {
+                "type": "text",
+                "value": "4) Certifications: Certificates are provided to students who complete the required number of lessons. Students who have shown improvement are provided Merit certificates while others get a participant certificate. Around 500 certificates had to be created in one go. So for this, we implemented the CRON job(request goes to a database table having status flags, one request query served at a time according to the flag ) where we generated a request for 10 school certificates at a time. This is stacked in the database and the server runs the CRON every 10 mins and serves the pending request for certificates. The purpose of implementing the CRON job was to generate the certificates in the backend so that the user doesn’t have wait for hours to get that large amount of data and which sometimes can result in a browser crash."
+            },
+            {
+                "type": "text",
+                "value": "Overall the technology leveraged for this program reduced manual work, improved accuracy, and allowed the team to spend more time doing program-related work. The reports that took about 5 days to create are now created in about 10 mins. Similarly, certificates that were generated over 2 weeks are now generated in 10 mins. Leveraging such a technology allows the team to reduce hours of their time to drive engagement. The program team was able to have deeper data-backed conversations with teachers, students, and school leaders. It allowed for all stakeholders involved to be constantly aware of their progress and identify strategies to strengthen impact."
+            },
+            {
+                "type": "text",
+                "value": "Written by: Suprava Koley and Mehek Rastogi"
+            },
+            {
+                "type": "text",
+                "value": "This blog is part of our Tech Tuesdays Series curated for CTO For Non-Profits Community"
             }
         ]
     }
-
 ]

@@ -8,6 +8,7 @@ body {
 
 
 .blog-container {
+  height: auto;
   max-width: 1200px;
   padding: 20px;
   width: 80%;
@@ -15,7 +16,8 @@ body {
 }
 
 
-.blog-grid1{
+.blog-grid1 {
+  height: auto;
   display: flex;
   gap: 3%;
   justify-content: center;
@@ -48,6 +50,10 @@ body {
 .left-card {
   flex: 2;
   max-width: 470px;
+}
+
+.right-container {
+  height: auto;
 }
 
 .right-cards {
@@ -100,7 +106,8 @@ body {
   text-decoration: none;
 }
 
-.large-card h2, .large-card p {
+.large-card h2,
+.large-card p {
   margin: 10px 0;
 }
 
@@ -132,7 +139,8 @@ body {
   margin: auto;
   margin-bottom: 20px;
 }
-.blog-container1{
+
+.blog-container1 {
   min-width: 300px;
   width: 90%;
   margin: auto;
@@ -141,15 +149,17 @@ body {
 }
 
 
-.blog-card1 .content1{
-  width: 50%; /* The content takes the remaining space */
+.blog-card1 .content1 {
+  width: 50%;
+  /* The content takes the remaining space */
   text-align: left;
   margin-top: -14x0px;
   margin-left: 55%;
   height: 30px;
 
 }
-.blog-card1 .content1 h3{
+
+.blog-card1 .content1 h3 {
   margin-top: 18px;
   margin-left: 2px;
   color: #53435B;
@@ -162,35 +172,42 @@ body {
   text-overflow: hidden;
 }
 
-.blog-card1 .content1 p{
+.blog-card1 .content1 p {
   color: #666;
   font-size: 10px;
   margin-top: -8px;
 }
-.right-cards{
+
+.right-cards {
   height: 60%;
   padding: 24px;
 }
 
-.blog-card a{
+.blog-card a {
   text-decoration: none;
   display: block;
 }
 
-.blog-card1 a{
+.blog-card1 a {
   text-decoration: none;
   display: block;
 }
+
 .right-cards .card-image {
-  width: 50%; /* Adjust image size to 40% of the card */
-  margin-right: 8px; /* Add space between image and text */
+  width: 50%;
+  /* Adjust image size to 40% of the card */
+  margin-right: 8px;
+  /* Add space between image and text */
   padding-bottom: -10px;
   overflow: hidden;
   margin-top: 14px;
 }
+
 .right-cards1 .card-image {
-  width: 50%; /* Adjust image size to 40% of the card */
-  margin-right: 8px; /* Add space between image and text */
+  width: 50%;
+  /* Adjust image size to 40% of the card */
+  margin-right: 8px;
+  /* Add space between image and text */
   padding-bottom: -10px;
   overflow: hidden;
   margin-top: 14px;
@@ -202,41 +219,45 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-} 
+}
+
 .right-cards1 .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 
-} 
+}
 
 
 .right-cards .content {
-  width: 50%; /* The content takes the remaining space */
+  width: 50%;
+  /* The content takes the remaining space */
   text-align: left;
   margin-top: -110px;
   margin-left: 50%;
   height: 30px;
 }
+
 .right-cards1 .content1 {
-  width: 50%; /* The content takes the remaining space */
+  width: 50%;
+  /* The content takes the remaining space */
   text-align: left;
   margin-top: -150px;
   margin-left: 55%;
   height: 30px;
 }
 
-.largecon{
+.largecon {
   text-align: left;
   color: #000000;
   line-height: 23px;
   font-weight: 500;
   font-family: "Manrope", sans-serif;
   font-size: 11px;
-} 
+}
 
-.largecon p{
+.largecon p {
   margin-top: -10px;
 }
 
@@ -285,9 +306,10 @@ body {
   font-size: 1.2em;
   color: #333;
 }
+
 @media screen and (max-width: 900px) {
 
-  .blog-container{
+  .blog-container {
     scale: .8;
   }
 
@@ -303,23 +325,25 @@ body {
     align-content: center;
   }
 
-  .large-card{
- margin-left: 0px;
- width: 80%;
- min-width: 250px;
+  .large-card {
+    margin-left: 0px;
+    width: 80%;
+    min-width: 250px;
   }
 
-  .right-cards{
+  .right-cards {
     margin: 0;
   }
 
-  .search-filter{
+  .search-filter {
     display: none;
   }
-  .left-card .card-image{
+
+  .left-card .card-image {
     height: 200px;
   }
-  .large-card{
+
+  .large-card {
     height: 300px;
   }
 
@@ -350,7 +374,7 @@ body {
 
 .search-filter {
   width: 100%;
-  margin-top: 30px  ;
+  margin-top: 30px;
   display: flex;
   margin-left: -30px;
   justify-content: center;
@@ -369,10 +393,12 @@ body {
   align-items: center;
   gap: 8px;
 }
-.sortimg1{
+
+.sortimg1 {
   scale: .5;
 }
-.sortimg2{
+
+.sortimg2 {
   scale: .5;
 }
 
@@ -405,7 +431,7 @@ body {
   cursor: pointer;
   position: absolute;
   width: 100px;
-  height:40px;
+  height: 40px;
   border-radius: 4px;
   margin-top: -20px;
 }
@@ -447,32 +473,36 @@ body {
   padding: 20px;
   width: 80%;
 }
+
 .right-container {
   flex: 2;
   padding: 20px;
   max-width: 70vw;
 }
+
 .blog-detail {
   margin-bottom: 20px;
 }
 
-.blog-detail p{
-color: grey;
-font-size: 15px;
-font-weight: 500;
-width: 100%;
-font-family: "Manrope", sans-serif;
+.blog-detail p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
 
 }
-.blog-detail h3{
-font-size: 20px;
-color: #53435B; 
-font-family: "Manrope", sans-serif;
+
+.blog-detail h3 {
+  font-size: 20px;
+  color: #53435B;
+  font-family: "Manrope", sans-serif;
 }
-.blog-detail ul{
-margin-left: 60px;
-font-family: "Manrope", sans-serif;
-color: #53435B;
+
+.blog-detail ul {
+  margin-left: 60px;
+  font-family: "Manrope", sans-serif;
+  color: #53435B;
 }
 
 
@@ -494,6 +524,7 @@ color: #53435B;
   display: inline-block;
   margin-right: -6vw;
 }
+
 .subscribe-newsletter input[type="email"] {
   width: 80%;
   padding: 10px;
@@ -502,6 +533,7 @@ color: #53435B;
   margin-bottom: 10px;
   font-family: "Manrope", sans-serif;
 }
+
 .subscribe-newsletter button {
   width: 90%;
   padding: 10px;
@@ -511,11 +543,13 @@ color: #53435B;
   border-radius: 4px;
   cursor: pointer;
 }
-.greytext{
+
+.greytext {
   color: #53435B70;
   font-weight: 400;
   width: 100%;
 }
+
 .subscribe-newsletter button:hover {
   background-color: #c35a0f;
 }
@@ -526,20 +560,23 @@ color: #53435B;
   flex-direction: column;
   align-content: center;
   margin: auto;
-  gap: 20px; /* Adds a gap between the blogs */
+  gap: 20px;
+  /* Adds a gap between the blogs */
 }
 
 .blogs {
   width: 100%;
   height: 150px;
   border-radius: 20px;
-  background-color: black; /* Default background color */
+  background-color: black;
+  /* Default background color */
   transition: background-image 0.3s, color 0.3s;
 }
 
 .blogs.active {
   background-image: url("/public/img/blogss.png");
-  color: white; /* Ensures active card text color is white */
+  color: white;
+  /* Ensures active card text color is white */
 }
 
 .blogs.active .blogtext {
@@ -552,7 +589,8 @@ color: #53435B;
 }
 
 .blogs:hover .blogtext {
-  color: white; /* Ensures only hovered card's text turns white */
+  color: white;
+  /* Ensures only hovered card's text turns white */
 }
 
 .blogtext {
@@ -561,7 +599,8 @@ color: #53435B;
   margin-left: 20px;
   font-size: 12px;
   font-family: "Manrope", sans-serif;
-  color: black; /* Default text color */
+  color: black;
+  /* Default text color */
 }
 
 
@@ -571,13 +610,16 @@ color: #53435B;
   padding: 15px;
   border-radius: 8px;
 }
+
 .share-this-blog h4 {
   margin-bottom: 10px;
 }
+
 .share-this-blog .share-buttons {
   display: flex;
   gap: 10px;
 }
+
 .share-this-blog .share-buttons a {
   padding: 10px;
   border-radius: 5px;
@@ -585,46 +627,52 @@ color: #53435B;
   text-decoration: none;
   display: inline-block;
 }
+
 .share-this-blog .share-buttons a:hover {
   background-color: #0056b3;
 }
+
 .authname {
   font-size: 20px;
   margin-top: 18px;
   margin-left: 5px;
 }
-.sortdis{
+
+.sortdis {
   margin-top: 10px;
 }
 
 
 @media (max-width: 800px) {
   .blog-detail-container {
-      flex-direction: column;
-      padding: 10px;
+    flex-direction: column;
+    padding: 10px;
   }
 
   .subscribe-newsletter {
-      width: 100%;
-      margin-top: 20px;
-      display: none;
+    width: 100%;
+    margin-top: 20px;
+    display: none;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .search-blog{
+  .search-blog {
     max-width: 150px;
   }
 
-  .sort-button{
+  .sort-button {
     max-width: 40px;
   }
-  .sort-options{
-    scale: .7 ;
+
+  .sort-options {
+    scale: .7;
     width: 100px;
     margin-left: -14px;
   }
-.sortimg2, .sortdis{
-  display: none;
-}
+
+  .sortimg2,
+  .sortdis {
+    display: none;
+  }
 }
