@@ -8,168 +8,83 @@
     gap: 3%;
 
 }
+/* Common styles for cards */
+.card1, .card2 {
+    position: relative;
+    width: 55%;
+    height: 340px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-color 0.5s ease;
+}
 
 .card1 {
     background-image: url(/public/img/Rectangle\ 3800.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    /* For layering child elements */
-    width: 55%;
-    height: 340px;
     background-color: black;
-    border-radius: 20px;
-    overflow: hidden;
-    /* Prevent overflow during animation */
-    transition: background-color 0.5s ease;
-    /* Smooth color transition */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
 }
-
-.textincard {
-    padding-bottom: 10%;
-    position: relative;
-    z-index: 2;
-    /* Ensures this text is above the base background */
-    font-size: 24px;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    /* Smooth text disappearance */
-}
-
-/* Overlay for hover effect */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    /* Start off-screen */
-    width: 100%;
-    height: 100%;
-    background-color: orange;
-    /* New background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease;
-    /* Smooth slide-in */
-    z-index: 1;
-    /* Layer above the default background */
-}
-
-.animated-text {
-    font-size: 24px;
-    color: white;
-    opacity: 0;
-    /* Initially hidden */
-    transition: opacity 0.5s ease;
-    /* Smooth fade-in */
-}
-
-/* Hover Effect */
-.card1:hover {
-    background-color: orange;
-    /* Change background color */
-}
-
-.card1:hover .textincard {
-    transform: translateY(-100%);
-    /* Move text out of view */
-    opacity: 0;
-    /* Fade out */
-}
-
-.card1:hover .overlay {
-    transform: translateX(-100%);
-    /* Slide overlay in from right to center */
-}
-
-.card1:hover .animated-text {
-    opacity: 1;
-    /* Fade in new text */
-}
-
-
 
 .card2 {
     background-image: url(/public/img/5fa07a867643b2884190777494a58647.jpeg);
-    background-size: cover;
-    position: relative;
-    /* For layering child elements */
-    width: 55%;
-    height: 340px;
     background-color: navy;
-    border-radius: 20px;
-    overflow: hidden;
-    /* Prevent overflow during animation */
-    transition: background-color 0.5s ease;
-    /* Smooth color transition */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
 }
 
-.card2 .textincard {
+/* Text inside the cards */
+.textincard {
     position: relative;
-    z-index: 2;
-    /* Ensures this text is above the base background */
-
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    /* Smooth text disappearance */
+    z-index: 2; /* Ensures it's above the overlay */
+    padding-bottom: 10%;
 }
 
-/* Overlay for hover effect */
-.card2 .overlay {
+/* Overlay styles */
+.overlay {
     position: absolute;
     top: 0;
-    left: 100%;
-    /* Start off-screen */
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: teal;
-    /* New background color */
+    background-color: #811622D1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease;
-    /* Smooth slide-in */
-    z-index: 1;
-    /* Layer above the default background */
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.95); /* Slightly scaled down */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    z-index: 1; /* Ensures it’s below the text in the card */
 }
 
-.card2 .animated-text {
-    font-size: 24px;
+/* Animated text styles */
+.animated-text {
+    margin-top: -100px;
+    font-size: .8rem;
+    width: 90%;
+    font-weight: bold;
     color: white;
     opacity: 0;
-    /* Initially hidden */
-    transition: opacity 0.5s ease;
-    /* Smooth fade-in */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
 }
 
-/* Hover Effect */
-.card2:hover {
-    background-color: teal;
-    /* Change background color */
-}
-
-.card2:hover .textincard {
-    transform: translateY(-100%);
-    /* Move text out of view */
-    opacity: 0;
-    /* Fade out */
-}
-
+/* Hover effect on card */
+.card1:hover .overlay,
 .card2:hover .overlay {
-    transform: translateX(-100%);
-    /* Slide overlay in from right to center */
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Back to original size */
 }
 
+/* Hover effect on animated text */
+.card1:hover .animated-text,
 .card2:hover .animated-text {
-    opacity: 1;
-    /* Fade in new text */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Slide into place */
 }
+
 
 
 

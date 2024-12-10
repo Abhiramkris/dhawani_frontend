@@ -69,7 +69,7 @@
     <div class="card1">
       <div class="textincard">Grant Management</div>
       <div class="overlay">
-        <div class="animated-text">Empowering Projects</div>
+        <div class="animated-text">Gain 360° visibility into your projects and tasks. Track activities, budgets, and impact through web and mobile apps. Manage donor-specific reports, integrate beneficiary data, and keep all documentation in one place.</div>
       </div>
     </div>
 
@@ -77,7 +77,7 @@
     <div class="card2">
       <div class="textincard">Donor Management</div>
       <div class="overlay">
-        <div class="animated-text">Empowering Projects</div>
+        <div class="animated-text">Gain 360° visibility into your projects and tasks. Track activities, budgets, and impact through web and mobile apps. Manage donor-specific reports, integrate beneficiary data, and keep all documentation in one place.</div>
       </div>
     </div>
   </div>
@@ -205,52 +205,40 @@
               </div>
             </div>
           </div>
+
+
+          <div class="changingcont active" id="container2">
+            <div class="selectorimg">img1</div>
+            <div class="selectorbullet">
+              <div class="timeline">
+                <div class="timeline-item" id="item1">
+                  <div class="icon"></div>
+                  <p>Floating request for proposals</p>
+                </div>
+                <div class="timeline-item" id="item2">
+                  <div class="icon"></div>
+                  <p>Conducting due diligence</p>
+                </div>
+                <div class="timeline-item" id="item3">
+                  <div class="icon"></div>
+                  <p>Add team members and partners</p>
+                </div>
+                <div class="timeline-item" id="item4">
+                  <div class="icon"></div>
+                  <p>Program and admin budget template</p>
+                </div>
+                <div class="timeline-item" id="item5">
+                  <div class="icon"></div>
+                  <p>Budget templates</p>
+                </div>
+                <div class="progress-line"></div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
-        <script>
-          const timelineSection = document.querySelector('.timeline-section');
-          const timelineItems = document.querySelectorAll('.timeline-item');
-          const progressLine = document.querySelector('.progress-line');
-
-          function animateTimeline() {
-            let index = 0;
-
-            function animateNext() {
-              if (index < timelineItems.length) {
-                const currentItem = timelineItems[index];
-                const icon = currentItem.querySelector('.icon');
-                const text = currentItem.querySelector('p');
-
-                // Activate the current item
-                currentItem.classList.add('active');
-                icon.classList.add('active');
-                text.style.color = '#f00';
-
-                // Extend the progress line
-                progressLine.style.height = `${(index + 1) * 60}px`;
-
-                index++;
-                setTimeout(animateNext, 1000); // Delay before animating the next item
-              }
-            }
-
-            animateNext();
-          }
-
-          // IntersectionObserver to start animation only when the section becomes visible
-          const observer = new IntersectionObserver(
-            (entries) => {
-              const entry = entries[0];
-              if (entry.isIntersecting) {
-                animateTimeline();
-                observer.disconnect(); // Stop observing after the animation starts
-              }
-            }, {
-            threshold: 0.5
-          } // Trigger when 50% of the section is visible
-          );
-
-          observer.observe(timelineSection);
-        </script>
+    
 
         <div class="changingcont" id="container2">
           <div class="selectorimg">img2</div>
