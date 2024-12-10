@@ -234,70 +234,6 @@
     background-color: #ddd;
 }
 
-/* gptcode */
-
-.timeline {
-    position: relative;
-    padding: 20px;
-    width: 300px;
-}
-
-.timeline-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    position: relative;
-    opacity: 0;
-    /* Start hidden */
-    transform: translateY(20px);
-    /* Start position (slightly below) */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.timeline-item.active {
-    opacity: 1;
-    /* Make visible */
-    transform: translateY(0);
-    /* Move to original position */
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    background-image: url('your-image-url.jpg');
-    /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-shrink: 0;
-    z-index: 2;
-    transition: filter 0.3s ease-in-out;
-}
-
-.icon.active {
-    filter: brightness(1.2);
-    /* Highlight effect */
-}
-
-.timeline-item p {
-    margin-left: 15px;
-    font-size: 16px;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.progress-line {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 2px;
-    background-color: #ddd;
-    height: 0;
-    z-index: 1;
-    transition: height 0.5s ease-out;
-}
-
-
 
 
 
@@ -560,13 +496,8 @@ li::before {
     }
 }
 
-<<<<<<< Updated upstream
 .launchicons2 {
     width: 230px;
-=======
-.launchicons2{
-    width: 180px;
->>>>>>> Stashed changes
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -584,9 +515,6 @@ li::before {
     text-align: center;
     padding-top: 15px;
     /* at 860 make icons haveapding  */
-<<<<<<< Updated upstream
-}
-=======
 }
 
 @media (max-width: 1000px) {
@@ -595,4 +523,3 @@ li::before {
         scale: .8;
     }
 }
->>>>>>> Stashed changes
