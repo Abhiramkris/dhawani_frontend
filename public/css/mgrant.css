@@ -8,8 +8,10 @@
     gap: 3%;
 
 }
+
 /* Common styles for cards */
-.card1, .card2 {
+.card1,
+.card2 {
     position: relative;
     width: 55%;
     height: 340px;
@@ -37,7 +39,8 @@
 /* Text inside the cards */
 .textincard {
     position: relative;
-    z-index: 2; /* Ensures it's above the overlay */
+    z-index: 2;
+    /* Ensures it's above the overlay */
     padding-bottom: 10%;
 }
 
@@ -53,10 +56,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially hidden */
-    transform: scale(0.95); /* Slightly scaled down */
-    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
-    z-index: 1; /* Ensures it’s below the text in the card */
+    opacity: 0;
+    /* Initially hidden */
+    transform: scale(0.95);
+    /* Slightly scaled down */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    /* Smooth transition */
+    z-index: 1;
+    /* Ensures it’s below the text in the card */
 }
 
 /* Animated text styles */
@@ -67,22 +74,28 @@
     font-weight: bold;
     color: white;
     opacity: 0;
-    transform: translateY(20px); /* Start slightly below */
-    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transition */
+    transform: translateY(20px);
+    /* Start slightly below */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    /* Smooth transition */
 }
 
 /* Hover effect on card */
 .card1:hover .overlay,
 .card2:hover .overlay {
-    opacity: 1; /* Fully visible */
-    transform: scale(1); /* Back to original size */
+    opacity: 1;
+    /* Fully visible */
+    transform: scale(1);
+    /* Back to original size */
 }
 
 /* Hover effect on animated text */
 .card1:hover .animated-text,
 .card2:hover .animated-text {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Slide into place */
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Slide into place */
 }
 
 
@@ -339,16 +352,48 @@
     /* Smooth animation */
 }
 
+
+#left-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    /* Starts with half the width */
+    height: 100%;
+    /* Full height of parent (leftimpact or impactimg) */
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
 .hover-text {
     font-size: 1rem;
     font-weight: bold;
-    color: black;
+    color: white;
     opacity: 1;
     /* Visible by default */
 }
 
 .hover-points {
+
     font-size: 10px;
+}
+
+.impact li {
+
+    color: white;
+}
+
+.impact li::before {
+    background-image: none;
+
+}
+
+#left-parent-hover:hover #left-hover {
+    width: 100%;
 }
 
 .leftimpact:hover .hover-content,
@@ -359,8 +404,8 @@
 
 .leftimpact:hover .hover-text,
 .impactimg:hover .hover-text {
-    color: white;
-    /* Change text color on hover */
+    color: white
+        /* Change text color on hover */
 }
 
 
@@ -568,7 +613,9 @@ li::before {
 }
 
 @media (max-width: 1000px) {
-    .launchicons1, .launchicons2{
+
+    .launchicons1,
+    .launchicons2 {
         margin-bottom: 50px;
         scale: .8;
     }
