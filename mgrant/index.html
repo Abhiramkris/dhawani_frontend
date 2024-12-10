@@ -354,56 +354,74 @@
       <div class="titlehr"></div> <br>
     </div>
 
-
     <div class="impact">
       <div class="rightimpact">
-        <div class="imapctimg3">
-          <div class="child"></div>
+        <div class="impactimg impactimg3"
+          style="background-image:url(/public/img/834bb1ebc3924d4860c355b283d11181.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          <div class="hover-content">
+            <span class="hover-text">Godrej Group CSR</span>
+            <div class="points-in">
+              <li class="hover-points">Built a complete platform to manage all their CSR projects across 5 group
+                companies
+              </li>
+              <li>NGO management and ensuring MIS (Management Information System) compliance</li>
+            </div>
+          </div>
         </div>
-        <div class="imapctimg2"></div>
+        <div class="impactimg impactimg2">
+          <div class="hover-content">
+            <span class="hover-text">Hovered Text 2</span>
+          </div>
+        </div>
       </div>
       <div class="leftimpact">
-        <div class="impactcontent"></div>
-      </div>
-    </div> <br> <br> <br> <br>
-    <div class="countingcont">
-      <div>
-        <span class="countelement" data-target="1000">0</span><br>
-        <span class="counttext">organizations</span>
-      </div>
-      <div>
-        <span class="countelement" data-target="20">0</span><br>
-        <span class="counttext">CSRs/ Donors</span>
+        <div class="hover-content">
+          <span class="hover-text">Hovered Text Left</span>
+        </div>
       </div>
     </div>
+  </div>
+
+  </div>
+  <br> <br> <br> <br>
+  <div class="countingcont">
+    <div>
+      <span class="countelement" data-target="1000">0</span><br>
+      <span class="counttext">organizations</span>
+    </div>
+    <div>
+      <span class="countelement" data-target="20">0</span><br>
+      <span class="counttext">CSRs/ Donors</span>
+    </div>
+  </div>
 
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const counters = document.querySelectorAll(".countelement");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const counters = document.querySelectorAll(".countelement");
 
-        counters.forEach((counter) => {
-          const updateCount = () => {
-            const target = +counter.getAttribute("data-target");
-            const current = +counter.innerText;
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const current = +counter.innerText;
 
-            // Speed of the animation
-            const increment = target / 90; // Adjust divisor to control speed
+          // Speed of the animation
+          const increment = target / 90; // Adjust divisor to control speed
 
-            if (current < target) {
-              counter.innerText = Math.ceil(current + increment);
-              setTimeout(updateCount, 10); // Delay in ms
-            } else {
-              counter.innerText = target + "+"; // Append "+" after reaching the target
-            }
-          };
+          if (current < target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCount, 10); // Delay in ms
+          } else {
+            counter.innerText = target + "+"; // Append "+" after reaching the target
+          }
+        };
 
-          updateCount();
-        });
+        updateCount();
       });
+    });
 
 
-    </script>
+  </script>
   </div> <br> <br> <br>
 
 

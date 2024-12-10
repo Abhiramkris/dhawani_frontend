@@ -446,8 +446,13 @@
 
 .leftimpact {
     height: 400px;
+    /* Full height of leftimpact */
     width: 40%;
     background-color: aqua;
+    position: relative;
+    /* Needed for the hover-content to position inside */
+    overflow: hidden;
+    /* Ensures hover-content doesn’t spill outside */
 }
 
 .rightimpact {
@@ -455,15 +460,56 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
     gap: 20px;
 }
 
-.imapctimg3,
-.imapctimg2 {
+.impactimg {
+    position: relative;
     height: 200px;
     width: 100%;
     background-color: blue;
+    overflow: hidden;
+}
+
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* Starts with half the width */
+    height: 100%;
+    /* Full height of parent (leftimpact or impactimg) */
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    /* Smooth animation */
+}
+
+.hover-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    opacity: 1;
+    /* Visible by default */
+}
+
+.hover-points {
+    font-size: 10px;
+}
+
+.leftimpact:hover .hover-content,
+.impactimg:hover .hover-content {
+    width: 100%;
+    /* Expands to cover the entire parent on hover */
+}
+
+.leftimpact:hover .hover-text,
+.impactimg:hover .hover-text {
+    color: white;
+    /* Change text color on hover */
 }
 
 
@@ -514,12 +560,13 @@
 .solcard {
     background-color: #F7E2D1;
     width: 100%;
-    gap: 40px;
+    gap: 100px;
     height: auto;
     display: flex;
     margin: auto;
     justify-content: center;
 }
+
 
 .sol1,
 .sol2 {
@@ -533,6 +580,7 @@
 }
 
 .solcont {
+
     font-weight: 700;
     margin-left: 30px;
     margin-top: 30px;
@@ -541,7 +589,7 @@
 .solcont::after {
     content: '';
     width: 30px;
-    height: 3px;
+    height: 5px;
     background-color: #F58634;
     position: absolute;
     margin-top: -14px;
@@ -584,6 +632,8 @@ li::before {
     border-radius: 15px;
     margin-top: 50px;
 }
+
+
 
 
 @media (max-width: 1300px) {
