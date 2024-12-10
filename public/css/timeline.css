@@ -1,0 +1,84 @@
+/* Timeline container */
+.timeline {
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-left: 4px solid transparent; /* For visual alignment */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slide from below */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth entry */
+}
+
+/* Animated timeline visible */
+.timeline.animate {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Slide into position */
+}
+
+/* Timeline items */
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px; /* Space for the icon */
+    opacity: 0; /* Initially hidden */
+}
+
+/* Timeline items animation */
+.timeline-item.active {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: var(--delay); /* Custom delay for each item */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Timeline icons */
+.icon {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.8); /* Smaller size */
+    transition: background-color 1s ease, transform 1s ease; /* Smooth highlight */
+}
+
+/* Highlighted state for icons */
+.timeline-item.active .icon {
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Normal size */
+}
+
+.progress-line {
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+    left: 10px;
+    width: 4px;
+    height: 0%;
+    background: #811622;
+    animation: growLine 3s ease forwards; /* Progress line animation */
+}
+
+/* Keyframes for progress line */
+@keyframes growLine {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 75%;
+    }
+}

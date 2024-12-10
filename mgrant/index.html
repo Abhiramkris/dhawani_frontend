@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="/public/css/mgrant.css">
   <link rel="stylesheet" href="/public/css/navbar.css">
   <link rel="stylesheet" href="/public/css/style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  <link rel="stylesheet" href="/public/css/timeline.css">
+  <href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 </head>
 <style>
@@ -69,7 +69,7 @@
     <div class="card1">
       <div class="textincard">Grant Management</div>
       <div class="overlay">
-        <div class="animated-text">Empowering Projects</div>
+        <div class="animated-text">Gain 360° visibility into your projects and tasks. Track activities, budgets, and impact through web and mobile apps. Manage donor-specific reports, integrate beneficiary data, and keep all documentation in one place.</div>
       </div>
     </div>
 
@@ -77,7 +77,7 @@
     <div class="card2">
       <div class="textincard">Donor Management</div>
       <div class="overlay">
-        <div class="animated-text">Empowering Projects</div>
+        <div class="animated-text">Gain 360° visibility into your projects and tasks. Track activities, budgets, and impact through web and mobile apps. Manage donor-specific reports, integrate beneficiary data, and keep all documentation in one place.</div>
       </div>
     </div>
   </div>
@@ -182,6 +182,36 @@
             <div class="selectorbullet">
               <div class="timeline">
                 <div class="timeline-item" id="item1">
+                  <div class="icon"><img src="/public/img/Close button.png" alt=""></div>
+                  <p>Floating request for proposals</p>
+                </div>
+                <div class="timeline-item" id="item2">
+                  <div class="icon"></div>
+                  <p>Conducting due diligence</p>
+                </div>
+                <div class="timeline-item" id="item3">
+                  <div class="icon"></div>
+                  <p>Add team members and partners</p>
+                </div>
+                <div class="timeline-item" id="item4">
+                  <div class="icon"></div>
+                  <p>Program and admin budget template</p>
+                </div>
+                <div class="timeline-item" id="item5">
+                  <div class="icon"></div>
+                  <p>Budget templates</p>
+                </div>
+                <div class="progress-line"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="changingcont" id="container2">
+            <div class="selectorimg">img1</div>
+            <div class="selectorbullet">
+              <div class="timeline">
+                <div class="timeline-item" id="item1">
                   <div class="icon"></div>
                   <p>Floating request for proposals</p>
                 </div>
@@ -205,52 +235,10 @@
               </div>
             </div>
           </div>
+
+
         </div>
-        <script>
-          const timelineSection = document.querySelector('.timeline-section');
-          const timelineItems = document.querySelectorAll('.timeline-item');
-          const progressLine = document.querySelector('.progress-line');
-
-          function animateTimeline() {
-            let index = 0;
-
-            function animateNext() {
-              if (index < timelineItems.length) {
-                const currentItem = timelineItems[index];
-                const icon = currentItem.querySelector('.icon');
-                const text = currentItem.querySelector('p');
-
-                // Activate the current item
-                currentItem.classList.add('active');
-                icon.classList.add('active');
-                text.style.color = '#f00';
-
-                // Extend the progress line
-                progressLine.style.height = `${(index + 1) * 60}px`;
-
-                index++;
-                setTimeout(animateNext, 1000); // Delay before animating the next item
-              }
-            }
-
-            animateNext();
-          }
-
-          // IntersectionObserver to start animation only when the section becomes visible
-          const observer = new IntersectionObserver(
-            (entries) => {
-              const entry = entries[0];
-              if (entry.isIntersecting) {
-                animateTimeline();
-                observer.disconnect(); // Stop observing after the animation starts
-              }
-            }, {
-            threshold: 0.5
-          } // Trigger when 50% of the section is visible
-          );
-
-          observer.observe(timelineSection);
-        </script>
+    
 
         <div class="changingcont" id="container2">
           <div class="selectorimg">img2</div>
@@ -272,31 +260,8 @@
           <div class="selectorbullet"></div>
         </div>
       </div>
+      <script src="/public/js/time.js"></script>
 
-      <script>
-        function showcontainer(containerid, clickedcard) {
-          console.log(containerid);
-
-          // Hide all containers
-          const containers = document.querySelectorAll('.changingcont');
-          containers.forEach(container => container.classList.remove('active'));
-
-          // Show the targeted container
-          const targetContainer = document.getElementById(containerid);
-          if (targetContainer) {
-            targetContainer.classList.add('active');
-          } else {
-            console.log("Container not found");
-          }
-
-          // Remove active class from all cards
-          const cards = document.querySelectorAll('.selectorcard');
-          cards.forEach(card => card.classList.remove('active'));
-
-          // Add active class to the clicked card
-          clickedcard.classList.add('active');
-        }
-      </script>
     </div>
   </div>
 
