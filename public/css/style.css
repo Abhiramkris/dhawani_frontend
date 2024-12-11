@@ -2,6 +2,7 @@
     font-size: 40px;
     font-weight: 700;
     text-align: center;
+    color: #811622;
 }
 .dhnititle .titlehr{
 background-color: #F58634;
@@ -10,6 +11,7 @@ width: 4%;
 border-radius: 12px;
 margin: auto;
 margin-top: 15px;
+display: flex;
 }
 .dhnisub{
     text-align: center;
@@ -87,4 +89,62 @@ margin-top: 15px;
     scale: 1;
     margin-top: 10px;
 }
+}
+
+.wavybg{
+  width: 100%;
+  background-image: url('/public/img/mgrant/Frame.png');
+}
+
+.twoside{
+  width: 87%;
+  display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    
+}
+
+.c1ard{
+  width: 50%;
+  margin-top: 50px;
+}
+.c2ard{
+  position: relative;
+  right: 2px;
+  width: 50%;
+  background-color: #811624;
+  margin-top: 50px;
+}
+.c2{
+  display: flex;
+  width: 50%;
+  margin-top: 70px;
+}
+.mformcard{
+  height: 60px;
+  background-color: white;
+  width: 250px;
+  display: flex;
+  border-radius: 10px;
+}
+.inn1{
+  width: 22%;
+  height: 40px;
+  padding-top: 20px;
+  background-color: #811622;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.inn2{
+  margin-left: 20px;
+  height: 35px;
+  padding-top: 15px;
+  text-align: center;
+  justify-content: center;
 }
