@@ -29,4 +29,19 @@
   .tab-button.active {
     background-color: #ccc;
   }
+  .tab-button.active {
+    background-color: #ccc;
+  }
+  
+  /* Show active tab content */
+  .tab-content.active {
+    display: block;
+  }
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
   

@@ -60,7 +60,7 @@
 
   <!-- landning1 -->
   <div class="tabs">
-    <button class="tab-button active" onclick="openTab('tab1')">Tab 1</button>
+    <button class="tab-button active" onclick="openTab('tab1')">LMS</button>
     <button class="tab-button" onclick="openTab('tab2')">Tab 2</button>
     <button class="tab-button" onclick="openTab('tab3')">Tab 3</button>
     <button class="tab-button active" onclick="openTab('tab4')">Tab 4</button>
@@ -73,64 +73,232 @@
 
   <div id="tab1" class="tab-content">
 
-    <div style="width: 100%; background-image: url('/public/img/mgrant/Frame.png');">
-      <div class="dhnititle" style="text-align: left; margin-left: 40px;">LMS<br>
-        <div class="titlehr" style="width: 2%; margin-left: 0; margin-top: -5px;"></div> <br>
-      </div>
-    </div>
-
-    <div class="dhnisub" style="text-align: left; margin-left: 40px; margin-top: -30px;">
-      Our low-code/no-code user-friendly Program MIS software simplifies data collection and monitoring, even in offline environments and across multiple languages. It quickly transforms raw data into real-time insights, enabling informed decision-making. The platform’s project-tracking feature brings everything into one place, from dashboards and survey builders to easy data migration and training sessions, making it ideal for project assessments and audits (such as Need, Baseline, Midline, Impact, SRoI). Additionally, the platform integrates seamlessly with mGrant, offering extended value and functionality to streamline your grant management process.
+    <div class="dhnititle" style="text-align: left">LMS<br>
+      <div class="titlehr" style="width: 8%; margin-left: 0; margin-top:-8px;"></div> <br>
     </div>
 
 
-    <!-- tabs for lms here -->
-
-    <div class="tabs">
-        <button class="tab-button active" onclick="openTab('tab6')">mLearn</button>
-        <button class="tab-button" onclick="openTab('tab7')">Moodle</button>
-        <button class="tab-button" onclick="openTab('tab8')">Zoho Trainer Central</button>
-        <button class="tab-button" onclick="openTab('tab8')">Frappe LMS</button>
+    <!-- Nested tabs for LMS -->
+    <div id="tab1-tabs" class="tabs">
+      <button class="tab-button active" onclick="openTab('tab6', 'tab1-tabs')">mLearn</button>
+      <button class="tab-button" onclick="openTab('tab7', 'tab1-tabs')">Moodle</button>
+      <button class="tab-button" onclick="openTab('tab8', 'tab1-tabs')">Zoho Trainer Central</button>
+      <button class="tab-button" onclick="openTab('tab9', 'tab1-tabs')">Frappe LMS</button>
     </div>
 
-            <!-- mlearn here -->
+    <!-- Nested tab contents for LMS -->
     <div id="tab6" class="tab-content">
-     
-        
+
+
+      <!-- lms1 -->
+      <div class="twoside">
+        <div class="c2ard">
+          <div class="timage">Donor Management</div>
+        </div>
+        <div class="c1ard"> <br>
+          <div class="dhnititle" style="text-align: left;">mFORM Web<br>
+            <div class="titlehr" style="width: 10%; margin-left: 0;"></div> <br>
+          </div>
+          <div class="te" style="margin-top: -20px;">mLearn is a dynamic, do-it-yourself platform tailored to meet your specific learning needs. Designed to deliver, track, and document e-learning courses, mLearn offers a customizable solution for creating engaging multimedia content, tracking progress, and setting personalized learning paths. Whether you're scaling up for larger groups or customizing content for specific users, mLearn ensures that learning is efficient, engaging, and scalable for all.
+            <br>
+            mLearn is a mobile-based Learning Management System (LMS) designed for cadre teams like ASHAs, ANMs, Bank Sakhis, and Pashu Sakhis. This highly configurable tool enables NGOs to quickly deliver, track, and document educational courses. Through standardized content delivery, assessments, and progress tracking, NGOs can ensure consistent training across all teams. The platform also provides insights into trainee behavior, helping identify areas for improvement.
+          </div>
+        </div>
+      </div> <br> <br>
+
+
+      
+      <!-- lms2 -->
+      <div style="background-color: #F7E2D1; width: 100%; height: 100%;"> <br> <br>
+        <div class="dhnititle">Key Challenges Addressed by mLearn<br>
+          <div class="titlehr"></div> <br>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; width: 95%; height: 500px; margin: auto; gap: 30px; align-items: center; justify-content: center;">
+
+          <div style="display: flex;width:30%; height: 40%;">
+            <div class="mformimg" style="width: 35%;"></div>
+            <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
+              <h3 style="margin-left: 10px; margin-top: 20px;">Error & Inconsistencies</h3>
+              <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Difference in data quality and accuracy at the time of collection due to duplication of questions, lengthy forms and mistakes in filling of data can hamper data. </h5>
+            </div>
+          </div>
+
+          <div style="display: flex;width:30%;height: 40%;">
+            <div class="mformimg" style="width: 35%;"></div>
+            <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
+              <h3 style="margin-left: 10px; margin-top: 20px;">Surveyors Management</h3>
+              <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Tracking the activities and accurately calculating the effort of the surveyors can be difficult. Moreover, Surveyors can’t manage and monitor their own data. </h5>
+            </div>
+          </div>
+
+          <div style="display: flex;width:30%;height: 40%;">
+            <div class="mformimg" style="width: 35%;"></div>
+            <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
+              <h3 style="margin-left: 10px; margin-top: 20px;">Data Loss</h3>
+              <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;"> Differences in data quality and accuracy at the time of collection due to duplication of questions, lengthy forms, and mistakes in filling of data can hamper the process.</h5>
+            </div>
+          </div>
+
+          <div style="display: flex;width:30%;height: 40%;">
+            <div class="mformimg" style="width: 35%;"></div>
+            <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
+              <h3 style="margin-left: 10px; margin-top: 20px;">Fragmented Data</h3>
+              <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Lack of standardized practices across organisations can cause data to be fragmented and organizing legacy data is also challenging.</h5>
+            </div>
+          </div>
+
+
+        </div>
+        <br> <br>
+      </div> <br>
+
+
+
+      <!-- lsm3 -->
+
+      <div class="feature" style="background-color: white;">
+        <div> <br> <br>
+          <div class="dhnititle">Flexible Solutions for You!
+            <div class="titlehr"></div>
+          </div> <br> <br>
+          <div class="feacont">
+            <div class="selector">
+              <div class="selectorcard active" onclick="showcontainer('container1',this)">Hello</div>
+              <div class="selectorcard" onclick="showcontainer('container2',this)"></div>
+              <div class="selectorcard" onclick="showcontainer('container3',this)"></div>
+              <div class="selectorcard" onclick="showcontainer('container4',this)"></div>
+              <div class="selectorcard" onclick="showcontainer('container5',this)"></div>
+            </div>
+
+            <div class="selector2">
+              <div class="changingcont active" id="container1">
+                <div class="selectorimg">img1</div>
+                <div class="selectorbullet">
+                  <div class="timeline">
+                    <div class="timeline-item" id="item1">
+                      <div class="icon"><img src="/public/img/Close button.png" alt=""></div>
+                      <p>Floating request for proposals</p>
+                    </div>
+                    <div class="timeline-item" id="item2">
+                      <div class="icon"></div>
+                      <p>Conducting due diligence</p>
+                    </div>
+                    <div class="timeline-item" id="item3">
+                      <div class="icon"></div>
+                      <p>Add team members and partners</p>
+                    </div>
+                    <div class="timeline-item" id="item4">
+                      <div class="icon"></div>
+                      <p>Program and admin budget template</p>
+                    </div>
+                    <div class="timeline-item" id="item5">
+                      <div class="icon"></div>
+                      <p>Budget templates</p>
+                    </div>
+                    <div class="progress-line"></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="changingcont" id="container2">
+                <div class="selectorimg">img1</div>
+                <div class="selectorbullet">
+                  <div class="timeline">
+                    <div class="timeline-item" id="item1">
+                      <div class="icon"></div>
+                      <p>Floating request for proposals</p>
+                    </div>
+                    <div class="timeline-item" id="item2">
+                      <div class="icon"></div>
+                      <p>Conducting due diligence</p>
+                    </div>
+                    <div class="timeline-item" id="item3">
+                      <div class="icon"></div>
+                      <p>Add team members and partners</p>
+                    </div>
+                    <div class="timeline-item" id="item4">
+                      <div class="icon"></div>
+                      <p>Program and admin budget template</p>
+                    </div>
+                    <div class="timeline-item" id="item5">
+                      <div class="icon"></div>
+                      <p>Budget templates</p>
+                    </div>
+                    <div class="progress-line"></div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <div class="changingcont" id="container2">
+              <div class="selectorimg">img2</div>
+              <div class="selectorbullet"></div>
+            </div>
+
+            <div class="changingcont" id="container3">
+              <div class="selectorimg"></div>
+              <div class="selectorbullet"></div>
+            </div>
+
+            <div class="changingcont" id="container4">
+              <div class="selectorimg"></div>
+              <div class="selectorbullet"></div>
+            </div>
+
+            <div class="changingcont" id="container5">
+              <div class="selectorimg"></div>
+              <div class="selectorbullet"></div>
+            </div>
+          </div>
+          <script src="/public/js/time.js"></script>
+
+        </div>
+
+
+
+
 
       </div>
 
 
 
 
+    </div>
+
+
+
+
+    <div id="tab7" class="tab-content">
+      <h2>Moodle Content</h2>
+      <p>Details about Moodle.</p>
+    </div>
+
+
+    <div id="tab8" class="tab-content">
+      <h2>Zoho Trainer Central Content</h2>
+      <p>Details about Zoho Trainer Central.</p>
+    </div>
+
+
+    <div id="tab9" class="tab-content">
+      <h2>Frappe LMS Content</h2>
+      <p>Details about Frappe LMS.</p>
+    </div>
   </div>
 
 
 
 
-  <!-- CAHTBOT STARTS HERE -->
+
+
   <div id="tab2" class="tab-content">
-    <h2>Content for Tab 2</h2>
-    <p>This is the content for tab 2.</p>
+
   </div>
-
-  <div id="tab3" class="tab-content">
-    <h2>Content for Tab 2</h2>
-    <p>This is the content for tab 2.</p>
-  </div>
-
-  <div id="tab4" class="tab-content">
-    <h2>Content for Tab 2</h2>
-    <p>This is the content for tab 2.</p>
-  </div>
-
-  <div id="tab5" class="tab-content">
-    <h2>Content for Tab 2</h2>
-    <p>This is the content for tab 2.</p>
-  </div>
-
-
-
 
 
 </body>

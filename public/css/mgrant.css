@@ -209,7 +209,7 @@
 .feature {
     background-color: #F7E2D1;
     width: 100%;
-    height: 800px;
+    height: 100%;
 }
 
 .feacont {
@@ -223,12 +223,11 @@
 }
 
 .selector {
-    background-color: black;
     margin-top: 30px;
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 10px;
 }
 
 
@@ -237,17 +236,17 @@
 }
 
 .selectorcard {
-    width: 40%;
+    width: 60%;
     height: 90px;
-    background-color: olivedrab;
     margin: auto;
-
+    background-color: white;
+    border-radius: 10px;
 }
 
 .selectorimg {
-    width: 70%;
-    height: 50px;
-    background-color: aqua;
+    width: 100%;
+    height: 350px;
+    background-color: grey;
 }
 
 .changingcont {
@@ -271,7 +270,10 @@
 }
 
 .selectorcard.active {
-    background-color: #ddd;
+    background-image: url('/public/img/Tab.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
