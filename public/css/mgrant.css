@@ -532,12 +532,13 @@ li::before {
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 800px) {
     .muft {
         position: relative;
     }
 
     .solcard {
+        align-items: center;
         display: block;
         height: 1300px;
         justify-content: center;

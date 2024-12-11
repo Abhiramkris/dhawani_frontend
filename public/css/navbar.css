@@ -2,9 +2,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-
 }
 
+/* Top container links */
 .topcontainerlinks {
     display: flex;
     font-size: 16px;
@@ -15,9 +15,7 @@ body {
     width: 100%;
     color: white;
     gap: 5px;
-    width: 100%;
     overflow: hidden;
-
 }
 
 .topcontainerlinks p {
@@ -48,7 +46,7 @@ body {
     align-items: center;
 }
 
-/* Toggle button for small screens */
+/* Hamburger toggle button */
 #nav-toggle {
     display: none;
     flex-direction: column;
@@ -69,6 +67,7 @@ body {
 /* Nav links */
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -88,14 +87,15 @@ body {
 .nav-links a.active {
     color: #811622;
     font-weight: bold;
-    border-top: 3px solid #811622;
+    border-bottom: 3px solid #811622;
 }
 
 .nav-links a.active {
     color: #811622;
     font-weight: bold;
-    border-bottom: 3px solid #811622;
+    border-top: 3px solid #811622;
 }
+
 
 /* Nav button */
 #nav-btn button {
@@ -110,8 +110,7 @@ body {
     cursor: pointer;
 }
 
-/* Responsive Design */
-
+/* Responsive design for medium screens */
 @media(max-width:1084px) {
     #nav-logo {
         margin-right: 0px;
@@ -122,6 +121,7 @@ body {
     }
 }
 
+/* Responsive design for smaller screens */
 @media (max-width: 975px) {
     #nav-logo {
         display: none;
@@ -133,7 +133,6 @@ body {
         left: 20px;
         align-items: center;
     }
-
 
     .nav-links {
         display: none;
@@ -169,4 +168,52 @@ body {
         margin: 0;
         font-size: xx-small;
     }
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: flex;
+    /* Aligns inline with other nav links */
+    align-items: center;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Positions dropdown below parent */
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
