@@ -62,7 +62,7 @@
           <div class="top2-cont1-bottom-right">
             <div class="top2-cont1-bottom-right-top">
               <div class="top2-cont1-bottom-right-top-left">
-                <p class="top2-cont1-contents-head"style="margin-left: 20px;">mForm</p>
+                <p class="top2-cont1-contents-head" style="margin-left: 20px;">mForm</p>
                 <p class="top2-cont1-contents-para" style="margin-left: 20px;">Your all-in-one platform for efficient data collection, visualization, and real-time decision-making.</p>
                 <div class="top2-arrows">
                   <div class="top2-arrows-content" style="position: relative; padding-top: 1px; padding-left: 80%;">
@@ -174,7 +174,7 @@
         <div class="titlehr"></div><br>
       </div>
     </div>
-    
+
     <div class="mid-topbox-cont">
       <div class="mid-boxes" id="first-midbox" style="color: white;">Corporate
         Foundations</div>
@@ -262,228 +262,199 @@
     </div>
   </div>
   <div class="testimonials" style="height: 100vh;">
-    <div style="background-color: #F586343D;"> <br>
-      <div class="dhnititle">At a Glance<br>
+    <div> <br>
+      <div class="dhnititle">Testimonials<br>
         <div class="titlehr"></div>
       </div> <br> <br>
 
       <style>
         .carousel-container {
-          position: relative;
-          width: 100%;
-          height: 400px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          gap: 20px;
-          /* Adds gap between the slides */
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
         }
 
         .carousel-slide {
-          position: absolute;
-          width: 40%;
-          height: 500px;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          font-size: 24px;
-          transition: all 0.5s ease;
-          opacity: 0;
-          transform: scale(0.92);
-          margin: 0 10px;
-          /* Optional: Adds individual margins for finer control */
+            flex: 0 0 100%;
+            width: 100%;
+            opacity: 0.5;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transform: scale(0.9);
         }
-
 
         .carousel-slide.active {
-          border-radius: 20px;
-          width: 40%;
-          opacity: 1;
-          transform: translateX(0%) scale(1);
-          z-index: 10;
+            opacity: 1;
+            transform: scale(1);
         }
 
-        .carousel-slide.prev {
-          border-radius: 20px;
-          width: 30%;
-          opacity: 0.7;
-          transform: translateX(-50%) scale(0.8);
-          left: 10%;
-          z-index: 5;
+        .carousel-content {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            height: 300px;
         }
 
-        .carousel-slide.next {
-          border-radius: 20px;
-          width: 30%;
-          opacity: 0.7;
-          transform: translateX(50%) scale(0.8);
-          right: 10%;
-          z-index: 5;
+        .carousel-bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
         }
 
-        .carousel-btn {
-
-          top: 50%;
-          transform: translateY(-50%);
-          background: rgba(255, 255, 255, 0.5);
-          border: none;
-          padding: 10px 15px;
-          cursor: pointer;
-          z-index: 20;
+        .carousel-image {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-right: 15px;
         }
 
-        .carousel-btn.prev-btn {
-          background-color: red;
-          left: 20px;
-        }
-
-        .carousel-btn.next-btn {
-          right: 20px;
-        }
-
-        .carousel-inner {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          width: 100%;
-        }
-
-        .carousel-ctn {
-          margin-top: -35%;
-          height: 90%;
-          width: 100%;
-          background-color: red;
-        }
-
-        .carousel-botm {
-          height: 40%;
-          width: 100%;
-          background-color: aqua;
-          display: flex;
-          flex-direction: row;
-        }
-
-        .carousel-img {
-
-          height: 80%;
-          width: 40%;
-          background-color: blueviolet;
+        .carousel-info {
+            flex-grow: 1;
         }
 
         .carousel-name {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: end;
-          flex-direction: column;
-          font-size: 15px;
-          height: 100%;
-          width: 60%;
-          background-color: chartreuse;
-          padding-right: 18px;
-
-          padding-top: 5%;
+            font-weight: bold;
+            color: rgba(245, 134, 52, 1);
         }
 
-        .carousel-ctn {
-          background-color: #434c4e;
-          display: flex;
-
+        .carousel-title {
+            color: rgba(129, 22, 34, 1);
+            font-size: 0.9rem;
         }
 
-        .top-quotes {
-          height: 10%;
-          width: 50%;
-          background-color: rebeccapurple;
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
         }
 
-        .bottom-ctn {
-          height: 80%;
-          background-color: aqua;
+        .carousel-btn {
+            background-color: rgba(245, 134, 52, 1);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
         }
-      </style>
-      <div class="carousel-container">
-        <div class="carousel-slide" style="background-color: #3a3232;">
-          <div class="carousel-inner">
-            <div class="carousel-ctn"></div>
-            <div class="carousel-botm">
-              <div class="carousel-img" style="background-image: url(/public/img/home-carousel/Group\ 158.png);">
-              </div>
-              <div class="carousel-name"></div>
+
+        .carousel-quote {
+            font-style: italic;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-slide active">
+                <div class="carousel-content">
+                    <div class="carousel-quote">
+                        "Lorem Ipsum Sample Text orem Ipsum Sample Text. 
+                        Ipsum Sample Text orem Ipsum Sample Text."
+                    </div>
+                    <div class="carousel-bottom">
+                        <div class="carousel-image" style="background-image: url('/public/img/home-carousel/Group\ 158.png');"></div>
+                        <div class="carousel-info">
+                            <div class="carousel-name">SM SEHGAL FOUNDATION</div>
+                            <div class="carousel-title">Anjali Godyal</div>
+                            <div class="carousel-title">Chief Development Officer</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <div class="carousel-quote">
+                        "Another testimonial text goes here. 
+                        Highlighting the great work and impact."
+                    </div>
+                    <div class="carousel-bottom">
+                        <div class="carousel-image" style="background-image: url('/public/img/home-carousel/Group\ 158.png');"></div>
+                        <div class="carousel-info">
+                            <div class="carousel-name">ANOTHER FOUNDATION</div>
+                            <div class="carousel-title">John Doe</div>
+                            <div class="carousel-title">Executive Director</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <div class="carousel-quote">
+                        "A third testimonial text demonstrating 
+                        the organization's commitment and success."
+                    </div>
+                    <div class="carousel-bottom">
+                        <div class="carousel-image" style="background-image: url('/public/img/home-carousel/Group\ 158.png');"></div>
+                        <div class="carousel-info">
+                            <div class="carousel-name">COMMUNITY IMPACT</div>
+                            <div class="carousel-title">Jane Smith</div>
+                            <div class="carousel-title">Program Manager</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="carousel-slide" style="background-color: #424f4e;">
-          <div class="carousel-inner">
-            <div class="carousel-ctn">
+    </div>
 
-              <div class="top-quotes" style="width: 50px;height: 50px; background-color: black; margin-top: 10px;">oj</div>
-              <div class="bottom-ctn"></div>
+    <div class="carousel-controls">
+        <button class="carousel-btn prev-btn">← Previous</button>
+        <button class="carousel-btn next-btn">Next →</button>
+    </div> <br> <br>
 
-            </div>
-            <div class="carousel-botm">
-              <div class="carousel-img" style="background-image: url(/public/img/home-carousel/Group\ 158.png); background-size:contain; background-position-x: center; background-repeat: no-repeat;">
-
-              </div>
-              <div class="carousel-name">
-                <p style="font-size: 1 rem;margin-left: -20%; font-weight: 600; color: rgba(245, 134, 52, 1);">
-                  SM SEHGAL FOUNDATION
-                </p>
-                <p style="margin-top: -6%; font-size: 0.8rem; font-weight: 400; color: rgba(129, 22, 34, 1);">
-                  Anjali Godyal</p>
-                <p style="margin-top: -5%; margin-left:-10px; font-size: 0.8rem; color: rgba(129, 22, 34, 1);">
-                  Chief Development
-                  Officer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-slide" style="background-color: #434c4e;">Slide 3</div>
-
-
-      </div>
-      <div class="testi-btn" style="display: flex; align-items: center; justify-content: center; margin-top: 10%;">
-        <button class="carousel-btn prev-btn">←</button>
-            NEXT
-        <button class="carousel-btn next-btn">→</button>
-      </div>
-
-      <script>
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
-          const slides = document.querySelectorAll('.carousel-slide');
-          const prevBtn = document.querySelector('.prev-btn');
-          const nextBtn = document.querySelector('.next-btn');
-          let currentIndex = 1;
+            const wrapper = document.querySelector('.carousel-wrapper');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentIndex = 0;
 
-          function updateSlides() {
-            // Remove all classes
-            slides.forEach(slide => {
-              slide.classList.remove('active', 'prev', 'next');
+            function updateCarousel() {
+                // Remove active class from all slides
+                slides.forEach(slide => slide.classList.remove('active'));
+                
+                // Add active class to current slide
+                slides[currentIndex].classList.add('active');
+                
+                // Adjust wrapper position
+                wrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateCarousel();
             });
 
-            // Set classes based on current index
-            slides[currentIndex].classList.add('active');
-            slides[(currentIndex - 1 + slides.length) % slides.length].classList.add('prev');
-            slides[(currentIndex + 1) % slides.length].classList.add('next');
-          }
-
-          // Initial setup
-          updateSlides();
-
-          nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            updateSlides();
-          });
-
-          prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            updateSlides();
-          });
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateCarousel();
+            });
         });
-      </script>
+    </script>
     </div>
+    <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"
+    onload="resizeIframe(this)"></iframe>
+
+  <script>
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
 </body>
 
 </html>
