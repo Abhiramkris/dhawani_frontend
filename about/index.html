@@ -34,12 +34,27 @@
       </div>
 
       <div class="nav-links">
-        <a href="#logo" id="nav-logo"><img src="" alt="logo"></a>
+        <a href="#logo" id="nav-logo"><img src="/public/img/Dhwani final Logo 1.png" style="height: 30px; width: 80px;"
+            alt="logo"></a>
+
         <a href="#home" class="nav-link navtextmain">Home</a>
         <a href="#about" class="nav-link navtextmain">About Us</a>
-        <a href="#services" class="nav-link navtextmain">Solutions</a>
+        <div class="dropdown" style="margin: 0px;">
+          <a href="#services" class="nav-link navtextmain dropdown-toggle">Solutions</a>
+          <div class="dropdown-menu">
+            <a href="#blogs" class="dropdown-item">Mgrant</a>
+            <a href="#case-studies" class="dropdown-item">Mform</a>
+            <a href="#case-studies" class="dropdown-item">Mlearn</a>
+          </div>
+        </div>
         <a href="#careers" class="nav-link navtextmain">Careers</a>
-        <a href="#resources" class="nav-link navtextmain">Resources</a>
+        <div class="dropdown" style="margin: 0px;">
+          <a href="#resources" class="nav-link navtextmain dropdown-toggle" id="navbar-resources">Resources</a>
+          <div class="dropdown-menu">
+            <a href="#blogs" class="dropdown-item">Blog</a>
+            <a href="#case-studies" class="dropdown-item">Newsletter</a>
+          </div>
+        </div>
         <a href="#contactus" class="nav-link navtextmain">Contact Us</a>
         <div id="nav-btn">
           <button>Book A Session</button>
@@ -101,282 +116,266 @@
     <!-- Main Container for Carousels -->
     <style>
       .slide-indicators {
-          display: flex;
-          justify-content: center;
-          margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
       }
+
       .slide-indicator {
-          width: 10px;
-          height: 10px;
-          background-color: #ddd;
-          border-radius: 50%;
-          margin: 0 5px;
-          cursor: pointer;
-          transition: all 0.3s ease;
+        width: 10px;
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
       }
+
       .carousel-item.active-white {
-          background-color: #007bff;
-          width: 20px;
-          border-radius: 5px;
+        background-color: #007bff;
+        width: 20px;
+        border-radius: 5px;
       }
+
       a.carousel-link.active {
         color: aliceblue;
-          transform: scale(1.05);
-          box-shadow: 0 0 15px rgba(255,255,255,0.7);
-          z-index: 10;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+        z-index: 10;
       }
-  </style>
+    </style>
 
-  <div class="container mt-5 aboutcarousel">
+    <div class="container mt-5 aboutcarousel">
       <!-- Entire original HTML structure -->
       <div class="row">
-          <!-- Carousel 1 -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=666&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=555&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 1 -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="object-fit: contain;">
+                <img class="d-block w-100" src="/public/img/three-grid/a9be5acc2d67ebbde7ed15af69a7605d.jpeg"
+                  alt="First slide">
               </div>
+              <div class="carousel-item" style="object-fit: contain;">
+                <img class="d-block w-100" src="/public/img/three-grid/81a3e2f50d7bfc8f0e398f8c3350c457.jpeg"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item" style="object-fit: cover;">
+                <img class="d-block w-100" src="/public/img/three-grid/a61478c79c12c79d0a342a9269512d81.png"
+                  alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
 
-          <!-- Carousel 2 -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=666&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 2 -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/0d22058393cc20b05a95d30aca3c8074.jpeg"
+                  alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/523865953b0ffe6daa0c1b037d48bd12.jpeg"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3836 (1).png" alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
 
-          <!-- Carousel 3 -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=999&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 3 -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3837.png" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3837 (1).png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3837 (2).png" alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
       </div>
 
       <div class="row">
-          <!-- Carousel 4 -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=999&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 4 -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3833 (2).png" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3833.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3833 (1).png" alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
 
-          <!-- Centralized Controls Remain Unchanged -->
-          <div class="col-md-4 mb-4">
-              <div class="carousel-controls">
-                  <a href="#" class="carousel-link" data-slide-to="0">Slide 1</a> |
-                  <a href="#" class="carousel-link" data-slide-to="1">Slide 2</a> |
-                  <a href="#" class="carousel-link" data-slide-to="2">Slide 3</a>
-              </div>
+        <!-- Centralized Controls Remain Unchanged -->
+        <div class="col-md-4 mb-4">
+          <div class="carousel-controls">
+            <a href="#" class="carousel-link" data-slide-to="0">Slide 1</a> |
+            <a href="#" class="carousel-link" data-slide-to="1">Slide 2</a> |
+            <a href="#" class="carousel-link" data-slide-to="2">Slide 3</a>
           </div>
+        </div>
 
-          <!-- Carousel 6 -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=999&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 6 -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3834.png" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3834 (1).png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3834 (2).png" alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
       </div>
 
       <div class="row">
-          <!-- Carousel 7 (Both instances) -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls7a" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=999&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 7 (Both instances) -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls7a" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3838.png" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3838 (1).png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3838 (2).png " alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls7b" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=999&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls7b" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3839.png" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3839 (1).png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3839 (2).png" alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
 
-          <!-- Carousel 8 -->
-          <div class="col-md-4 mb-4">
-              <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=999&fg=555&text=First+slide" alt="First slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=888&fg=444&text=Second+slide" alt="Second slide">
-                      </div>
-                      <div class="carousel-item">
-                          <img class="d-block w-100"
-                              src="https://via.placeholder.com/800x400?auto=yes&bg=777&fg=333&text=Third+slide" alt="Third slide">
-                      </div>
-                  </div>
-                  <div class="slide-indicators"></div>
+        <!-- Carousel 8 -->
+        <div class="col-md-4 mb-4">
+          <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3840.png" alt="First slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3840 (1).png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/public/img/three-grid/Rectangle 3840 (2).png" alt="Third slide">
+              </div>
+            </div>
+            <div class="slide-indicators"></div>
           </div>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
       document.addEventListener('DOMContentLoaded', () => {
-          // Function to create slide indicators
-          function createSlideIndicators(carousel) {
-              const slideCount = carousel.querySelectorAll('.carousel-item').length;
-              const indicatorContainer = carousel.querySelector('.slide-indicators');
-              indicatorContainer.innerHTML = '';
+        // Function to create slide indicators
+        function createSlideIndicators(carousel) {
+          const slideCount = carousel.querySelectorAll('.carousel-item').length;
+          const indicatorContainer = carousel.querySelector('.slide-indicators');
+          indicatorContainer.innerHTML = '';
 
-              for (let i = 0; i < slideCount; i++) {
-                  const indicator = document.createElement('div');
-                  indicator.classList.add('slide-indicator');
-                  if (i === 0) indicator.classList.add('active');
-                  indicator.dataset.slideTo = i;
-                  indicatorContainer.appendChild(indicator);
-              }
+          for (let i = 0; i < slideCount; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('slide-indicator');
+            if (i === 0) indicator.classList.add('active');
+            indicator.dataset.slideTo = i;
+            indicatorContainer.appendChild(indicator);
           }
+        }
 
-          // Initialize slide indicators for all carousels
-          document.querySelectorAll('.carousel').forEach(createSlideIndicators);
+        // Initialize slide indicators for all carousels
+        document.querySelectorAll('.carousel').forEach(createSlideIndicators);
 
-          // Handle slide change
-          document.querySelectorAll('.carousel').forEach(carousel => {
-              carousel.addEventListener('slide.bs.carousel', (e) => {
-                  // Update slide indicators
-                  const indicators = carousel.querySelectorAll('.slide-indicator');
-                  indicators.forEach(indicator => {
-                      indicator.classList.remove('active');
-                  });
-                  indicators[e.to].classList.add('active');
+        // Handle slide change
+        document.querySelectorAll('.carousel').forEach(carousel => {
+          carousel.addEventListener('slide.bs.carousel', (e) => {
+            // Update slide indicators
+            const indicators = carousel.querySelectorAll('.slide-indicator');
+            indicators.forEach(indicator => {
+              indicator.classList.remove('active');
+            });
+            indicators[e.to].classList.add('active');
 
-                  // Reset all carousel items
-                  const carouselItems = carousel.querySelectorAll('.carousel-item');
-                  carouselItems.forEach(item => {
-                      item.classList.remove('active-white');
-                  });
+            // Reset all carousel items
+            const carouselItems = carousel.querySelectorAll('.carousel-item');
+            carouselItems.forEach(item => {
+              item.classList.remove('active-white');
+            });
 
-                  // Add white scale to active slide
-                  const activeItem = carousel.querySelector('.carousel-link.active');
-                  if (activeItem) {
-                      activeItem.classList.add('active-white');
-                  }
-              });
+            // Add white scale to active slide
+            const activeItem = carousel.querySelector('.carousel-link.active');
+            if (activeItem) {
+              activeItem.classList.add('active-white');
+            }
           });
+        });
 
-          // Click on slide indicators
-          document.querySelectorAll('.slide-indicators').forEach(container => {
-              container.addEventListener('click', (e) => {
-                  if (e.target.classList.contains('slide-indicator')) {
-                      const slideTo = parseInt(e.target.dataset.slideTo);
-                      const carousel = e.target.closest('.carousel');
-                      const carouselInstance = bootstrap.Carousel.getInstance(carousel);
-                      carouselInstance.to(slideTo);
-                  }
-              });
+        // Click on slide indicators
+        document.querySelectorAll('.slide-indicators').forEach(container => {
+          container.addEventListener('click', (e) => {
+            if (e.target.classList.contains('slide-indicator')) {
+              const slideTo = parseInt(e.target.dataset.slideTo);
+              const carousel = e.target.closest('.carousel');
+              const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+              carouselInstance.to(slideTo);
+            }
           });
+        });
       });
-  </script>
+    </script>
 
   </div>
   <!--  landin3 -->
   <div class="bg3"></div>
   <div class="cvalue"><br>
     <div class="dhnititle">
-      <p>Core Values</p>
+      <p style="color: white;">Core Values</p>
       <div class="titlehr"></div>
     </div>
     <div class="iconsvalue">
@@ -399,7 +398,7 @@
   </div>
   </div>
 
-  
+
   <!-- landing4 -->
 
   <div class="bg4">
@@ -425,8 +424,8 @@
       </div>
     </div>
   </div>
-  </div> 
-  
+  </div>
+
   <br> <br>
   <br> <br>
 

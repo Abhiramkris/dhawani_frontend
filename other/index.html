@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/public/css/style.css">
   <link rel="stylesheet" href="/public/css/timeline.css">
   <link rel="stylesheet" href="/public/css/other.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -23,8 +24,6 @@
     </div>
 
     <div class="navbar">
-      <a href="#logo" id="nav-logo-toggle"><img src="" alt="logo"></a>
-
       <!-- Hamburger Menu Toggle -->
       <div id="nav-toggle">
         <span></span>
@@ -33,12 +32,27 @@
       </div>
 
       <div class="nav-links">
-        <a href="#logo" id="nav-logo"><img src="" alt="logo"></a>
+        <a href="#logo" id="nav-logo"><img src="/public/img/Dhwani final Logo 1.png" style="height: 30px; width: 80px;"
+            alt="logo"></a>
+
         <a href="#home" class="nav-link navtextmain">Home</a>
         <a href="#about" class="nav-link navtextmain">About Us</a>
-        <a href="#services" class="nav-link navtextmain">Solutions</a>
+        <div class="dropdown" style="margin: 0px;">
+          <a href="#services" class="nav-link navtextmain dropdown-toggle">Solutions</a>
+          <div class="dropdown-menu">
+            <a href="#blogs" class="dropdown-item">Mgrant</a>
+            <a href="#case-studies" class="dropdown-item">Mform</a>
+            <a href="#case-studies" class="dropdown-item">Mlearn</a>
+          </div>
+        </div>
         <a href="#careers" class="nav-link navtextmain">Careers</a>
-        <a href="#resources" class="nav-link navtextmain">Resources</a>
+        <div class="dropdown" style="margin: 0px;">
+          <a href="#resources" class="nav-link navtextmain dropdown-toggle" id="navbar-resources">Resources</a>
+          <div class="dropdown-menu">
+            <a href="#blogs" class="dropdown-item">Blog</a>
+            <a href="#case-studies" class="dropdown-item">Newsletter</a>
+          </div>
+        </div>
         <a href="#contactus" class="nav-link navtextmain">Contact Us</a>
         <div id="nav-btn">
           <button>Book A Session</button>
@@ -47,7 +61,6 @@
 
     </div>
   </div>
-
   <div class="solutionlanding">
     <div class="solutioncontainer">
       <div class="solutiontitle">Other Solutions</div>
@@ -96,9 +109,17 @@
         <div class="dhnititle" style="text-align: left;">mFORM Web<br>
           <div class="titlehr" style="width: 10%; margin-left: 0;"></div> <br>
         </div>
-        <div class="te" style="margin-top: -20px;">mLearn is a dynamic, do-it-yourself platform tailored to meet your specific learning needs. Designed to deliver, track, and document e-learning courses, mLearn offers a customizable solution for creating engaging multimedia content, tracking progress, and setting personalized learning paths. Whether you're scaling up for larger groups or customizing content for specific users, mLearn ensures that learning is efficient, engaging, and scalable for all.
+        <div class="te" style="margin-top: -20px;">mLearn is a dynamic, do-it-yourself platform tailored to meet your
+          specific learning needs. Designed to deliver, track, and document e-learning courses, mLearn offers a
+          customizable solution for creating engaging multimedia content, tracking progress, and setting personalized
+          learning paths. Whether you're scaling up for larger groups or customizing content for specific users, mLearn
+          ensures that learning is efficient, engaging, and scalable for all.
           <br>
-          mLearn is a mobile-based Learning Management System (LMS) designed for cadre teams like ASHAs, ANMs, Bank Sakhis, and Pashu Sakhis. This highly configurable tool enables NGOs to quickly deliver, track, and document educational courses. Through standardized content delivery, assessments, and progress tracking, NGOs can ensure consistent training across all teams. The platform also provides insights into trainee behavior, helping identify areas for improvement.
+          mLearn is a mobile-based Learning Management System (LMS) designed for cadre teams like ASHAs, ANMs, Bank
+          Sakhis, and Pashu Sakhis. This highly configurable tool enables NGOs to quickly deliver, track, and document
+          educational courses. Through standardized content delivery, assessments, and progress tracking, NGOs can
+          ensure consistent training across all teams. The platform also provides insights into trainee behavior,
+          helping identify areas for improvement.
         </div>
       </div>
     </div> <br> <br>
@@ -110,13 +131,16 @@
         <div class="titlehr"></div> <br>
       </div>
 
-      <div style="display: flex; flex-wrap: wrap; width: 95%; height: 500px; margin: auto; gap: 30px; align-items: center; justify-content: center;">
+      <div
+        style="display: flex; flex-wrap: wrap; width: 95%; height: 500px; margin: auto; gap: 30px; align-items: center; justify-content: center;">
 
         <div style="display: flex;width:30%; height: 40%;">
           <div class="mformimg" style="width: 35%;"></div>
           <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
             <h3 style="margin-left: 10px; margin-top: 20px;">Error & Inconsistencies</h3>
-            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Difference in data quality and accuracy at the time of collection due to duplication of questions, lengthy forms and mistakes in filling of data can hamper data. </h5>
+            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Difference in data quality and accuracy at
+              the time of collection due to duplication of questions, lengthy forms and mistakes in filling of data can
+              hamper data. </h5>
           </div>
         </div>
 
@@ -124,7 +148,9 @@
           <div class="mformimg" style="width: 35%;"></div>
           <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
             <h3 style="margin-left: 10px; margin-top: 20px;">Surveyors Management</h3>
-            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Tracking the activities and accurately calculating the effort of the surveyors can be difficult. Moreover, Surveyors can’t manage and monitor their own data. </h5>
+            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Tracking the activities and accurately
+              calculating the effort of the surveyors can be difficult. Moreover, Surveyors can’t manage and monitor
+              their own data. </h5>
           </div>
         </div>
 
@@ -132,7 +158,9 @@
           <div class="mformimg" style="width: 35%;"></div>
           <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
             <h3 style="margin-left: 10px; margin-top: 20px;">Data Loss</h3>
-            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;"> Differences in data quality and accuracy at the time of collection due to duplication of questions, lengthy forms, and mistakes in filling of data can hamper the process.</h5>
+            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;"> Differences in data quality and accuracy
+              at the time of collection due to duplication of questions, lengthy forms, and mistakes in filling of data
+              can hamper the process.</h5>
           </div>
         </div>
 
@@ -140,7 +168,8 @@
           <div class="mformimg" style="width: 35%;"></div>
           <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66">
             <h3 style="margin-left: 10px; margin-top: 20px;">Fragmented Data</h3>
-            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Lack of standardized practices across organisations can cause data to be fragmented and organizing legacy data is also challenging.</h5>
+            <h5 style="margin-left: 10px; color: #53435B; font-weight: 500;">Lack of standardized practices across
+              organisations can cause data to be fragmented and organizing legacy data is also challenging.</h5>
           </div>
         </div>
 
@@ -255,27 +284,27 @@
     </div>
 
     <script src="/public/js/time.js"></script>
-    
-    </div>
+
+  </div>
 
 
 
-    <div id="tab2" class="tab-content">
-      <h2>Moodle Content</h2>
-      <p>Details about Moodle.</p>
-    </div>
+  <div id="tab2" class="tab-content">
+    <h2>Moodle Content</h2>
+    <p>Details about Moodle.</p>
+  </div>
 
 
-    <div id="tab3" class="tab-content">
-      <h2>Zoho Trainer Central Content</h2>
-      <p>Details about Zoho Trainer Central.</p>
-    </div>
+  <div id="tab3" class="tab-content">
+    <h2>Zoho Trainer Central Content</h2>
+    <p>Details about Zoho Trainer Central.</p>
+  </div>
 
 
-    <div id="tab4" class="tab-content">
-      <h2>Frappe LMS Content</h2>
-      <p>Details about Frappe LMS.</p>
-    </div>
+  <div id="tab4" class="tab-content">
+    <h2>Frappe LMS Content</h2>
+    <p>Details about Frappe LMS.</p>
+  </div>
   </div>
 
 
@@ -286,8 +315,17 @@
 
   </div>
 
+  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"
+    onload="resizeIframe(this)"></iframe>
+
+  <script>
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
 
 </body>
+<script src="/public/js/navbar.js"></script>
 <script src="/public/js/other.js"></script>
 
 </html>

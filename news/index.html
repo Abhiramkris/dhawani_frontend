@@ -7,6 +7,7 @@
   <title>Newsletter</title>
   <link rel="stylesheet" href="/public/css/newstyles.css">
   <link rel="stylesheet" href="/public/css/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,12 +28,27 @@
       </div>
 
       <div class="nav-links">
-        <a href="#logo" id="nav-logo"><img src="" alt="logo"></a>
+        <a href="#logo" id="nav-logo"><img src="/public/img/Dhwani final Logo 1.png" style="height: 30px; width: 80px;"
+            alt="logo"></a>
+
         <a href="#home" class="nav-link navtextmain">Home</a>
         <a href="#about" class="nav-link navtextmain">About Us</a>
-        <a href="#services" class="nav-link navtextmain">Solutions</a>
+        <div class="dropdown" style="margin: 0px;">
+          <a href="#services" class="nav-link navtextmain dropdown-toggle">Solutions</a>
+          <div class="dropdown-menu">
+            <a href="#blogs" class="dropdown-item">Mgrant</a>
+            <a href="#case-studies" class="dropdown-item">Mform</a>
+            <a href="#case-studies" class="dropdown-item">Mlearn</a>
+          </div>
+        </div>
         <a href="#careers" class="nav-link navtextmain">Careers</a>
-        <a href="#resources" class="nav-link navtextmain">Resources</a>
+        <div class="dropdown" style="margin: 0px;">
+          <a href="#resources" class="nav-link navtextmain dropdown-toggle" id="navbar-resources">Resources</a>
+          <div class="dropdown-menu">
+            <a href="#blogs" class="dropdown-item">Blog</a>
+            <a href="#case-studies" class="dropdown-item">Newsletter</a>
+          </div>
+        </div>
         <a href="#contactus" class="nav-link navtextmain">Contact Us</a>
         <div id="nav-btn">
           <button>Book A Session</button>
@@ -41,7 +57,6 @@
 
     </div>
   </div>
-
   <div class="newsletter-container">
     <div class="left-container">
       <h1>Newsletter</h1>
@@ -125,6 +140,16 @@
 
     init();
   </script>
+
+  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"
+    onload="resizeIframe(this)"></iframe>
+
+  <script>
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
+
   <script src="/public/js/navbar.js"></script>
 </body>
 
