@@ -229,7 +229,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     background-color: rgba(247, 226, 209, 1);
 }
 
@@ -279,8 +279,8 @@ body {
 
 .grand-img-bg {
     margin: 10%;
-    height: 80%;
-    width: 80%;
+    height: 300px;
+    width: 300px;
     background-color: rgba(245, 134, 52, 1);
     border-radius: 5%;
 
@@ -312,12 +312,15 @@ body {
     }
 
     .top3-cont {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .mid-topbox-cont {
         column-gap: 15%;
         flex-wrap: wrap;
+    }
+    .mid-cont-group{
+        display: none;
     }
 }
 
@@ -332,11 +335,13 @@ body {
 
 .mid-topbox-cont {
     height: 20vh;
-    display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 #first-midbox {
@@ -344,18 +349,19 @@ body {
 }
 
 .mid-boxes {
-    flex-wrap: wrap;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    height: 80%;
-    width: 15%;
+    height: 60px;
+    width: 200px;
+    min-width: 100px;
     border: 2px solid;
-    font-weight: 600;
+    font-weight: 300;
     color: rgba(83, 67, 91, 1);
     border-color: rgba(245, 134, 52, 1);
+    text-align: center;
     border-radius: 10px;
+    padding-top: 10px;
 }
 
 .mid-cont {
@@ -375,4 +381,5 @@ body {
 .top-story-cont {
     width: 200px;
     height: 100px;
+}
 }
