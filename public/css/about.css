@@ -5,7 +5,7 @@
 }
 
 .landingcontainer {
-    width: 80%;
+    width: 100%;
     height: 40%;
     display: flex;
     margin: auto;
@@ -17,7 +17,8 @@
 .storycont {
     margin-top: 30px;
     margin-right: auto;
-    scale: .8;
+    scale: 1;
+    width: 100%;
 }
 
 .text1 {
@@ -46,23 +47,25 @@
 
 .story2 {
     margin-top: -30px;
-    margin-left: 280px;
+    margin-left: 200px;
 }
 
 .storycontent {
     margin-left: 2%;
     max-width: 60%;
-    margin-top: 45px;
+    margin-top: 15px;
+
 }
 
 
 .landimg2 {
     background-image: url("/public/img/aboyt2.png");
-    width: 800px;
+    width: 30%;
     background-position: -45px center;
     background-size: 122%;
     height: 200px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .bg2 {
@@ -162,15 +165,14 @@
 }
 
 @media(max-width:1084px) {
-    .titlehr {}
+
 
 
     .dhnititle p {
         font-size: 10px;
     }
 
-    .cvalue {}
-
+   
 
     .iconsvalue {
         display: flex;
@@ -231,11 +233,15 @@
     margin-top: 5%;
 }
 
-#quotes-logo {
+.qq {
     color: white;
     flex: 0.2 0.2 10%;
     height: 30%;
     width: 30%;
+    margin-top: -80px;
+}
+.andi1{
+    padding-top: 20px;
 }
 
 .bix2 {
@@ -273,28 +279,24 @@
         margin-top: 0;
         margin: 10%;
     }
-
-    .bix1 {
-        height: auto;
-        order: 1;
+    .bg4{
+        flex-direction: column;
     }
 
-    .bix2 {
-        order: 3;
+    #dialougs2{
+        padding-top: -100px;
     }
-
-    .bix3 {
-        position: relative;
-        top: -120px;
-        order: 2;
+    .qq{
+    scale: .4;
+    margin-top: -100px;
+    display: none;
     }
-
-    .bix1,
-    .bix3 {
-        margin: 10%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    
+    #dialougs1{
+        padding-top: 10px;
+    }
+    .andi1{
+        margin-left: 20px;
     }
 }
 
@@ -374,38 +376,39 @@
         padding-bottom: 10px;
     }
 
-    .story1,
-    .story2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.storycont{
+    scale: .7;
+}
 
-    .landimg1 {
-        margin-top: -100px;
-        height: 40vh;
-        width: 100vw;
-        background-size: cover;
-    }
 
-    .landimg2 {
-        margin-top: 20%;
-        width: 100vw;
-        height: 30vh;
-        background-size: cover;
 
-    }
+}
 
-    .storycontent {
-        padding: 20px;
-        max-width: 90%;
-        /* Let text fill the width */
-        text-align: center;
-        /* Optional: Center-align for aesthetics */
-        margin-top: 20px;
-    }
+@media(max-width:890px) {
 
-    .story2 {
-        margin-left: 0px;
-    }
+.story1{
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: -170px;
+    width: 100vw;
+}
+
+.story2{
+    display: none;
+}
+
+
+.storycontent{
+    width: 100vw;
+}
+.landimg1{
+    width: 80%;
+    height: 300px;
+}
+.landingcontainer{
+    height: 100%;
+    width: 100%;
+}
 }
