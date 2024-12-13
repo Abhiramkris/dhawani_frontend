@@ -373,11 +373,33 @@ body {
 
 .rightimpact {
     height: 400px;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
+.leftimpact1 {
+    height: 400px;
+    /* Full height of leftimpact */
+    width: 30%;
+    background-color: aqua;
+    position: relative;
+    /* Needed for the hover-content to position inside */
+    overflow: hidden;
+    /* Ensures hover-content doesn’t spill outside */
+}
+
+.rightimpact1 {
+    height: 400px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
 
 .impactimg {
     position: relative;
