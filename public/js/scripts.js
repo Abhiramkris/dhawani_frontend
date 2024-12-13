@@ -328,5 +328,45 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".countelement");
 
+    const startCounting = (counter) => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const current = +counter.innerText;
+
+        // Speed of the animation
+        const increment = target / 90; // Adjust divisor to control speed
+
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCount, 10); // Delay in ms
+        } else {
+          counter.innerText = target + "+"; // Append "+" after reaching the target
+        }
+      };
+
+      updateCount();
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startCounting(entry.target);
+          observer.unobserve(entry.target); // Stop observing once the animation starts
+        }
+      });
+    };
+
+    const observerOptions = {
+      threshold: 0.5, // Trigger when 50% of the element is visible
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    counters.forEach((counter) => {
+      observer.observe(counter);
+    });
+  });
 
