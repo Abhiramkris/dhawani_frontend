@@ -737,22 +737,21 @@ li::before {
     }
 }
 
-
 .marquee {
+    margin-top: 10%;
     display: flex;
-    margin-top: 70px;
+    position: relative;
     width: 100%;
     overflow: hidden;
     background: #fff;
     padding: 10px 0;
-    position: relative;
 }
 
 .marquee-content {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     /* Space between logos */
-    animation: scroll 10s linear infinite;
+    animation: scroll 5s linear infinite;
 }
 
 .marquee-content img {
@@ -763,12 +762,21 @@ li::before {
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
+        /* Moves exactly half the total width */
     }
+}
+
+/* Duplicate content using pseudo-elements for seamless looping */
+.marquee-content::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    /* Duplicate the content */
 }
 
 /* Blur Layers */
@@ -777,7 +785,6 @@ li::before {
     top: 0;
     height: 100%;
     width: 50px;
-    /* Adjust width of the blur */
     z-index: 2;
     pointer-events: none;
 }
