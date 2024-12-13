@@ -418,6 +418,9 @@
 }
 
 @media(max-width:890px) {
+    .aboutcarousel {
+        scale: .8;
+    }
 
     .story1 {
         flex-direction: column;
