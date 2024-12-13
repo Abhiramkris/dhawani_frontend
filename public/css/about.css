@@ -5,10 +5,9 @@
 }
 
 .landingcontainer {
-    width: 80%;
     height: 40%;
     display: flex;
-    margin: auto;
+    margin-left: -5%;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -18,6 +17,7 @@
     margin-top: 30px;
     margin-right: auto;
     scale: .8;
+
 }
 
 .text1 {
@@ -33,7 +33,10 @@
     border-radius: 20px;
     background-size: 110%;
     object-fit: cover;
+    border: none;
 }
+
+
 
 .story1,
 .story2 {
@@ -47,8 +50,9 @@
 }
 
 .story2 {
+    width: 100%;
     margin-top: -30px;
-    margin-left: 280px;
+    margin-left: 250px;
 }
 
 .storycontent {
@@ -103,6 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 /* Position the control buttons below the carousels */
@@ -112,6 +117,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+    padding: 10%;
     top: 20px;
     z-index: 10;
 }
@@ -180,7 +186,10 @@
 .cvalue {
     color: white;
     width: 100%;
-    height: 43.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45.5vh;
     background-image: url(/public/img/codifyformatter\ \(1\).png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -239,6 +248,7 @@
     align-items: end;
     border: 1px solid;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 
@@ -246,12 +256,11 @@
 
 .bix1 {
     display: flex;
-    flex-direction: column;
+    margin: 10px;
     flex-wrap: nowrap;
     padding: 4%;
-    padding-top: 10%;
     flex: 1 1 32%;
-    height: 400px;
+    height: 4 00px;
     color: white;
     box-sizing: border-box;
     margin-top: 5%;
@@ -306,11 +315,11 @@
     }
 
     .bix2 {
+        display: none;
         order: 3;
     }
 
     .bix3 {
-        position: relative;
         top: -120px;
         order: 2;
     }
@@ -420,7 +429,11 @@
     }
 
     .story2 {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+        margin-top: 8%;
     }
 
 
@@ -433,7 +446,14 @@
         height: 300px;
     }
 
+    .landimg2 {
+        transform: scale(1);
+        width: 80%;
+        height: 300px;
+    }
+
     .landingcontainer {
+        margin-left: 0%;
         height: 100%;
         width: 100%;
     }
