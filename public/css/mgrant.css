@@ -194,7 +194,6 @@ body {
 .keycard h8 {
     position: absolute;
     font-size: 12px;
-    width: 30%;
     text-align: left;
 }
 
@@ -507,7 +506,7 @@ body {
 
 
 .solcard {
-    padding-top: 10%;
+    padding-top: 1%;
     background-color: #F7E2D1;
     width: 100%;
     gap: 100px;
@@ -724,11 +723,12 @@ li::before {
     overflow: hidden;
     background: #fff;
     padding: 10px 0;
+    position: relative;
 }
 
 .marquee-content {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     /* Space between logos */
     animation: scroll 10s linear infinite;
 }
@@ -747,4 +747,25 @@ li::before {
     100% {
         transform: translateX(-100%);
     }
+}
+
+/* Blur Layers */
+.blur-layer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    /* Adjust width of the blur */
+    z-index: 2;
+    pointer-events: none;
+}
+
+.blur-layer.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.blur-layer.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }

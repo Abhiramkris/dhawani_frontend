@@ -5,7 +5,7 @@
 }
 
 .landingcontainer {
-    width: 100%;
+    width: 80%;
     height: 40%;
     display: flex;
     margin: auto;
@@ -17,8 +17,7 @@
 .storycont {
     margin-top: 30px;
     margin-right: auto;
-    scale: 1;
-    width: 100%;
+    scale: .8;
 }
 
 .text1 {
@@ -26,9 +25,11 @@
 }
 
 .landimg1 {
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url("/public/img/about1.png");
-    width: 30%;
-    height: 200px;
+    width: 60%;
+    height: 250px;
     border-radius: 20px;
     background-size: 110%;
     object-fit: cover;
@@ -47,18 +48,21 @@
 
 .story2 {
     margin-top: -30px;
-    margin-left: 200px;
+    margin-left: 280px;
 }
 
 .storycontent {
     margin-left: 2%;
     max-width: 60%;
-    margin-top: 15px;
-
+    margin-top: 45px;
 }
 
 
 .landimg2 {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.18);
     background-image: url("/public/img/aboyt2.png");
     width: 30%;
     background-position: -45px center;
@@ -69,6 +73,7 @@
 }
 
 .bg2 {
+    padding: 100px;
     background-color: #F7E2D1;
 
 }
@@ -94,16 +99,33 @@
 
 }
 
+#central-link-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Position the control buttons below the carousels */
 .carousel-controls {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     position: relative;
     top: 20px;
     z-index: 10;
 }
 
+.carousel-link {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
 .carousel-control-btn {
+    display: flex;
+
+    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
     /* Semi-transparent background */
     border: none;
@@ -169,10 +191,12 @@
 
 
     .dhnititle p {
+        margin-top: -20px;
         font-size: 10px;
     }
 
-   
+    .cvalue {}
+
 
     .iconsvalue {
         display: flex;
@@ -180,15 +204,15 @@
         margin: auto;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: -10px;
     }
 
     .icoon {
-        transform: scale(0.4);
+        transform: scale(0.3);
         display: flex;
         flex-wrap: wrap;
-        width: 50px;
-        height: 1px;
+        width: 40px;
+        height: 5px;
     }
 
     .icoon p {
@@ -233,15 +257,11 @@
     margin-top: 5%;
 }
 
-.qq {
+#quotes-logo {
     color: white;
     flex: 0.2 0.2 10%;
     height: 30%;
     width: 30%;
-    margin-top: -80px;
-}
-.andi1{
-    padding-top: 20px;
 }
 
 .bix2 {
@@ -279,24 +299,28 @@
         margin-top: 0;
         margin: 10%;
     }
-    .bg4{
-        flex-direction: column;
+
+    .bix1 {
+        height: auto;
+        order: 1;
     }
 
-    #dialougs2{
-        padding-top: -100px;
+    .bix2 {
+        order: 3;
     }
-    .qq{
-    scale: .4;
-    margin-top: -100px;
-    display: none;
+
+    .bix3 {
+        position: relative;
+        top: -120px;
+        order: 2;
     }
-    
-    #dialougs1{
-        padding-top: 10px;
-    }
-    .andi1{
-        margin-left: 20px;
+
+    .bix1,
+    .bix3 {
+        margin: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
@@ -376,9 +400,9 @@
         padding-bottom: 10px;
     }
 
-.storycont{
-    scale: .7;
-}
+    .storycont {
+        scale: .7;
+    }
 
 
 
@@ -386,29 +410,31 @@
 
 @media(max-width:890px) {
 
-.story1{
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    margin-top: -170px;
-    width: 100vw;
-}
+    .story1 {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        margin-top: -170px;
+        width: 100vw;
+    }
 
-.story2{
-    display: none;
-}
+    .story2 {
+        display: none;
+    }
 
 
-.storycontent{
-    width: 100vw;
-}
-.landimg1{
-    width: 80%;
-    height: 300px;
-}
-.landingcontainer{
-    height: 100%;
-    width: 100%;
-}
+    .storycontent {
+        width: 100vw;
+    }
+
+    .landimg1 {
+        width: 80%;
+        height: 300px;
+    }
+
+    .landingcontainer {
+        height: 100%;
+        width: 100%;
+    }
 }
