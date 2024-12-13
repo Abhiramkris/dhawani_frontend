@@ -406,9 +406,9 @@ html{
 
 .mainland{
     background-color: rgb(0, 255, 68); 
-    height: 104vh; 
+    height: 101vh; 
     width: 100%; 
-    margin-top: -135px;
+    margin-top: -110px;
 }
 
 .contentcontainer h3{
@@ -503,4 +503,41 @@ html{
     width: 90%;
     color: #53435B;
     font-weight: 400;
+    font-size: 15px;
+    padding-top:20px;
+}
+
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    animation: moveLogo 5s linear infinite;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.active-tab {
+    background-color: #f39c12;
+    color: white;
+}
+
+@keyframes moveLogo {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.cl{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.cl button{
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    border: ;
 }

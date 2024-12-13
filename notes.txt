@@ -48,3 +48,171 @@ ftpupload.net
 vRmBmdyEbj7
 
 
+    animation: moveLogo 5s linear infinite;
+
+@keyframes moveLogo {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline Selector</title>
+    <style>
+        .feacont {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .selector {
+            display: flex;
+            flex-direction: column;
+        }
+        .selectorcard {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+        }
+        .selectorcard.active {
+            background-color: #f0f0f0;
+        }
+        .changingcont {
+            display: none;
+        }
+        .changingcont.active {
+            display: block;
+        }
+        .timeline-item {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.5s ease;
+        }
+        .timeline-item.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .progress-line {
+            height: 2px;
+            background-color: #orange;
+        }
+    </style>
+</head>
+<body>
+<div class="feacont">
+    <div class="selector">
+        <div class="selectorcard active" onclick="showContainer('container1', this)">Hello</div>
+        <div class="selectorcard" onclick="showContainer('container2', this)">Second</div>
+        <div class="selectorcard" onclick="showContainer('container3', this)">Third</div>
+        <div class="selectorcard" onclick="showContainer('container4', this)">Fourth</div>
+        <div class="selectorcard" onclick="showContainer('container5', this)">Fifth</div>
+    </div>
+
+    <div class="selector2">
+        <div class="changingcont active" id="container1">
+            <div class="selectorimg" style="background-image: url('/public/img/ff.png');"></div>
+            <div class="selectorbullet">
+                <div class="timeline">
+                    <div class="timeline-item" id="item1">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Floating request for proposals</p>
+                    </div>
+                    <div class="timeline-item" id="item2">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Conducting due diligence</p>
+                    </div>
+                    <div class="timeline-item" id="item3">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Add team members and partners</p>
+                    </div>
+                    <div class="timeline-item" id="item4">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Program and admin budget template</p>
+                    </div>
+                    <div class="timeline-item" id="item5">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Budget templates</p>
+                    </div>
+                    <div class="progress-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="changingcont" id="container2">
+            <div class="selectorimg">Image 2</div>
+            <div class="selectorbullet">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Second Container Timeline Item 1</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                        <p>Second Container Timeline Item 2</p>
+                    </div>
+                    <div class="progress-line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other containers follow similar structure -->
+        <div class="changingcont" id="container3"></div>
+        <div class="changingcont" id="container4"></div>
+        <div class="changingcont" id="container5"></div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const timelines = document.querySelectorAll(".timeline");
+    
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const timeline = entry.target;
+                    const timelineItems = timeline.querySelectorAll(".timeline-item");
+
+                    timeline.classList.add("animate");
+
+                    timelineItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add("active");
+                        }, index * 500); // 500ms delay between items
+                    });
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    timelines.forEach(timeline => observer.observe(timeline));
+});
+
+function showContainer(containerId, clickedCard) {
+    // Hide all containers
+    const containers = document.querySelectorAll('.changingcont');
+    containers.forEach(container => container.classList.remove('active'));
+
+    // Show the targeted container
+    const targetContainer = document.getElementById(containerId);
+    if (targetContainer) {
+        targetContainer.classList.add('active');
+    }
+
+    // Remove active class from all cards
+    const cards = document.querySelectorAll('.selectorcard');
+    cards.forEach(card => card.classList.remove('active'));
+
+    // Add active class to the clicked card
+    clickedCard.classList.add('active');
+}
+</script>
+</body>
+</html>
+

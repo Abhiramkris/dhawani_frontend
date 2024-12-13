@@ -257,7 +257,7 @@ body {
 }
 
 .selectorcard {
-    width: 60%;
+    width: 40%;
     height: 90px;
     margin: auto;
     background-color: white;
@@ -297,8 +297,6 @@ body {
     background-repeat: no-repeat;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-
 
 
 .usecase {

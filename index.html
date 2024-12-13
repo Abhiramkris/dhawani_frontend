@@ -99,7 +99,7 @@
     <h3>We help social organizations go digital with custom tech solutions designed to support their vision.</h3>
   </div>
 
-
+<br>
   <div class="dhnititle" style="font-size: 40px;">Our Services<br>
     <div class="titlehr" style="width: 5%;"></div><br>
   </div>
@@ -152,7 +152,7 @@
     <div class="top3-cont">
       <div class="top3-left">
         <div class="top3-left-top">
-          <div class="dhnititle" style="font-size: 30px; text-align: left;">Impact & Outreach<br>
+          <div class="dhnititle" style="font-size: 40px; text-align: left;">Impact & Outreach<br>
             <div class="titlehr" style="width: 20%; margin-left: 0;"></div><br>
           </div>
         </div>
@@ -205,11 +205,72 @@
     </div>
   </div>
 
+  <div class="cl">
+    <button onclick="showLogos('tab1')">Tab 1</button>
+    <button onclick="showLogos('tab2')">Tab 2</button>
+    <button onclick="showLogos('tab3')">Tab 3</button>
+    <button onclick="showLogos('tab4')">Tab 4</button>
+    <button onclick="showLogos('tab5')">Tab 5</button>
+    <button onclick="showLogos('tab6')">Tab 6</button>
+</div>
+
+<div class="logo-container" id="logo-container" style="margin-top: 40px;">
+    <!-- Logos will be dynamically shown here -->
+</div>
+
+  
+
+    <script>
+  function showLogos(tabId) {
+    const logoContainer = document.getElementById('logo-container');
+    logoContainer.innerHTML = ''; // Clear previous logos
+
+    // Define logos for each tab
+    const logos = {
+        tab1: ['logo1.png', 'logo2.png', 'logo3.png'],
+        tab2: ['logo4.png', 'logo5.png', 'logo6.png'],
+        tab3: ['logo7.png', 'logo8.png', 'logo9.png'],
+        tab4: ['logo10.png', 'logo11.png', 'logo12.png'],
+        tab5: ['logo13.png', 'logo14.png', 'logo15.png'],
+        tab6: ['logo16.png', 'logo17.png', 'logo18.png']
+    };
+
+    // Add logos dynamically
+    logos[tabId].forEach(logo => {
+        const img = document.createElement('img');
+        img.src = logo;
+        img.alt = 'Company Logo';
+        img.className = 'logo';
+        logoContainer.appendChild(img);
+    });
+
+    // Highlight the active tab
+    const buttons = document.querySelectorAll('.cl button');
+    buttons.forEach(button => button.classList.remove('active-tab'));
+    document.querySelector(`[onclick="showLogos('${tabId}')"]`).classList.add('active-tab');
+}
+
+// Make Tab 1 active by default on page load
+window.onload = () => {
+    showLogos('tab1');
+};
+
+    </script>
+
+
+<br> <br>
 
 
   <!-- after grandma  -->
 
-
+  
+  <div class=" keyfeatures" style="background-color: white;">
+    <div class="dhnititle" style="font-size: 40px; background-color: white; margin-top: -70px;">Stories of change<br>
+      <div class="titlehr" style="width: 5%;"></div><br>
+    </div>
+    <div class="dhnisub" style="margin-top: -30px; background-color: white; font-size: 18px; margin-bottom: 50px;">Our solutions speak for themselves.  We strive to generate impact by strengthening the core of social impact organisations through comprehensive Information and Communication Technology solutions (ICT). Our tailor - made solutions have helped 2.5 million end users in the development sector so far, and we are constantly endeavouring for more.
+    </div>
+  </div>
 
   <div class="impact" style="width: 80%; position: relative;">
 
@@ -259,10 +320,24 @@
     <div class="midimpact">
 
 
+   
+
     </div>
 
     <div class="midmidimpact" style="position: absolute; width: 72%; height: 200px; background-color: black; top: 420px; left: 0;">
 
+      <div class="impactimg impactimg3" style="background-image:url(/public/img/834bb1ebc3924d4860c355b283d11181.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="hover-content" style="background-color: rgba(245, 134, 52, 0.85);">
+          <span class="hover-text">Godrej Group CSR</span>
+          <div class="points-in">
+            <li class="hover-points">Built a complete platform to manage all their CSR projects across 5 group
+              companies
+            </li>
+            <li class="hover-points">NGO management and ensuring MIS (Management Information System) compliance</li>
+
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>

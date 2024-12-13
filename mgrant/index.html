@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="/public/css/style.css">
   <link rel="stylesheet" href="/public/css/timeline.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  <<<<<<< Updated upstream <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"=======<href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">>>>>>> Stashed changes
     rel="stylesheet">
 </head>
 <style>
@@ -42,8 +42,7 @@
       </div>
 
       <div class="nav-links">
-        <a href="#logo" id="nav-logo"><img src="/public/img/Dhwani final Logo 1.png" style="height: 30px; width: 80px;"
-            alt="logo"></a>
+        <a href="#logo" id="nav-logo"><img src="/public/img/Dhwani final Logo 1.png" style="height: 30px; width: 80px;" alt="logo"></a>
 
         <a href="#home" class="nav-link navtextmain">Home</a>
         <a href="#about" class="nav-link navtextmain">About Us</a>
@@ -197,97 +196,122 @@
       </div> <br> <br>
       <div class="feacont">
         <div class="selector">
-          <div class="selectorcard active" onclick="showcontainer('container1',this)">Hello</div>
-          <div class="selectorcard" onclick="showcontainer('container2',this)"></div>
-          <div class="selectorcard" onclick="showcontainer('container3',this)"></div>
-          <div class="selectorcard" onclick="showcontainer('container4',this)"></div>
-          <div class="selectorcard" onclick="showcontainer('container5',this)"></div>
+            <div class="selectorcard active" onclick="showContainer('container1', this)">Hello</div>
+            <div class="selectorcard" onclick="showContainer('container2', this)">Second</div>
+            <div class="selectorcard" onclick="showContainer('container3', this)">Third</div>
+            <div class="selectorcard" onclick="showContainer('container4', this)">Fourth</div>
+            <div class="selectorcard" onclick="showContainer('container5', this)">Fifth</div>
         </div>
-
+    
         <div class="selector2">
-          <div class="changingcont active" id="container1">
-            <div class="selectorimg" style="background-image: url('/public/img/ff.png');"></div>
-            <div class="selectorbullet">
-              <div class="timeline">
-                <div class="timeline-item" id="item1">
-                  <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
-                  <p>Floating request for proposals</p>
+            <div class="changingcont active" id="container1">
+                <div class="selectorimg" style="background-image: url('/public/img/ff.png');"></div>
+                <div class="selectorbullet">
+                    <div class="timeline">
+                        <div class="timeline-item" id="item1">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Floating request for proposals</p>
+                        </div>
+                        <div class="timeline-item" id="item2">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Conducting due diligence</p>
+                        </div>
+                        <div class="timeline-item" id="item3">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Add team members and partners</p>
+                        </div>
+                        <div class="timeline-item" id="item4">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Program and admin budget template</p>
+                        </div>
+                        <div class="timeline-item" id="item5">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Budget templates</p>
+                        </div>
+                        <div class="progress-line"></div>
+                    </div>
                 </div>
-                <div class="timeline-item" id="item2">
-                  <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
-                  <p>Conducting due diligence</p>
+            </div>
+    
+            <div class="changingcont" id="container2">
+                <div class="selectorimg">Image 2</div>
+                <div class="selectorbullet">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Second Container Timeline Item 1</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                            <p>Second Container Timeline Item 2</p>
+                        </div>
+                        <div class="progress-line"></div>
+                    </div>
                 </div>
-                <div class="timeline-item" id="item3">
-                  <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
-                  <p>Add team members and partners</p>
-                </div>
-                <div class="timeline-item" id="item4">
-                  <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
-                  <p>Program and admin budget template</p>
-                </div>
-                <div class="timeline-item" id="item5">
-                  <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
-                  <p>Budget templates</p>
-                </div>
-                <div class="progress-line"></div>
+            </div>
+    
+            <!-- Other containers follow similar structure -->
+            <div class="changingcont" id="container3">
+              <div class="selectorimg">Image 3</div>
+              <div class="selectorbullet">
+                  <div class="timeline">
+                      <div class="timeline-item">
+                          <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                          <p>Second Container Timeline Item 1</p>
+                      </div>
+                      <div class="timeline-item">
+                          <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                          <p>Second Container Timeline Item 2</p>
+                      </div>
+                      <div class="progress-line"></div>
+                  </div>
+              </div>
+
+            </div>
+            <div class="changingcont" id="container4">
+
+              <div class="selectorimg">Image 4</div>
+              <div class="selectorbullet">
+                  <div class="timeline">
+                      <div class="timeline-item">
+                          <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                          <p>Second Container Timeline Item 1</p>
+                      </div>
+                      <div class="timeline-item">
+                          <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                          <p>Second Container Timeline Item 2</p>
+                      </div>
+                      <div class="progress-line"></div>
+                  </div>
               </div>
             </div>
-          </div>
+            <div class="changingcont" id="container5">
 
-
-          <div class="changingcont" id="container2">
-            <div class="selectorimg">img1</div>
-            <div class="selectorbullet">
-              <div class="timeline">
-                <div class="timeline-item" id="item1">
-                  <div class="icon"></div>
-                  <p>Floating request for proposals</p>
-                </div>
-                <div class="timeline-item" id="item2">
-                  <div class="icon"></div>
-                  <p>Conducting due diligence</p>
-                </div>
-                <div class="timeline-item" id="item3">
-                  <div class="icon"></div>
-                  <p>Add team members and partners</p>
-                </div>
-                <div class="timeline-item" id="item4">
-                  <div class="icon"></div>
-                  <p>Program and admin budget template</p>
-                </div>
-                <div class="timeline-item" id="item5">
-                  <div class="icon"></div>
-                  <p>Budget templates</p>
-                </div>
-                <div class="progress-line"></div>
+              <div class="selectorimg">Image 5</div>
+              <div class="selectorbullet">
+                  <div class="timeline">
+                      <div class="timeline-item">
+                          <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                          <p>Second Container Timeline Item 1</p>
+                      </div>
+                      <div class="timeline-item">
+                          <div class="icon"><img src="/public/img/Orange bullet.svg" alt=""></div>
+                          <p>Second Container Timeline Item 2</p>
+                      </div>
+                      <div class="progress-line"></div>
+                  </div>
               </div>
             </div>
-          </div>
-
-
         </div>
+    </div>
 
 
-        <div class="changingcont" id="container2">
-          <div class="selectorimg">img2</div>
-          <div class="selectorbullet"></div>
-        </div>
+      
+        
 
-        <div class="changingcont" id="container3">
-          <div class="selectorimg"></div>
-          <div class="selectorbullet"></div>
-        </div>
+      
 
-        <div class="changingcont" id="container4">
-          <div class="selectorimg"></div>
-          <div class="selectorbullet"></div>
-        </div>
-
-        <div class="changingcont" id="container5">
-          <div class="selectorimg"></div>
-          <div class="selectorbullet"></div>
-        </div>
-      </div>
+        
 
       <script src="/public/js/time.js"></script>
 
@@ -300,39 +324,33 @@
     <div class="titlehr"></div> <br>
   </div>
   <div class="usecase">
-    <div class="imgusecase"
-      style="background-image: linear-gradient(45deg,
+    <div class="imgusecase" style="background-image: linear-gradient(45deg,
     rgba(0, 0, 0, 0.356),
       rgba(0, 0, 0, 0.356)), url('/public/img/c8ac02981f8ad443c1061cf097f019a3.png'); background-size: cover; background-repeat: no-repeat; background-position: center ; ">
       <div class="contentusecase">
         Student Learning & Assessments</div>
     </div>
-    <div class="imgusecase"
-      style="background-image:linear-gradient(45deg,
+    <div class="imgusecase" style="background-image:linear-gradient(45deg,
       rgba(0, 0, 0, 0.356),
         rgba(0, 0, 0, 0.356)), url(/public/img/517f75f04f4a1540d9b95c273ec46e7e.png);  background-size: cover; background-repeat: no-repeat; background-position: center ;">
       <div class="contentusecase">Malnutrition Tracking & Reporting</div>
     </div>
-    <div class="imgusecase"
-      style="background-image:linear-gradient(45deg,
+    <div class="imgusecase" style="background-image:linear-gradient(45deg,
       rgba(0, 0, 0, 0.356),
         rgba(0, 0, 0, 0.356)), url(/public/img/bc7ad65e07ea0fceb5a12b1b7ab06db4.png);  background-size: cover; background-repeat: no-repeat; background-position: center ;">
       <div class="contentusecase">Volunteer - ESOP <br>Tracking</div>
     </div>
-    <div class="imgusecase"
-      style="background-image:linear-gradient(45deg,
+    <div class="imgusecase" style="background-image:linear-gradient(45deg,
       rgba(0, 0, 0, 0.356),
         rgba(0, 0, 0, 0.356)), url(/public/img/82dd83e8b1bd268e162059d7ae9091cb.png);  background-size: cover; background-repeat: no-repeat; background-position: center ;">
       <div class="contentusecase">Facility (School/ Health/ Centre) Audits</div>
     </div>
-    <div class="imgusecase"
-      style="background-image:linear-gradient(45deg,
+    <div class="imgusecase" style="background-image:linear-gradient(45deg,
       rgba(0, 0, 0, 0.356),
         rgba(0, 0, 0, 0.356)), url(/public/img/e25ef285dc498ed7845a4048eeaf4a21.png);  background-size: cover; background-repeat: no-repeat; background-position: center ;">
       <div class="contentusecase">RFP Led Partner <br>Onboarding</div>
     </div>
-    <div class="imgusecase"
-      style="background-image:linear-gradient(45deg,
+    <div class="imgusecase" style="background-image:linear-gradient(45deg,
       rgba(0, 0, 0, 0.356),
         rgba(0, 0, 0, 0.356)), url(/public/img/9cb56be744e17a68016709b09e14f382.png);  background-size: cover; background-repeat: no-repeat; background-position: center ;">
       <div class="contentusecase">Multi-donor Partner Grant Management</div>
@@ -350,8 +368,7 @@
 
     <div class="impact">
       <div class="rightimpact">
-        <div class="impactimg impactimg3"
-          style="background-image:url(/public/img/834bb1ebc3924d4860c355b283d11181.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="impactimg impactimg3" style="background-image:url(/public/img/834bb1ebc3924d4860c355b283d11181.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center;">
           <div class="hover-content" style="background-color: rgba(245, 134, 52, 0.85);">
             <span class="hover-text">Godrej Group CSR</span>
             <div class="points-in">
@@ -424,7 +441,7 @@
 
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const counters = document.querySelectorAll(".countelement");
 
       const startCounting = (counter) => {
@@ -493,8 +510,7 @@
         <li>Customisation</li>
         <li>Support while setting up</li>
       </ul>
-      <div class="solnimg"
-        style="background-image:url(/public/img/b52e90427681a314106f303abab90bee.png);  background-size: cover; background-repeat: no-repeat; background-position: center; ">
+      <div class="solnimg" style="background-image:url(/public/img/b52e90427681a314106f303abab90bee.png);  background-size: cover; background-repeat: no-repeat; background-position: center; ">
       </div>
     </div>
     <div class="sol2">
@@ -508,8 +524,7 @@
         <li>Additional AMC contract after a year.</li>
         <li>End-to-end process of onboarding</li> <br>
       </ul>
-      <div class="solnimg"
-        style="background-image: url(/public/img/380d2b5bf1acea2580f92e91d79cdca8.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div class="solnimg" style="background-image: url(/public/img/380d2b5bf1acea2580f92e91d79cdca8.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
       </div>
     </div>
   </div>
@@ -522,8 +537,7 @@
 
     <div class="launchiconscontainer">
       <div class="launchicons2">
-        <div class="icons"><img src="/public/img/mgrant/dedicated manager & data analysis.png" alt="icons for fearture"
-            class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/dedicated manager & data analysis.png" alt="icons for fearture" class="icons"></div>
         <div class="iconstext">Dedicated Project manager & Data Analysis Support</div>
       </div>
       <div class="launchicons1">
@@ -546,8 +560,7 @@
         <div class="iconstext">Bug Fixing & Issue Resolution</div>
       </div>
       <div class="launchicons1">
-        <div class="icons"><img src="/public/img/mgrant/feature enhancements 1.png" alt="icons for fearture"
-            class="icons"></div>
+        <div class="icons"><img src="/public/img/mgrant/feature enhancements 1.png" alt="icons for fearture" class="icons"></div>
         <div class="iconstext">Feature Enhancements</div>
       </div>
     </div>
@@ -572,8 +585,7 @@
 
         </div>
 
-        <div class="solnimg"
-          style="height: 62%; margin-top: 0%; margin-top: 20%; background-image:url(/public/img/b52e90427681a314106f303abab90bee.png);  background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="solnimg" style="height: 62%; margin-top: 0%; margin-top: 20%; background-image:url(/public/img/b52e90427681a314106f303abab90bee.png);  background-size: cover; background-repeat: no-repeat; background-position: center;">
         </div>
       </div>
       <div class="sol2" style="width: 40%; height: 70%; margin-top: 0%;">
@@ -582,16 +594,14 @@
 
         </div>
 
-        <div class="solnimg"
-          style="height: 62%; margin-top: 0%; margin-top: 20%; background-image: url(/public/img/380d2b5bf1acea2580f92e91d79cdca8.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="solnimg" style="height: 62%; margin-top: 0%; margin-top: 20%; background-image: url(/public/img/380d2b5bf1acea2580f92e91d79cdca8.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
         </div>
       </div>
     </div>
   </div>
 
 
-  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"
-    onload="resizeIframe(this)"></iframe>
+  <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;" onload="resizeIframe(this)"></iframe>
 
   <script>
     function resizeIframe(iframe) {
