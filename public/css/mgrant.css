@@ -16,6 +16,24 @@ body {
 }
 
 
+.imgcontsln {
+    position: relative;
+}
+
+.highlight1 {
+    position: absolute;
+    top: 90px;
+    left: 750px;
+    height: 180px;
+}
+
+
+.highlight2 {
+    position: absolute;
+    left: -100px;
+    top: 300px;
+}
+
 .twocard {
     width: 87%;
     height: 90vh;
@@ -89,6 +107,7 @@ body {
     margin-top: -100px;
     font-size: .8rem;
     width: 90%;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     opacity: 0;
@@ -376,9 +395,9 @@ body {
     gap: 20px;
 }
 
-.midimpact{
-    width: 30%; 
-    height: 620px; 
+.midimpact {
+    width: 30%;
+    height: 620px;
     background-color: rgb(200, 35, 35);
 }
 
@@ -475,23 +494,29 @@ body {
     .impactstory {
         width: 100%;
     }
-    .impact{
+
+    .impact {
         flex-direction: column;
     }
-    .rightimpact{
+
+    .rightimpact {
         width: 100%;
     }
-    .leftimpact{
+
+    .leftimpact {
         width: 100%;
     }
-    .midimpact{
+
+    .midimpact {
         width: 100%;
         height: 400px;
     }
-    .midmidimpact{
+
+    .midmidimpact {
         display: none;
     }
-    .points-in{
+
+    .points-in {
         display: none;
     }
 
@@ -506,7 +531,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 800px;
+    gap: 180px;
     margin: auto;
     margin-left: 7vw;
     margin-right: 10vw;
@@ -517,7 +542,7 @@ body {
     justify-content: flex-start;
     color: #F5863480;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: "Manrope", sans-serif;
 }
 
@@ -613,15 +638,18 @@ li::before {
     .muft {
         position: relative;
     }
+
     .countelement {
-    font-size: 2.3rem;
+        font-size: 2.3rem;
 
     }
-    .counttext{
+
+    .counttext {
         font-size: 1rem;
         margin-top: 20px;
-        
+
     }
+
     .solcard {
         align-items: center;
         display: block;
@@ -654,7 +682,7 @@ li::before {
 .launchiconscontainer {
     width: 100%;
     display: flex;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
@@ -716,13 +744,16 @@ li::before {
     width: 100%;
     height: 80vh;
     display: flex;
-
+    margin-bottom: 100px;
 }
 
 .last-left {
+    display: flex;
+    align-items: start;
+    justify-content: s;
     height: 100%;
     width: 40%;
-    background-color: red;
+
 }
 
 .last-right {
@@ -732,7 +763,7 @@ li::before {
     height: 100%;
     gap: 5%;
     width: 60%;
-    background-color: #53435B;
+
 }
 
 @media (max-width: 800px) {
@@ -759,7 +790,7 @@ li::before {
 
 .marquee-content {
     display: flex;
-    gap: 60px;
+    gap: 100px;
     /* Space between logos */
     animation: scroll 5s linear infinite;
 }
