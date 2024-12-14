@@ -1,3 +1,7 @@
+* {
+    font-family: poppins;
+}
+
 .c2 li::before {
     background-image: url(/public/img/daas/Group\ 156.png);
 }
@@ -9,3 +13,5 @@
     background-repeat: no-repeat;
 
 }
+
+.keycard {}
