@@ -48,8 +48,6 @@ ftpupload.net
 vRmBmdyEbj7
 
 
-<<<<<<< Updated upstream
-=======
     animation: moveLogo 5s linear infinite;
 
 @keyframes moveLogo {
@@ -60,4 +58,3 @@ vRmBmdyEbj7
         transform: translateX(-100%);
     }
 }
->>>>>>> Stashed changes
