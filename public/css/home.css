@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-body {
-=======
 html {
->>>>>>> Stashed changes
     margin: 0;
     font-family: poppins;
 }
@@ -280,13 +276,10 @@ html {
     width: 40%;
 
 }
-<<<<<<< Updated upstream
-=======
 
 .contentcontainer {
     margin-left: 60px;
 }
->>>>>>> Stashed changes
 
 .grand-img-bg {
     margin: 10%;
@@ -334,8 +327,6 @@ html {
     .mid-cont-group {
         display: none;
     }
-<<<<<<< Updated upstream
-=======
 
     .top3-right {
         padding-top: 20px;
@@ -360,7 +351,6 @@ html {
     }
 
 
->>>>>>> Stashed changes
 }
 
 .mid {
@@ -421,8 +411,6 @@ html {
     width: 200px;
     height: 100px;
 }
-<<<<<<< Updated upstream
-=======
 
 .contentcontainer h2 {
     font-weight: 700;
@@ -606,5 +594,4 @@ html {
     width: 150px;
     height: 60px;
     border-radius: 20px;
->>>>>>> Stashed changes
 }
