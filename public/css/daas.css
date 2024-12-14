@@ -1,0 +1,11 @@
+.c2 li::before {
+    background-image: url(/public/img/daas/Group\ 156.png);
+}
+
+.timage {
+    background-image: url(/public/img/daas/DaaaS.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
