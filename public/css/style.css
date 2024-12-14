@@ -1,80 +1,86 @@
-.dhnititle{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    color: #811622;
-}
-.dhnititle .titlehr{
-background-color: #F58634;
-height: 4px;
-width: 4%;
-border-radius: 12px;
-margin: auto;
-margin-top: 15px;
-display: flex;
-}
-.dhnisub{
-    text-align: center;
-    color: #53435B;
-    width: 80%;;
-    font-size: 15px;
-    margin: auto;
-    margin-top: 30px;
-    }
-    
-.solutionlanding{
-    width: 100%;
-    height: 100dvh;
-    background: linear-gradient(90deg,#811624,#BB031B);
-
-}
-.solutioncontainer{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
+.dhnititle {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #811622;
 }
 
-.solutiontitle{
-    font-size: 55px;
-    /* add popins here */
-    font-weight: 700;
-    margin-top: 50px;
-    color: white;
+.dhnititle .titlehr {
+  background-color: #F58634;
+  height: 4px;
+  width: 4%;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
 }
 
-.solutionsubtitle{
-    font-weight: 600;
-    margin-top: 14px;
-    font-size: 18px;
-    color: white;
+.dhnisub {
+  text-align: center;
+  color: #53435B;
+  width: 80%;
+  ;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 30px;
 }
 
-.imgcontsln{
-    width: 100%;
-    /* max-width: 800px; */
-    height: 100%;
-    margin: auto;
-    margin-top: -10px;
-    border-radius: 20px;
-    object-fit: cover;
-    scale: .9;
+.solutionlanding {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(90deg, #811624, #BB031B);
+}
+
+.solutioncontainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+
+.solutiontitle {
+  font-size: 55px;
+  /* add popins here */
+  font-weight: 700;
+  margin-top: 50px;
+  color: white;
+}
+
+.solutionsubtitle {
+  font-weight: 600;
+  margin-top: 14px;
+  font-size: 18px;
+  color: white;
+}
+
+.imgcontsln {
+  width: 100%;
+  /* max-width: 800px; */
+  height: 100%;
+  margin: auto;
+  margin-top: -10px;
+  border-radius: 20px;
+  object-fit: cover;
+  scale: .9;
 }
 
 @media (max-width: 1000px) {
-  .imgcontsln{
+  .imgcontsln {
     scale: .83;
     margin-top: -10px;
   }
-  .solutioncontainer{
+
+  .solutioncontainer {
     width: 100%;
   }
-  .solutiontitle{
+
+  .solutiontitle {
     margin-top: 160px;
   }
-  .solutionsubtitle{
+
+  .solutionsubtitle {
     width: 80%;
     margin: auto;
 
@@ -82,54 +88,59 @@ display: flex;
 }
 
 @media (max-width: 850px) {
-.solutiontitle{
+  .solutiontitle {
     margin-top: 180px;
-}
-.imgcontsln{
+  }
+
+  .imgcontsln {
     scale: 1;
     margin-top: 10px;
-}
+  }
 }
 
-.wavybg{
+.wavybg {
   width: 100%;
   background-image: url('/public/img/mgrant/Frame.png');
 }
 
-.twoside{
+.twoside {
   width: 87%;
   display: flex;
-    gap: 100px;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    
+  gap: 100px;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+
 }
 
-.c1ard{
+.c1ard {
   width: 50%;
   margin-top: 50px;
 }
-.c2ard{
+
+.c2ard {
   position: relative;
   right: 2px;
   width: 50%;
   background-color: #811624;
   margin-top: 50px;
 }
-.c2{
+
+.c2 {
   display: flex;
   width: 50%;
   margin-top: 70px;
 }
-.mformcard{
+
+.mformcard {
   height: 60px;
   background-color: white;
   width: 250px;
   display: flex;
   border-radius: 10px;
 }
-.inn1{
+
+.inn1 {
   width: 22%;
   height: 40px;
   padding-top: 20px;
@@ -141,10 +152,36 @@ display: flex;
   justify-content: center;
 }
 
-.inn2{
+.inn2 {
   margin-left: 20px;
   height: 35px;
   padding-top: 15px;
   text-align: center;
   justify-content: center;
+}
+
+.tabs3 {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 30px;
+  gap: 6px;
+}
+
+.tab-button {
+  border: 1px solid #811622;
+  padding: 10px;
+  background-color: white;
+  color: #811622;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tab-button2 {
+  border-radius: 8px;
+  background-color: #811622;
+  border: 1px solid #811622;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
 }
