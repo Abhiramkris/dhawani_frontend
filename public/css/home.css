@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 body {
+=======
+html {
+>>>>>>> Stashed changes
     margin: 0;
     font-family: poppins;
 }
@@ -276,6 +280,13 @@ body {
     width: 40%;
 
 }
+<<<<<<< Updated upstream
+=======
+
+.contentcontainer {
+    margin-left: 60px;
+}
+>>>>>>> Stashed changes
 
 .grand-img-bg {
     margin: 10%;
@@ -319,9 +330,37 @@ body {
         column-gap: 15%;
         flex-wrap: wrap;
     }
-    .mid-cont-group{
+
+    .mid-cont-group {
         display: none;
     }
+<<<<<<< Updated upstream
+=======
+
+    .top3-right {
+        padding-top: 20px;
+    }
+
+    .hider {
+        display: none;
+    }
+
+    .contentcontainer {
+        scale: .7;
+        margin: 0;
+        padding-top: -130px;
+    }
+
+    .boxy6,
+    .boxy7,
+    .boxy8,
+    .boxy9,
+    .boxy10 {
+        display: block;
+    }
+
+
+>>>>>>> Stashed changes
 }
 
 .mid {
@@ -382,4 +421,190 @@ body {
     width: 200px;
     height: 100px;
 }
+<<<<<<< Updated upstream
+=======
+
+.contentcontainer h2 {
+    font-weight: 700;
+    color: #811622;
+    font-size: 45px;
+    line-height: 45px;
+    padding-top: 180px;
+    width: 70%;
+}
+
+.mainland {
+    background-color: rgb(0, 255, 68);
+    height: 101vh;
+    max-width: 100%;
+    margin-top: -110px;
+}
+
+.contentcontainer h3 {
+    font-weight: 500;
+    color: #811622;
+    font-size: 25px;
+    line-height: 25px;
+    font-family: "Manrope", sans-serif;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.ctcbtn {
+    width: 200px;
+    height: 60px;
+    border: 4px solid black;
+    text-align: center;
+    padding-top: 15px;
+    animation: fadu 4.3s ease forwards;
+    /* Progress line animation */
+}
+
+.linuu {
+    animation: fadu 4.3s ease forwards;
+    /* Progress line animation */
+}
+
+.boxy6,
+.boxy7,
+.boxy8,
+.boxy9,
+.boxy10 {
+    display: none;
+}
+
+@keyframes fadu {
+    0% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.landuimg {
+    top: 200px;
+    right: -280px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    height: 78%;
+}
+
+@media (max-width:990px) {
+    .landuimg {
+        display: none;
+    }
+
+    .boxy4 {
+        display: none;
+    }
+
+    .boxy1 h4,
+    .boxy2 h4,
+    .boxy3 h4,
+    .boxy4 h4,
+    .boxy5 h4 {
+        display: none;
+    }
+
+    .boxy1 h2,
+    .boxy2 h2,
+    .boxy3 h2,
+    .boxy4 h2,
+    .boxy5 h2 {
+        font-size: .8rem;
+        margin: 0;
+        text-align: left;
+    }
+
+
+    .boxy6,
+    .boxy7,
+    .boxy8,
+    .boxy9,
+    .boxy10 {
+        display: block;
+    }
+}
+
+
+.serviceconatiners {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .6%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.boxy1 h2,
+.boxy2 h2,
+.boxy3 h2,
+.boxy4 h2,
+.boxy5 h2 {
+    margin-left: 40px;
+    margin-top: 4%;
+    width: 50%;
+    color: #53435B;
+}
+
+.boxy1 h4,
+.boxy2 h4,
+.boxy3 h4,
+.boxy4 h4,
+.boxy5 h4 {
+    margin-left: 40px;
+    width: 90%;
+    color: #53435B;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    animation: moveLogo 5s linear infinite;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.active-tab {
+    background-color: #f39c12;
+    color: white;
+}
+
+@keyframes moveLogo {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.cl {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cl button {
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+>>>>>>> Stashed changes
 }
