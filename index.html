@@ -99,7 +99,7 @@
     <h3>We help social organizations go digital with custom tech solutions designed to support their vision.</h3>
   </div>
 
-<br>
+  <br>
   <div class="dhnititle" style="font-size: 40px;">Our Services<br>
     <div class="titlehr" style="width: 5%;"></div><br>
   </div>
@@ -205,70 +205,258 @@
     </div>
   </div>
 
-  <div class="cl">
-    <button onclick="showLogos('tab1')">Tab 1</button>
-    <button onclick="showLogos('tab2')">Tab 2</button>
-    <button onclick="showLogos('tab3')">Tab 3</button>
-    <button onclick="showLogos('tab4')">Tab 4</button>
-    <button onclick="showLogos('tab5')">Tab 5</button>
-    <button onclick="showLogos('tab6')">Tab 6</button>
-</div>
 
-<div class="logo-container" id="logo-container" style="margin-top: 40px;">
-    <!-- Logos will be dynamically shown here -->
-</div>
+  <div class="logo-container">
+    <div class="tabs" id="tabContainer">
+      <!-- Tabs will be dynamically added here -->
+    </div>
+    <div class="logo-slider" id="logoSlider">
+      <!-- Logo tracks will be dynamically added here -->
+    </div>
+  </div>
 
-  
+  <script>
+    const logoData = {
+      "Corporate Foundations": {
+        rows: 2,
+        logos: [
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100"
+        ]
+      },
+      "Family Foundations": {
+        rows: 1,
+        logos: [
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100"
+        ]
+      },
+      "Social Enterprises": {
+        rows: 2,
+        logos: [
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100"
+        ]
+      },
+      "Educational Institutes": {
+        rows: 2,
+        logos: [
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100"
+        ]
+      },
+      "Government & Multilaterals": {
+        rows: 2,
+        logos: [
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100"
+        ]
+      },
+      "Impact investors": {
+        rows: 2,
+        logos: [
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100",
+          "/api/placeholder/150/100"
+        ]
+      },
 
-    <script>
-  function showLogos(tabId) {
-    const logoContainer = document.getElementById('logo-container');
-    logoContainer.innerHTML = ''; // Clear previous logos
-
-    // Define logos for each tab
-    const logos = {
-        tab1: ['logo1.png', 'logo2.png', 'logo3.png'],
-        tab2: ['logo4.png', 'logo5.png', 'logo6.png'],
-        tab3: ['logo7.png', 'logo8.png', 'logo9.png'],
-        tab4: ['logo10.png', 'logo11.png', 'logo12.png'],
-        tab5: ['logo13.png', 'logo14.png', 'logo15.png'],
-        tab6: ['logo16.png', 'logo17.png', 'logo18.png']
     };
 
-    // Add logos dynamically
-    logos[tabId].forEach(logo => {
-        const img = document.createElement('img');
-        img.src = logo;
-        img.alt = 'Company Logo';
-        img.className = 'logo';
-        logoContainer.appendChild(img);
+    const tabContainer = document.getElementById('tabContainer');
+    const logoSlider = document.getElementById('logoSlider');
+
+    // Create tabs
+    Object.keys(logoData).forEach((category, index) => {
+      const tab = document.createElement('div');
+      tab.classList.add('tab');
+      tab.textContent = category;
+      tab.dataset.category = category;
+
+      if (index === 0) tab.classList.add('active');
+
+      tab.addEventListener('click', () => {
+        // Remove active from all tabs
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // Render logos for this category
+        renderLogos(category);
+      });
+
+      tabContainer.appendChild(tab);
     });
 
-    // Highlight the active tab
-    const buttons = document.querySelectorAll('.cl button');
-    buttons.forEach(button => button.classList.remove('active-tab'));
-    document.querySelector(`[onclick="showLogos('${tabId}')"]`).classList.add('active-tab');
-}
+    function renderLogos(category) {
+      const categoryData = logoData[category];
+      logoSlider.innerHTML = '';
 
-// Make Tab 1 active by default on page load
-window.onload = () => {
-    showLogos('tab1');
-};
+      // Create rows based on category configuration
+      const rowCount = categoryData.rows;
+      for (let i = 0; i < rowCount; i++) {
+        const logoRow = document.createElement('div');
+        logoRow.classList.add('logo-row');
 
-    </script>
+        // Create logo track with duplicated logos for infinite scroll
+        const logoTrack = document.createElement('div');
+        logoTrack.classList.add('logo-track');
 
+        // Duplicate logos to create seamless infinite scroll
+        const logos = [...categoryData.logos, ...categoryData.logos];
+        logos.forEach(logoSrc => {
+          const logoItem = document.createElement('div');
+          logoItem.classList.add('logo-item');
 
-<br> <br>
+          const img = document.createElement('img');
+          img.src = logoSrc;
+          img.alt = 'Company Logo';
+
+          logoItem.appendChild(img);
+          logoTrack.appendChild(logoItem);
+        });
+
+        logoRow.appendChild(logoTrack);
+        logoSlider.appendChild(logoRow);
+      }
+    }
+
+    // Initial render of first category
+    renderLogos(Object.keys(logoData)[0]);
+  </script>
+
+  <style>
+    .logo-container {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .tab {
+      width: 150px;
+      height: 60px;
+      border-radius: 10px;
+      border: 1px solid #f39c12;
+      color: #f39c12;
+      text-align: center;
+      align-content: center;
+      font-weight: 600;
+      color: #53435B;
+
+    }
+
+    .tab.active {
+      background-color: #f39c12;
+      color: white;
+    }
+
+    .logo-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    .logo-track {
+      display: flex;
+      animation: scrollLogos 20s linear infinite;
+    }
+
+    .logo-track:hover {
+      animation-play-state: paused;
+    }
+
+    .logo-row {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 20px;
+    }
+
+    .logo-item {
+      flex: 0 0 auto;
+      width: 150px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-item:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-item img {
+      max-width: 120px;
+      max-height: 80px;
+      object-fit: contain;
+    }
+
+    @keyframes scrollLogos {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+
+  <br> <br>
 
 
   <!-- after grandma  -->
 
-  
+
   <div class=" keyfeatures" style="background-color: white;">
     <div class="dhnititle" style="font-size: 40px; background-color: white; margin-top: -70px;">Stories of change<br>
       <div class="titlehr" style="width: 5%;"></div><br>
     </div>
-    <div class="dhnisub" style="margin-top: -30px; background-color: white; font-size: 18px; margin-bottom: 50px;">Our solutions speak for themselves.  We strive to generate impact by strengthening the core of social impact organisations through comprehensive Information and Communication Technology solutions (ICT). Our tailor - made solutions have helped 2.5 million end users in the development sector so far, and we are constantly endeavouring for more.
+    <div class="dhnisub" style="margin-top: -30px; background-color: white; font-size: 18px; margin-bottom: 50px;">Our solutions speak for themselves. We strive to generate impact by strengthening the core of social impact organisations through comprehensive Information and Communication Technology solutions (ICT). Our tailor - made solutions have helped 2.5 million end users in the development sector so far, and we are constantly endeavouring for more.
     </div>
   </div>
 
@@ -320,7 +508,7 @@ window.onload = () => {
     <div class="midimpact">
 
 
-   
+
 
     </div>
 
