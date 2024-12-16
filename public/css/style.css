@@ -106,7 +106,7 @@
 .twoside {
   width: 87%;
   display: flex;
-  gap: 100px;
+  gap: 50px;
   justify-content: center;
   align-content: center;
   margin: auto;
