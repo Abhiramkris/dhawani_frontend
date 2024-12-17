@@ -456,18 +456,21 @@
             display: flex;
             transition: transform 0.5s ease;
             gap: 20px;
+           
         }
 
         .team-member {
             flex: 0 0 calc(25% - 15px);
             position: relative;
             text-align: center;
+            
+            
         }
 
         .image-wrapper {
             position: relative;
             overflow: hidden;
-            height: 400px;
+            height: 350px;
         }
 
         .team-member img {
@@ -476,6 +479,7 @@
             object-fit: cover;
             filter: grayscale(0);
             transition: filter 0.3s ease, transform 0.3s ease;
+            border-radius:18px;
         }
 
         .image-gradient {
@@ -488,6 +492,7 @@
             pointer-events: none;
             opacity: 1;
             transition: opacity 0.3s ease;
+            border-radius:18px;
         }
 
         .team-member:hover img {
@@ -506,8 +511,13 @@
             right: 0;
             padding: 10px;
             color: white;
-            background: rgba(0,0,0,0.5);
             text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            font-size:10px;
+            text-align: left;
+        }
+        .team-info h2{
+          color:white;
+          text-align: left;
         }
 
         .nav-btn {
@@ -542,45 +552,162 @@
 
     const teamMembers = [
         {
-            name: "John Doe",
-            designation: "CEO",
-            image: "/api/placeholder/300/400"
+            name: "Aashima Takkar",
+            designation: "Engagement Manager",
+            image: "/public/img/man/man1.png"
         },
         {
-            name: "Jane Smith",
-            designation: "CTO",
-            image: "/api/placeholder/300/400"
+            name: "Kalavati Singh",
+            designation: "Sr. Delivery Manager",
+            image: "/public/img/man/man2.jpeg"
         },
         {
-            name: "Mike Johnson",
-            designation: "Design Lead",
-            image: "/api/placeholder/300/400"
+            name: "Parul Chuchra",
+            designation: "Sr. Project Manager",
+            image: "/public/img/man/man3.jpg"
         },
         {
-            name: "Emily Brown",
-            designation: "Marketing Director",
-            image: "/api/placeholder/300/400"
+            name: "Shristi Sharma",
+            designation: "Program Manager",
+            image: "/public/img/man/man4.png"
         },
         {
-            name: "Alex Wilson",
-            designation: "Product Manager",
-            image: "/api/placeholder/300/400"
+            name: "Sonal Awasthi",
+            designation: "Project Manager",
+            image: "/public/img/man/man5.png"
         },
         {
-            name: "Sarah Lee",
-            designation: "HR Director",
-            image: "/api/placeholder/300/400"
+            name: "Vepasa",
+            designation: "Program Manager",
+            image: "/public/img/man/man6.jpeg"
         },
         {
-            name: "David Kim",
-            designation: "Finance Lead",
-            image: "/api/placeholder/300/400"
+            name: "Nivedita Gupta",
+            designation: "HR Lead",
+            image: "/public/img/man/man7.jpeg"
+        },
+      
+        {
+            name: "Ravi Jangir",
+            designation: "Strategy Manager",
+            image: "/public/img/man/man8.jpg"
         },
         {
-            name: "Rachel Green",
-            designation: "Operations Manager",
-            image: "/api/placeholder/300/400"
-        }
+            name: "Harshdeep Singh Mokha",
+            designation: "Technical Project Manager",
+            image: "/public/img/man/man9.jpg"
+        },
+        {
+            name: "Kashika Chadha",
+            designation: "Senior Project Manager",
+            image: "/public/img/man/man10.jpg"
+        },
+        {
+            name: "Mayank Gandhi",
+            designation: "SProject Manager",
+            image: "/public/img/man/man11.jpg"
+        }, {
+            name: "Prachi Gupta",
+            designation: "Program Manager",
+            image: "/public/img/man/man12.jpg"
+        }, {
+            name: "Shikha Pant",
+            designation: "Project Manager",
+            image: "/public/img/man/man13.jpg"
+        }, {
+            name: "Shweta Singh",
+            designation: "Senior Project Manager",
+            image: "/public/img/man/man14.jpeg"
+        }, 
+        {
+            name: "Nihaan Mohammed",
+            designation: "Associate Product Manager",
+            image: "/public/img/man/man15.png"
+        },
+        {
+            name: "Abhijit Nair",
+            designation: "Engineering Manager",
+            image: "/public/img/man/man16.jpeg"
+        },
+      
+        {
+            name: "Manish Kumar Roy",
+            designation: "Team Lead - Backend",
+            image: "/public/img/tech/tech1.jpeg"
+        },
+        {
+            name: "Manju Lata Soreng",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech2.JPG"
+        },
+        {
+            name: "Pragat Singh",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech3.JPG"
+        },
+        {
+            name: "Rohit Singh",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech4.JPG"
+        },
+        
+        {
+            name: "Satyam Yadav",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech5.jpg"
+        },
+        {
+            name: "Shrey Jain",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech6.JPG"
+        },
+        {
+            name: "Vivek Kumar Singh",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech7.JPG"
+        },
+        {
+            name: "Ankit Jangir",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech8.JPG"
+        },
+        {
+            name: "Mohd Talha",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/tech9.JPG"
+        },
+        {
+            name: "Abhishek Jain",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/leader1.jpg"
+        },
+        {
+            name: "Deepak Batra",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/leader2.jpg"
+        },
+        {
+            name: "Seema Bhardwaj",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/leader3.png"
+        },
+        {
+            name: "Shobhit Mathur",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/leader4.JPG"
+        },
+        {
+            name: "Siddharth Bhargava",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/leader5.jpg"
+        },
+        {
+            name: "Nidhi Arora",
+            designation: "Team Lead - PHP",
+            image: "/public/img/tech/leader6.jpg"
+        },
+        
+
     ];
 
     const carousel = document.getElementById('teamCarousel');

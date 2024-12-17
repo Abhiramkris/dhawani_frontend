@@ -222,7 +222,7 @@
   <script>
     const logoData = {
       "Corporate Foundations": {
-        rows: 1,
+        rows: 2,
         logos: [
           "/public/img/complogo/1/1.png",
           "/public/img/complogo/1/2.png",
@@ -263,41 +263,108 @@
         ]
       },
       "Family Foundations": {
-        rows: 2,
+        rows: 1,
         logos: [
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100"
+        "/public/img/complogo/2/1.png",
+        "/public/img/complogo/2/2.png",
+        "/public/img/complogo/2/3.png",
+        "/public/img/complogo/2/4.png",
+        "/public/img/complogo/2/5.png",
+        "/public/img/complogo/2/6.png",
+        "/public/img/complogo/2/7.png",
+        "/public/img/complogo/2/8.png",
+        "/public/img/complogo/2/9.png",
+        "/public/img/complogo/2/10.png",
+        "/public/img/complogo/2/11.png",
+        "/public/img/complogo/2/12.png",
+        "/public/img/complogo/2/13.png",
+
         ]
       },
       "Social Enterprises": {
         rows: 2,
         logos: [
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100"
+        "/public/img/complogo/3/1.png",
+        "/public/img/complogo/3/2.png",
+        "/public/img/complogo/3/3.png",
+        "/public/img/complogo/3/4.png",
+        "/public/img/complogo/3/5.png",
+        "/public/img/complogo/3/6.png",
+        "/public/img/complogo/3/7.png",
+        "/public/img/complogo/3/8.png",
+        "/public/img/complogo/3/9.png",
+        "/public/img/complogo/3/10.png",
+        "/public/img/complogo/3/11.png",
+        "/public/img/complogo/3/12.png",
+        "/public/img/complogo/3/13.png",
+        "/public/img/complogo/3/14.png",
+        "/public/img/complogo/3/15.png",
+        "/public/img/complogo/3/16.png",
+        "/public/img/complogo/3/17.png",
+        "/public/img/complogo/3/18.png",
+        "/public/img/complogo/3/19.png",
+        "/public/img/complogo/3/20.png",
+        "/public/img/complogo/3/21.png",
+        "/public/img/complogo/3/22.png",
+        "/public/img/complogo/3/23.png",
+        "/public/img/complogo/3/24.png",
+        "/public/img/complogo/3/25.png",
+        "/public/img/complogo/3/26.png",
+        "/public/img/complogo/3/27.png",
+        "/public/img/complogo/3/28.png",
+        "/public/img/complogo/3/29.png",
+        "/public/img/complogo/3/30.png",
+        "/public/img/complogo/3/31.png",
+        "/public/img/complogo/3/32.png",
+        "/public/img/complogo/3/33.png",
+        "/public/img/complogo/3/34.png",
+        "/public/img/complogo/3/35.png",
+        "/public/img/complogo/3/36.png",
+        "/public/img/complogo/3/37.png",
+        "/public/img/complogo/3/38.png",
+        "/public/img/complogo/3/39.png",
+        "/public/img/complogo/3/40.png",
+        "/public/img/complogo/3/41.png",
+        "/public/img/complogo/3/42.png",
+        "/public/img/complogo/3/43.png",
+        "/public/img/complogo/3/44.png",
+        "/public/img/complogo/3/45.png",
+        "/public/img/complogo/3/46.png",
+        "/public/img/complogo/3/47.png",
+        "/public/img/complogo/3/48.png",
+        "/public/img/complogo/3/49.png",
+        "/public/img/complogo/3/50.png",
+        "/public/img/complogo/3/51.png",
+        "/public/img/complogo/3/52.png",
+        "/public/img/complogo/3/53.png",
+        "/public/img/complogo/3/54.png",
+        "/public/img/complogo/3/55.png",
+        "/public/img/complogo/3/56.png",
+        "/public/img/complogo/3/57.png",
+
         ]
       },
       "Educational Institutes": {
-        rows: 2,
+        rows: 1,
         logos: [
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100",
-          "/api/placeholder/150/100"
-        ]
+        "/public/img/complogo/4/1.png",
+        "/public/img/complogo/4/2.png",
+        "/public/img/complogo/4/3.png",
+        "/public/img/complogo/4/4.png",
+        "/public/img/complogo/4/5.png",
+        "/public/img/complogo/4/6.png",
+        "/public/img/complogo/4/7.png",
+        "/public/img/complogo/4/8.png",
+        "/public/img/complogo/4/9.png",
+        "/public/img/complogo/4/10.png",
+        "/public/img/complogo/4/11.png",
+        "/public/img/complogo/4/12.png",
+        "/public/img/complogo/4/13.png",
+        "/public/img/complogo/4/14.png",
+        "/public/img/complogo/4/15.png",
+        "/public/img/complogo/4/16.png",
+        
+      ]
       },
       "Government & Multilaterals": {
         rows: 2,
@@ -328,66 +395,69 @@
 
     };
 
-    const tabContainer = document.getElementById('tabContainer');
-    const logoSlider = document.getElementById('logoSlider');
+    function renderLogos(category) {
+  const categoryData = logoData[category];
+  logoSlider.innerHTML = ''; // Clear the slider
 
-    // Create tabs
-    Object.keys(logoData).forEach((category, index) => {
-      const tab = document.createElement('div');
-      tab.classList.add('tab');
-      tab.textContent = category;
-      tab.dataset.category = category;
+  const logosPerRow = Math.ceil(categoryData.logos.length / categoryData.rows); // Divide logos into rows
+  const rowCount = categoryData.rows;
 
-      if (index === 0) tab.classList.add('active');
+  for (let i = 0; i < rowCount; i++) {
+    const logoRow = document.createElement('div');
+    logoRow.classList.add('logo-row');
 
-      tab.addEventListener('click', () => {
-        // Remove active from all tabs
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+    // Create logo track
+    const logoTrack = document.createElement('div');
+    logoTrack.classList.add('logo-track');
 
-        // Render logos for this category
-        renderLogos(category);
-      });
+    // Slice logos for this row
+    const rowLogos = categoryData.logos.slice(
+      i * logosPerRow,
+      (i + 1) * logosPerRow
+    );
 
-      tabContainer.appendChild(tab);
+    // Add infinite scrolling by duplicating rowLogos within the row
+    const infiniteLogos = [...rowLogos, ...rowLogos];
+    infiniteLogos.forEach(logoSrc => {
+      const logoItem = document.createElement('div');
+      logoItem.classList.add('logo-item');
+
+      const img = document.createElement('img');
+      img.src = logoSrc;
+      img.alt = 'Company Logo';
+
+      logoItem.appendChild(img);
+      logoTrack.appendChild(logoItem);
     });
 
-    function renderLogos(category) {
-      const categoryData = logoData[category];
-      logoSlider.innerHTML = '';
+    logoRow.appendChild(logoTrack);
+    logoSlider.appendChild(logoRow);
+  }
+}
+Object.keys(logoData).forEach((category, index) => {
+  const tab = document.createElement('div');
+  tab.classList.add('tab');
+  tab.textContent = category;
+  tab.dataset.category = category;
 
-      // Create rows based on category configuration
-      const rowCount = categoryData.rows;
-      for (let i = 0; i < rowCount; i++) {
-        const logoRow = document.createElement('div');
-        logoRow.classList.add('logo-row');
+  if (index === 0) tab.classList.add('active'); // First tab is active by default
 
-        // Create logo track with duplicated logos for infinite scroll
-        const logoTrack = document.createElement('div');
-        logoTrack.classList.add('logo-track');
+  tab.addEventListener('click', () => {
+    // Remove active class from all tabs
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
 
-        // Duplicate logos to create seamless infinite scroll
-        const logos = [...categoryData.logos, ...categoryData.logos];
-        logos.forEach(logoSrc => {
-          const logoItem = document.createElement('div');
-          logoItem.classList.add('logo-item');
+    // Render logos for the selected category
+    renderLogos(category);
+  });
 
-          const img = document.createElement('img');
-          img.src = logoSrc;
-          img.alt = 'Company Logo';
-
-          logoItem.appendChild(img);
-          logoTrack.appendChild(logoItem);
-        });
+  tabContainer.appendChild(tab);
+});
 
 
-        logoRow.appendChild(logoTrack);
-        logoSlider.appendChild(logoRow);
-      }
-    }
+// Initial render of the first category
+renderLogos(Object.keys(logoData)[0]);
 
-    // Initial render of first category
-    renderLogos(Object.keys(logoData)[0]);
   </script>
 
   <style>
