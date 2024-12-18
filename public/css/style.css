@@ -185,3 +185,126 @@
   font-weight: 600;
   font-size: 16px;
 }
+
+
+.challenges-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width:973px) {
+  .mformimg {
+    transform: scale(0.7);
+  }
+
+  .challenges-inner {
+    transform: scale(0.9);
+  }
+}
+
+
+.others-cont {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.others-use {
+  background-color: rgba(252, 243, 237, 1);
+  border-radius: 10px;
+  height: 50vh;
+  width: 90%;
+  border-radius: 10px;
+
+}
+
+.use-top {
+  height: 50%;
+
+}
+
+.others-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 50%;
+
+}
+
+.use-top-grp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+
+}
+
+.use-specifications {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+
+}
+
+.useothersimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+
+}
+
+.usetitle {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.use-specifications h5 {
+  color: rgba(83, 67, 91, 1);
+  padding-left: 5%;
+  border-left: 0.10rem solid rgba(83, 67, 91, 1);
+}
+
+.img-cont {
+  padding-top: 5%;
+  background-color: rgba(247, 226, 209, 1);
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.top-img-cont {
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 40%;
+  width: 100%;
+}
+
+.bottom-img-cont {
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 40%;
+  width: 100%;
+}
+
+.inner-img-cont {
+  height: 100%;
+  width: 30%;
+
+}
