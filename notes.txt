@@ -786,3 +786,125 @@ margin-top: 40px; border-radius: 10px;font-size: 15px; font-weight: 700; text-al
     </script>
   </div>
 
+
+
+
+  
+  <div id="tab2" class="tab-content">
+
+    <div class="wavybg">
+
+
+      <!-- Nested tab contents for LMS -->
+      <!-- lms1 -->
+      <div class="twoside">
+        <div class="c1ard"> <br>
+          <div class="dhnititle" style="text-align: left; margin-top: -25px;">Chatbot<br>
+            <div class="titlehr" style="width: 10%; margin-left: 0;"></div> <br>
+          </div>
+          <div class="te" style="margin-top: -20px;">Chatbots are virtual conversational agents designed to streamline
+            communication and enhance engagement through instant, automated responses. By providing a seamless way for
+            organizations to connect with beneficiaries and stakeholders, chatbots offer a practical solution for
+            managing interactions, addressing inquiries, and collecting valuable feedback—anytime, anywhere.
+            <br>
+            Glific is an open-source, WhatsApp-based, two-way communication platform designed to empower social impact
+            organizations. It enables nonprofits to connect with communities by facilitating meaningful, large-scale
+            conversations. The user-friendly interface simplifies chatbot creation, making it possible to quickly
+            respond to program beneficiaries and stakeholders on a familiar platform.
+          </div>
+        </div>
+        <div class="c2ard">
+          <div class="timage">Donor Management</div>
+        </div>
+
+      </div> <br> <br>
+    </div>
+
+    <div style="background-color: #F7E2D1; width: 100%; height: 580px; margin-top: -20px;"> <br> <br>
+      <div class="dhnititle">Challenges We Solve<br>
+        <div class="titlehr"></div> <br>
+      </div>
+
+      <div
+        style="display: flex; flex-wrap: wrap; width: 95%; height: 500px; margin: auto; gap: 1px; align-items: center; justify-content: center; margin-top: -30px;">
+
+        <div style="display: flex;width:30%; height: 40%;">
+          <div class="mformimg" style="width: 35%;"></div>
+          <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66; height: 100px;">
+            <h3 style="margin-left: 10px; margin-top: 20px; color: #53435B;font-weight: 700; font-size: 25px;">
+              Managing
+              high volumes of inquiries</h3>
+          </div>
+        </div>
+
+        <div style="display: flex;width:30%;height: 40%;">
+          <div class="mformimg" style="width: 30%;"></div>
+          <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66; height: 100px;">
+            <h3 style="margin-left: 10px; margin-top: 20px; color: #53435B;font-weight: 700; font-size: 25px;">
+              Ensuring
+              consistent and timely responses</h3>
+          </div>
+        </div>
+
+        <div style="display: flex;width:30%;height: 40%;">
+          <div class="mformimg" style="width: 30%;"></div>
+          <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66; height: 100px;">
+            <h3 style="margin-left: 10px; margin-top: 20px; color: #53435B;font-weight: 700; font-size: 25px;">
+              Engaging
+              beneficiaries in real-time</h3>
+          </div>
+        </div>
+
+        <div style="display: flex;width:30%;height: 40%; margin-top: -100px;">
+          <div class="mformimg" style="width: 30%;"></div>
+          <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66; height: 100px;">
+            <h3 style="margin-left: 10px; margin-top: 20px; color: #53435B;font-weight: 700; font-size: 25px;">
+              Collecting and analyzing feedback</h3>
+          </div>
+        </div>
+        <div style="display: flex;width:30%;height: 40%; margin-top: -100px;">
+          <div class="mformimg" style="width: 30%;"></div>
+          <div class="mformcard2" style="width: 60%; border-left: 1px solid #53435B66; height: 100px;">
+            <h3 style="margin-left: 10px; margin-top: 20px; color: #53435B;font-weight: 700; font-size: 25px;">
+              Reducing
+              manual intervention in support</h3>
+          </div>
+        </div>
+      </div>
+      <br> <br>
+    </div> <br>
+
+    <div class="dhnititle" style="margin-top: 40px;">Key Features<br>
+      <div class="titlehr" style="margin-top:1px;"></div> <br>
+    </div>
+    <div class="twoside" style="margin-top: -60px; margin-left: 180px;">
+      <div class="c1ard">
+        <div class="timage" style="width: 100%; height: 350px; background-color: black;"></div>
+      </div>
+
+      <div class="c2" style="margin-top: 80px;">
+
+        <div style="margin-left: -80px;">
+          <ul>
+            <li style="font-size: 20px; font-weight: 700; color: #53435B; margin-bottom: 40px;">Feedback Collection
+              <br>and help <br> Analyze Patterns
+            </li>
+            <li style="font-size: 20px; font-weight: 700; color: #53435B; margin-bottom: 40px;">24/7 Availability</li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li style="font-size: 20px; font-weight: 700; color: #53435B; margin-bottom: 40px;">Instant <br>Responses
+              and <br> Reduced Wait <br> Times</li>
+            <li style="font-size: 20px; font-weight: 700; color: #53435B; margin-bottom: 40px;">Automated <br>
+              Workflow
+              <br> Management
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+

@@ -3,6 +3,7 @@
   font-weight: 700;
   text-align: center;
   color: #811622;
+  width: 100%;
 }
 
 .dhnititle .titlehr {
@@ -19,7 +20,6 @@
   text-align: center;
   color: #53435B;
   width: 80%;
-  ;
   font-size: 15px;
   margin: auto;
   margin-top: 30px;
@@ -85,6 +85,9 @@
     margin: auto;
 
   }
+  .te{
+    width: 90vw;
+  }
 }
 
 @media (max-width: 850px) {
@@ -96,6 +99,36 @@
     scale: 1;
     margin-top: 10px;
   }
+  .twoside{
+    flex-direction: column;
+    width: 100vw;
+  }
+  .c1ard, .c2ard {
+    width: 90vw;
+  }
+  .c2 {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 70px;
+    }
+  .c2 ul {
+    width: 90vw;
+  }
+  .timage{
+    width: 90vw;
+  }
+  .icns {
+   display: block;
+  }
+  .icns > div {
+    width: 90%;
+  }
+
+}
+
+.icn1{
+  width: 30%;
 }
 
 .wavybg {

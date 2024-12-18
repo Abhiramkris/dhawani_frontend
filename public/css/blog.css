@@ -109,6 +109,7 @@ body {
 .large-card h2,
 .large-card p {
   margin: 10px 0;
+  font-size: 18px;
 }
 
 /* Right Cards - Image aligned to left */
@@ -285,6 +286,7 @@ body {
 .pagination {
   text-align: center;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .pagination button {

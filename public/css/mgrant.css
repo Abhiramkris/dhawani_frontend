@@ -349,6 +349,16 @@
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
     }
+    .feacont{
+        flex-direction: column;
+    }
+    .selector{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+    
 }
 
 .contentusecase::before {
