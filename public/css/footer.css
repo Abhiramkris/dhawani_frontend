@@ -58,7 +58,6 @@ body {
 .logo-section{
     flex: 1 1 100px; /* Allow the section to size dynamically */
     min-width: 400px;
-    margin-top: 80px;
     justify-content: center;
 }
 
