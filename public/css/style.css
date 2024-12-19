@@ -85,9 +85,6 @@
     margin: auto;
 
   }
-  .te{
-    width: 90vw;
-  }
 }
 
 @media (max-width: 850px) {
@@ -95,39 +92,51 @@
     margin-top: 180px;
   }
 
+  .te {
+    width: 90vw;
+  }
+
   .imgcontsln {
     scale: 1;
     margin-top: 10px;
   }
-  .twoside{
+
+  .twoside {
     flex-direction: column;
     width: 100vw;
   }
-  .c1ard, .c2ard {
+
+  .c1ard,
+  .c2ard {
     width: 90vw;
   }
+
   .c2 {
     display: flex;
     flex-direction: column;
     width: 90vw;
     margin-top: 70px;
-    }
+  }
+
   .c2 ul {
     width: 90vw;
   }
-  .timage{
+
+  .timage {
     width: 90vw;
   }
+
   .icns {
-   display: block;
+    display: block;
   }
-  .icns > div {
+
+  .icns>div {
     width: 90%;
   }
 
 }
 
-.icn1{
+.icn1 {
   width: 30%;
 }
 
