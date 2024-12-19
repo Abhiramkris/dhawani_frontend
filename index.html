@@ -777,6 +777,7 @@
       position: relative;
       max-width: 1200px;
       margin: auto;
+      z-index: 0;
     }
 
     /* Track for cards */
@@ -792,11 +793,12 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
-      min-width: 33.33%;
+      max-width: 33.33%;
       /* Show 3 cards */
       margin: 0 10px;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 600px;
     }
 
     .testimonial-card:hover {
@@ -822,7 +824,8 @@
     .testimonial-author {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 50px;
+      margin-top: 50px;
     }
 
     .author-image {
@@ -840,6 +843,7 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      z-index: 1000;
     }
 
     .carousel-button {
@@ -860,8 +864,10 @@
     .carousel-button:hover {
       background-color: rgba(0, 0, 0, 0.7);
     }
-  </style>
-
+  </style> <br> <br> <br> 
+ <div class="dhnititle" style="font-size: 40px; background-color: white; margin-top: -70px;">Testimonials<br>
+  <div class="titlehr" style="width: 5%;"></div><br>
+</div>
   <div class="testimonial-container">
     <!-- Navigation Buttons -->
     <div class="carousel-buttons">
@@ -875,10 +881,11 @@
 
     <!-- Carousel Track -->
     <div class="carousel-track">
+
       <div class="testimonial-card">
         <div class="testimonial-text">
           <p class="quote-text">
-            This incredible team has transformed our approach to innovation.
+            This incredible team has transformed our approach to innovation. Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample 
           </p>
           <div class="testimonial-author">
             <img src="/api/placeholder/80/80" alt="Author" class="author-image">
@@ -890,21 +897,48 @@
         </div>
       </div>
       <!-- Add more cards here -->
+      
       <div class="testimonial-card">
         <div class="testimonial-text">
           <p class="quote-text">
-            Working with this team has been a game-changer for our organization.
+            This incredible team has transformed our approach to innovation. Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample 
           </p>
           <div class="testimonial-author">
             <img src="/api/placeholder/80/80" alt="Author" class="author-image">
             <div class="author-details">
-              <span class="author-name">Michael Chen</span>
-              <span class="author-designation">Head of Strategy</span>
+              <span class="author-name">Sarah Johnson</span>
+              <span class="author-designation">CEO</span>
+            </div>
+          </div>
+        </div>
+      </div> <div class="testimonial-card">
+        <div class="testimonial-text">
+          <p class="quote-text">
+            This incredible team has transformed our approach to innovation. Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample 
+          </p>
+          <div class="testimonial-author">
+            <img src="/api/placeholder/80/80" alt="Author" class="author-image">
+            <div class="author-details">
+              <span class="author-name">Sarah Johnson</span>
+              <span class="author-designation">CEO</span>
             </div>
           </div>
         </div>
       </div>
-      <!-- Repeat testimonials for testing -->
+      <div class="testimonial-card">
+        <div class="testimonial-text">
+          <p class="quote-text">
+            This incredible team has transformed our approach to innovation. Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample Lorem Ipsum Sample Text orem Ipsum Sample 
+          </p>
+          <div class="testimonial-author">
+            <img src="/api/placeholder/80/80" alt="Author" class="author-image">
+            <div class="author-details">
+              <span class="author-name">Sarah Johnson</span>
+              <span class="author-designation">CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -945,12 +979,46 @@
 
 
 
+<style>
+  .down{
+    width: 80%;
+    background-color: #811622;
+    height: 200px;
+    z-index: 10;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: -150px;
+    left: 10%;
+    color: white;
+  }
+  .iframe-cont{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 250px;
+  }
+</style>
+  <div class="iframe-cont">
+    <iframe id="footer" src="/footer.html?active=home" style="width: 100%; border: none; z-index: 1; position: absolute;"
+    onload="resizeIframe(this)"></iframe>
+    <div class="down">
+      <div style="display: flex; flex-direction: column; margin: auto; text-align: left;"> 
+        <h2>Curious to know more?</h2>
+        <h4 style="margin-top: -10px;">Download our Brochure</h4>
+      </div>
 
-
+      <div style="width: 250px; height: 60px; background-color: #f39c12; margin: auto;">
+       <div style="margin: auto; text-align: center; padding-top: 17px; font-weight: 600;"> Download Brochure</div> 
+      </div>
+    
+    </div>
+  </div>
+ 
   <script src="/public/js/scripts.js"></script>
 
-  <iframe id="footer" src="/footer.html?active=home" style="width: 100%; border: none;"
-    onload="resizeIframe(this)"></iframe>
 
   <script>
     function resizeIframe(iframe) {
