@@ -2213,7 +2213,14 @@
     }
   </style>
 
+  <iframe id="footer" src="/footer.html?active=home" style="width: 100%; border: none;"
+    onload="resizeIframe(this)"></iframe>
 
+  <script>
+    function resizeIframe(iframe) {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
   <script src="/public/js/time.js"></script>
 
   <!-- <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"

@@ -349,16 +349,18 @@
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
     }
-    .feacont{
+
+    .feacont {
         flex-direction: column;
     }
-    .selector{
+
+    .selector {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 90vw;
     }
-    
+
 }
 
 .contentusecase::before {
@@ -892,9 +894,11 @@ li::before {
     overflow: hidden;
     background: #fff;
     padding: 10px 0;
+
 }
 
 .marquee-content {
+
     display: flex;
     gap: 100px;
     /* Space between logos */
