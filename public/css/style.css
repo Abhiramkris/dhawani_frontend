@@ -213,10 +213,11 @@
   border: 1px solid #811622;
   padding: 10px;
   background-color: white;
-  color: #811622;
+  color: rgba(83, 67, 91, 1);
   font-size: 16px;
   font-weight: 600;
 }
+
 
 .tab-button2 {
   border-radius: 8px;
@@ -228,6 +229,13 @@
   font-size: 16px;
 }
 
+
+.tab-button.active {
+  background-color: #1f0000;
+  /* Background color for the active tab */
+  border-color: #aaa;
+  /* Optional: change border color for active tab */
+}
 
 .challenges-cont {
   display: flex;
