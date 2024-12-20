@@ -7,7 +7,8 @@ function openTab(tabId) {
   const buttons = document.querySelectorAll('.tab-button');
   buttons.forEach(button => {
     button.classList.remove('active');
-    button.style.backgroundColor = ''; // Reset background color
+    button.style.backgroundColor = '';
+    button.style.color = 'rgba(83, 67, 91, 1)'; // Reset background color
   });
 
   // Add 'active' class to the selected tab content
