@@ -619,6 +619,7 @@
 }
 
 .countingcont {
+    transform: scale(0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -633,7 +634,7 @@
     justify-content: flex-start;
     color: #F5863480;
     font-weight: 800;
-    font-size: 8rem;
+    font-size: 200px;
     font-family: "Manrope", sans-serif;
 }
 
@@ -642,15 +643,15 @@
     justify-content: flex-start;
     color: #F5863480;
     font-weight: 800;
-    font-size: 8rem;
+    font-size: 200px;
     font-family: "Manrope", sans-serif;
 }
 
 .counttext {
-    top: 50%;
-    font-size: 21px;
+
+    font-size: 40px;
     position: relative;
-    bottom: 25px;
+    bottom: 50px;
 }
 
 
@@ -850,13 +851,14 @@ li::before {
     height: 80vh;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+
 }
 
 .last-left {
+    font-size: 65px;
     display: flex;
-    align-items: start;
-    justify-content: s;
+    align-items: flex-start;
+
     height: 100%;
     width: 40%;
 
@@ -867,7 +869,7 @@ li::before {
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 5%;
+
     width: 60%;
     padding-right: 30px;
 
