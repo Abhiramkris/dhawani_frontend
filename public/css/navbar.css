@@ -16,7 +16,6 @@ body {
     color: white;
     gap: 5px;
     overflow: hidden;
-
 }
 
 .topcontainerlinks p {
@@ -26,7 +25,6 @@ body {
 /* Navbar container */
 .navbar {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     background-color: #fff;
     padding: 20px;
@@ -36,11 +34,12 @@ body {
     z-index: 1000;
 }
 
+/* Logo alignment */
 #nav-logo {
-    margin-right: 50px;
+    margin-right: auto;
+    /* Pushes logo to the far left */
 }
 
-/* Logo alignment */
 #nav-logo-toggle {
     display: none;
     position: absolute;
@@ -71,6 +70,10 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
+    /* Centers the nav links */
+    flex-grow: 1;
+    /* Ensures links take space between logo and button */
 }
 
 .nav-links a {
@@ -92,16 +95,14 @@ body {
     border-bottom: 3px solid #811622;
 }
 
-.nav-links a.active {
-    color: #811622;
-    font-weight: bold;
-    border-top: 3px solid #811622;
+/* Nav button */
+#nav-btn {
+    margin-right: 15px;
+    margin-left: auto;
+    /* Pushes button to the far right */
 }
 
-
-/* Nav button */
 #nav-btn button {
-    margin-left: 50px;
     height: 50px;
     width: 150px;
     border-radius: 5px;
@@ -125,6 +126,11 @@ body {
 
 /* Responsive design for smaller screens */
 @media (max-width: 975px) {
+
+    #nav-btn {
+        margin-left: 0px;
+    }
+
     #nav-logo {
         display: none;
     }

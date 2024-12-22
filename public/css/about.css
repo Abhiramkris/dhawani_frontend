@@ -77,13 +77,16 @@
 }
 
 .bg2 {
-    padding: 100px;
+    padding: 60px;
+    padding-bottom: 20px;
     background-color: #F7E2D1;
 
 }
 
 
 .aboutcarousel {
+    margin-top: -7%;
+    margin-bottom: -10%;
     scale: .8;
 }
 
@@ -160,7 +163,7 @@
 
 .iconsvalue {
     display: flex;
-    gap: 100px;
+    gap: 150px;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -175,10 +178,18 @@
     align-items: center;
 }
 
+.icons-para p {
+    justify-content: center;
+    width: 200px;
+}
+
+
+
 .icoon p {
+    text-align: center;
     display: flex;
     margin-top: 16px;
-    font-size: 10.8px;
+    font-size: 15px;
 }
 
 .cvalue {
