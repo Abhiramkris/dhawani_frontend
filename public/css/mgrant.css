@@ -43,15 +43,6 @@
     }
 }
 
-.twocard {
-    width: 87%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 3%;
-
-}
 
 /* Common styles for cards */
 .card1,
@@ -350,6 +341,12 @@
     align-items: center;
     margin: auto;
     margin-top: 40px;
+}
+
+.selectorcard h5{
+    width: 70%;
+    font-size: 15px;
+    margin: auto;
 }
 
 @media (max-width: 800px) {
