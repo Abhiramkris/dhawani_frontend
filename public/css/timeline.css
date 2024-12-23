@@ -3,7 +3,7 @@
     position: relative;
     padding: 20px;
     width: 80%;
-    margin: 0 auto;
+    margin-right: auto;
     border-left: 4px solid transparent; /* For visual alignment */
     opacity: 0; /* Initially hidden */
     transform: translateY(50px); /* Slide from below */

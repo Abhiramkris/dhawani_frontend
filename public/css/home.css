@@ -427,6 +427,8 @@ body {
     background-position: center; /* Center the image in the container */
     height: 101vh; /* Full height of the viewport */
     width: 100vw; /* Full width of the viewport */
+    position: relative;
+    overflow: hidden;
     margin-top:-100px; /* Negative margin to adjust the position */
 }
 
@@ -488,7 +490,6 @@ body {
     overflow: hidden;
     z-index: 0;
     height: 100%;
-    width: 60%;
 }
 
 @media (max-width:990px) {
