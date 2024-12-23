@@ -310,6 +310,7 @@ body {
 @media (max-width:800px) {
     .counttext {
         font-size: 15px;
+        margin-top: 20px;
     }
 
     .top3-cont {
@@ -520,7 +521,30 @@ body {
     .boxy9,
     .boxy10 {
         display: block;
+        background-color: #f7e2d1;
     }
+
+
+    .boxy6 h2,
+    .boxy7 h2,
+    .boxy8 h2,
+    .boxy9 h2,
+    .boxy10 h2 {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .boxy6 h4,
+    .boxy7 h4,
+    .boxy8 h4,
+    .boxy9 h4,
+    .boxy10 h4 {
+        font-size: 15px;
+        padding-left: 20px;
+        color: #53435B;
+        padding-bottom: 10px;
+    }
+
 }
 
 

@@ -614,10 +614,10 @@
 }
 
 .counttext {
-
-    font-size: 40px;
+    font-size: 28px;
     position: relative;
     bottom: 50px;
+    left: 25px;
 }
 
 
@@ -700,6 +700,10 @@ li::before {
 
 
 
+.service1{
+    display: none;
+    align-items: center;
+}
 
 @media (max-width: 800px) {
     .muft {
@@ -707,19 +711,21 @@ li::before {
     }
 
     .countelement {
-        font-size: 2.3rem;
-
+        font-size: 55px;
     }
 
     .countelement1 {
-        font-size: 2.3rem;
+        font-size: 35px;
 
     }
 
     .counttext {
-        font-size: 1rem;
-        margin-top: 20px;
-
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .serviceconatiners{
+        display: none;
     }
 
     .solcard {
