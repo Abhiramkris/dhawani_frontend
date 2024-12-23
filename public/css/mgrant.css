@@ -10,7 +10,6 @@
 }
 
 .solutioncontainer {
-    padding-bottom: 500px;
     display: flex;
     align-items: center;
 }
@@ -44,7 +43,6 @@
 
 .twocard {
     width: 87%;
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +145,14 @@
 
 
 
-@media (max-width: 700px) {}
+@media (max-width: 800px) {
+.card1, .card2{
+    width: 90%;
+}
+.card2{
+    margin-top: 20px;
+}
+}
 
 
 .textincard {
@@ -159,7 +164,6 @@
 }
 
 .keyfeatures {
-    margin-top: 130px;
     width: 100%;
     background-image: url("/public/img/mgrant/Frame.png");
     /* bg url here */
