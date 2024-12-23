@@ -1,74 +1,75 @@
+<link rel="stylesheet" href="/public/css/footer.css">
+<footer class="footer">
+  <br> <br>
+  <div class="footer-content">
+    <!-- First Column -->
+    <div class="footer-section logo-section" style="margin-top: 28px;">
+      <img src="/public/img/New folder/Dhwani White Logo 1.png" alt=" Logo" class="footer-logo">
+      <form class="newsletter">
+        <label for="email">Subscribe to our newsletter</label>
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </div>
+      </form>
+      <div
+        style="width: 90%; height: 200px; background-image: url('/public/img/fotmap.png'); object-fit: contain; border-radius: 10px;">
 
-  <link rel="stylesheet" href="/public/css/footer.css">
-  <footer class="footer">
-    <br> <br> 
-    <div class="footer-content">
-      <!-- First Column -->
-      <div class="footer-section logo-section" style="margin-top: 28px;">
-        <img src="/public/img/Dhwani final Logo 1.png" alt="Logo" class="footer-logo">
-        <form class="newsletter">
-          <label for="email">Subscribe to our newsletter</label>
-          <div class="input-group">
-            <input type="email" id="email" placeholder="Your email">
-            <button type="submit">Subscribe</button>
-          </div>
-        </form>
-        <div style="width: 90%; height: 200px; background-image: url('/public/img/fotmap.png'); object-fit: contain; border-radius: 10px;">
-
-        </div> <br> <br> <br>
-      </div>
-
-      <!-- Middle Column -->
-      <div class="footer-section contact-info">
-        <h3>Get in touch with us</h3>
-        <p><strong>Corporate Office</strong> <br> 
-          Ground Floor, Building #94, 
-          Sector 44, Gurugram, Haryana 122002</p> <br>
-        <p><strong>Registered Office</strong> <br>
-          2, Kishan Nagar, Balkeshwar, 
-          Agra, Uttar Pradesh, 282004</p> <br>
-        <p><strong>partnership@dhwaniris.com</strong></p> <br>
-        <p><strong>careers@dhwaniris.com</strong></p><br>
-        <p><strong>+91 9574655961</strong></p>
-
-      </div>
-
-      <!-- Last Column -->
-      <div class="footer-section quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="/" id="home" target="_blank">Home</a></li>
-          <li><a href="/about" id="aboutus" target="_blank">About Us</a></li>
-          <li><a href="/mform" id="sol" target="_blank">Solutions</a></li>
-          <li><a href="/about" id="team" target="_blank">Team</a></li>
-          <li><a href="#" id="careers" target="_blank">Careers</a></li>
-          <li><a href="/blogs" id="resources" target="_blank">Resources</a></li>
-          <li><a href="/contact-us" id="contact-us" target="_blank">Contact Us</a></li>
-        </ul>
-      </div>
+      </div> <br> <br> <br>
     </div>
-  </footer>
 
-  <script>
-    // Function to get query parameters
-    function getQueryParameter(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
+    <!-- Middle Column -->
+    <div class="footer-section contact-info">
+      <h3>Get in touch with us</h3>
+      <p><strong>Corporate Office</strong> <br>
+        Ground Floor, Building #94,
+        Sector 44, Gurugram, Haryana 122002</p> <br>
+      <p><strong>Registered Office</strong> <br>
+        2, Kishan Nagar, Balkeshwar,
+        Agra, Uttar Pradesh, 282004</p> <br>
+      <p><strong>partnership@dhwaniris.com</strong></p> <br>
+      <p><strong>careers@dhwaniris.com</strong></p><br>
+      <p><strong>+91 9574655961</strong></p>
 
-    // Read 'active' from the URL query string
-    const activeSection = getQueryParameter("active");
+    </div>
 
-    // Highlight the active section
-    if (activeSection) {
-      const activeLink = document.getElementById(activeSection);
-      if (activeLink) {
-        activeLink.classList.add("active");
-      } else {
-        console.error(`No link found with id: ${activeSection}`);
-      }
+    <!-- Last Column -->
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/" id="home" target="_blank">Home</a></li>
+        <li><a href="/about" id="aboutus" target="_blank">About Us</a></li>
+        <li><a href="/mform" id="sol" target="_blank">Solutions</a></li>
+        <li><a href="/about" id="team" target="_blank">Team</a></li>
+        <li><a href="#" id="careers" target="_blank">Careers</a></li>
+        <li><a href="/blogs" id="resources" target="_blank">Resources</a></li>
+        <li><a href="/contact-us" id="contact-us" target="_blank">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Function to get query parameters
+  function getQueryParameter(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  // Read 'active' from the URL query string
+  const activeSection = getQueryParameter("active");
+
+  // Highlight the active section
+  if (activeSection) {
+    const activeLink = document.getElementById(activeSection);
+    if (activeLink) {
+      activeLink.classList.add("active");
     } else {
-      console.error("No active section provided in the URL.");
+      console.error(`No link found with id: ${activeSection}`);
     }
-  </script>
+  } else {
+    console.error("No active section provided in the URL.");
+  }
+</script>
+
 </html>
