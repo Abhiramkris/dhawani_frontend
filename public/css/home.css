@@ -420,16 +420,24 @@ body {
     padding-top: 150px;
     width: 70%;
 }
+
 .mainland {
-    background-image: url(/public/img/Group%20225.png); /* Updated URL encoding for space */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    background-size: cover; /* Make the image cover the entire container */
-    background-position: center; /* Center the image in the container */
-    height: 101vh; /* Full height of the viewport */
-    width: 100vw; /* Full width of the viewport */
+    background-image: url(/public/img/Group%20225.png);
+    /* Updated URL encoding for space */
+    background-repeat: no-repeat;
+    /* Prevent image repetition */
+    background-size: cover;
+    /* Make the image cover the entire container */
+    background-position: center;
+    /* Center the image in the container */
+    height: 101vh;
+    /* Full height of the viewport */
+    width: 100vw;
+    /* Full width of the viewport */
     position: relative;
     overflow: hidden;
-    margin-top:-100px; /* Negative margin to adjust the position */
+    margin-top: -100px;
+    /* Negative margin to adjust the position */
 }
 
 .contentcontainer h3 {
@@ -539,12 +547,13 @@ body {
         padding-left: 20px;
         padding-top: 20px;
     }
+
     .boxy6 h4,
     .boxy7 h4,
     .boxy8 h4,
     .boxy9 h4,
     .boxy10 h4 {
-        font-size: 15px;
+        font-size: 10px;
         padding-left: 20px;
         color: #53435B;
         padding-bottom: 10px;
@@ -599,7 +608,7 @@ body {
     width: 90%;
     color: #53435B;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     padding-top: 20px;
 }
 
