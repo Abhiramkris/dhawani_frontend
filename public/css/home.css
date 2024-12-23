@@ -1,4 +1,4 @@
-html {
+body {
     margin: 0;
     font-family: poppins;
     overflow-x: hidden;
@@ -298,11 +298,12 @@ html {
 
 .counttext {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     color: #53435B;
+    width: 200px;
 
 }
 
@@ -421,7 +422,7 @@ html {
     background-image: url(/public/img/Group\ 225.png);
     height: 101vh;
     width: 100%;
-    margin-top: -110px;
+    margin-top: -128px;
 }
 
 .contentcontainer h3 {
@@ -476,12 +477,13 @@ html {
 }
 
 .landuimg {
-    top: 200px;
+    top: 175px;
     right: -200px;
     position: absolute;
     overflow: hidden;
     z-index: 0;
     height: 78%;
+    width: 70vw;
 }
 
 @media (max-width:990px) {
@@ -555,7 +557,8 @@ html {
     margin-left: 20px;
     margin-top: 4%;
     width: 50%;
-    color: #53435B;
+    color: black;
+    font-size: 28px;
 }
 
 .boxy1 h4,

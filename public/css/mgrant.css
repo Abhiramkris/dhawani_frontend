@@ -421,77 +421,43 @@
     gap: 20px;
 }
 
+
 .midimpact {
     width: 30%;
     height: 620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative; /* Establish a positioning context for the text-content */
     overflow: hidden;
-}
-
-.midimpact img {
+  }
+  
+  .midimpact img {
     width: 100%;
-    height: 70%;
+    height: 100%; /* Make the image cover the entire container */
     object-fit: cover;
-
-}
-
-.midimpact .text-content {
-    background-color: #811622;
-    font-family: "Manrope", sans-serif;
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    height: 40%;
-}
-
-#midimpact-hover {
-    position: relative;
-    overflow: hidden;
-    /* Ensures hover-content doesn’t spill outside */
-}
-
-#midimpact-hover .hover-content {
-    position: absolute;
+    position: absolute; /* Keep the image fixed in place */
     top: 0;
     left: 0;
-    width: 50%;
-    /* Starts with half the width */
-    height: 100%;
-    /* Full height of parent */
-    background-color: rgba(50, 50, 150, 0.85);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;
-    /* Smooth animation */
-}
-
-#midimpact-hover:hover .hover-content {
-    width: 100%;
-    /* Expands to cover the entire parent on hover */
-}
-
-#midimpact-hover .hover-text {
-    font-size: 1rem;
+    z-index: 1; /* Place the image below the text content */
+  }
+  
+  .midimpact .text-content {
+    background-color: rgba(129, 22, 34, 0.9); /* Semi-transparent overlay */
+    font-family: "Manrope", sans-serif;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
     font-weight: bold;
-    color: white;
-    opacity: 1;
-    /* Visible by default */
-}
-
-#midimpact-hover:hover .hover-text {
-    color: white;
-    /* Change text color on hover */
-}
-
-#midimpact-hover .hover-points {
-    font-size: 10px;
-    color: white;
-}
+    position: absolute; /* Overlay the text content on the image */
+    bottom: 0; /* Start from the bottom of the container */
+    width: 100%;
+    height: 35%; /* Default height */
+    z-index: 2; /* Place the text content above the image */
+    transition: height 0.3s ease-in-out; /* Smooth expansion on hover */
+  }
+  
+  .midimpact:hover .text-content {
+    height: 100%; /* Expand text content height on hover */
+  }
+  
 
 
 
@@ -634,7 +600,7 @@
     justify-content: flex-start;
     color: #F5863480;
     font-weight: 800;
-    font-size: 200px;
+    font-size: 100px;
     font-family: "Manrope", sans-serif;
 }
 
@@ -643,7 +609,7 @@
     justify-content: flex-start;
     color: #F5863480;
     font-weight: 800;
-    font-size: 200px;
+    font-size: 100px;
     font-family: "Manrope", sans-serif;
 }
 

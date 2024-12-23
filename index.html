@@ -16,7 +16,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="overflow-x: hidden;"> 
   <div id="navbarframe">
     <div class="topcontainerlinks">
       <img src="/public/img/others/Vector (2).png" style="margin-left: 3%;" alt="">
@@ -72,7 +72,7 @@
   <!-- lamding -->
 
   <div class="mainland">
-    <div class="contentcontainer" style="position: relative; margin-top: 40px;z-index: 100;">
+    <div class="contentcontainer" style="position: relative; margin-top: 30px;z-index: 100;">
       <h2>
         EMPOWERING SOCIAL IMPACT <br> THROUGH TECHNOLOGY
       </h2>
@@ -104,12 +104,12 @@
     </div>
   </div>
 
-  <div style="width: 80%; text-align: center; margin: auto; font-size: 18px; color: #53435B;"> <br>
+  <div style="width: 80%; text-align: center; margin: auto; font-size: 28px; color: #53435B; font-weight: 500;"> <br>
     <h3>We help social organizations go digital with custom tech solutions designed to support their vision.</h3>
   </div>
 
   <br>
-  <div class="dhnititle" style="font-size: 40px;">Our Services<br>
+  <div class="dhnititle" >Our Services<br>
     <div class="titlehr" style="width: 5%;"></div><br>
   </div>
 
@@ -180,7 +180,7 @@
     <div class="top3-cont">
       <div class="top3-left">
         <div class="top3-left-top">
-          <div class="dhnititle" style="font-size: 40px; text-align: left;">Impact & Outreach<br>
+          <div class="dhnititle" style="font-size: 40px; text-align: left; margin-top: -100px;">Impact & Outreach<br>
             <div class="titlehr" style="width: 20%; margin-left: 0;"></div><br>
           </div>
         </div>
@@ -305,6 +305,7 @@
 
         ]
       },
+      
       "Social Enterprises": {
         rows: 2,
         logos: [
@@ -415,6 +416,8 @@
       },
 
     };
+    
+    
 
     function renderLogos(category) {
       const categoryData = logoData[category];
@@ -456,24 +459,32 @@
       }
     }
     Object.keys(logoData).forEach((category, index) => {
-      const tab = document.createElement('div');
-      tab.classList.add('tab');
-      tab.textContent = category;
-      tab.dataset.category = category;
+  const tab = document.createElement('div');
+  tab.classList.add('tab');
+  tab.dataset.category = category;
 
-      if (index === 0) tab.classList.add('active'); // First tab is active by default
+  // Create a span for the category text
+  const span = document.createElement('span');
+  span.classList.add('tab-text');
+  span.textContent = category;
 
-      tab.addEventListener('click', () => {
-        // Remove active class from all tabs
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+  // Append the span to the tab
+  tab.appendChild(span);
 
-        // Render logos for the selected category
-        renderLogos(category);
-      });
+  if (index === 0) tab.classList.add('active'); // First tab is active by default
 
-      tabContainer.appendChild(tab);
-    });
+  tab.addEventListener('click', () => {
+    // Remove active class from all tabs
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    // Render logos for the selected category
+    renderLogos(category);
+  });
+
+  tabContainer.appendChild(tab);
+});
+
 
 
     // Initial render of the first category
@@ -493,7 +504,17 @@
       display: flex;
       gap: 20px;
       justify-content: center;
+      flex-wrap: wrap;
     }
+
+    @media (max-width:800px) {
+    .tabs {
+      flex: 1 1 calc(33.33% - 20px);
+    }
+    .midimpact{
+      display: none;
+    }
+  }
 
     .tab {
       width: 150px;
@@ -508,6 +529,11 @@
       cursor: pointer;
     }
 
+    .tab-text {
+  display: inline-block;
+  width: 120px; /* Restrict text width */
+
+}
     .tab.active {
       background-color: #f39c12;
       color: white;
@@ -570,7 +596,6 @@
     }
   </style>
 
-  <br> <br>
 
 
   <!-- after grandma  -->
@@ -636,14 +661,15 @@
     <div class="midimpact">
       <!-- Image Section -->
       <img src="/public/img/Hindustan Unilever 1.png" alt="Impact Story Image">
-
+    
       <!-- Text Content Section -->
-      <div class="text-content" style="text-align: left">
-        <p style="margin-left: 10px; font-weight: 600; font-size: 15px;">Hindustan Unilever Foundation (HUF)</p>
-        <p style="text-align: left; font-weight: 400; margin-left: 10px; font-size: 10px; margin-top: 20px;">Empowering
-          12 NGOs through its collaboration with Hindustan Unilever Foundation (HUF) to drive sustainable water
+      <div class="text-content">
+        <p style="font-size: 16px;">Hindustan Unilever Foundation (HUF)</p>
+        <p style="font-size: 10px; font-weight: 300;">
+          Empowering 12 NGOs through its collaboration with Hindustan Unilever Foundation (HUF) to drive sustainable water
           management using Data Management System to collect and monitor farmer data in multiple languages, enabling
-          informed decisions, effective water resource management, and community resilience.</p>
+          informed decisions, effective water resource management, and community resilience.
+        </p>
       </div>
     </div>
 
