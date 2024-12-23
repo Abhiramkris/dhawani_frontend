@@ -43,6 +43,13 @@
     }
 }
 
+.twocard{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Common styles for cards */
 .card1,
@@ -148,6 +155,9 @@
 
     .card2 {
         margin-top: 20px;
+    }
+    .twocard{
+        flex-direction: row;
     }
 }
 
@@ -647,8 +657,8 @@
 .counttext {
     font-size: 28px;
     position: relative;
-    bottom: 50px;
-    left: 25px;
+    bottom: 30px;
+    left: 5px;
 }
 
 
@@ -802,9 +812,9 @@ li::before {
 }
 
 .launchiconscontainer {
-    width: 100%;
+    width: 80%;
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;

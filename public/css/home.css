@@ -421,24 +421,6 @@ body {
     width: 70%;
 }
 
-.mainland {
-    background-image: url(/public/img/Group%20225.png);
-    /* Updated URL encoding for space */
-    background-repeat: no-repeat;
-    /* Prevent image repetition */
-    background-size: cover;
-    /* Make the image cover the entire container */
-    background-position: center;
-    /* Center the image in the container */
-    height: 101vh;
-    /* Full height of the viewport */
-    width: 100vw;
-    /* Full width of the viewport */
-    position: relative;
-    overflow: hidden;
-    margin-top: -100px;
-    /* Negative margin to adjust the position */
-}
 
 .contentcontainer h3 {
     font-weight: 500;
@@ -491,18 +473,33 @@ body {
     }
 }
 
-.landuimg {
-    top: 20%;
-    left: 40%;
-    position: absolute;
-    overflow: hidden;
-    z-index: 0;
-    height: 100%;
+.mainland {
+    background-image: url(/public/img/Group%20225.png);
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover; /* Make the image cover the entire container */
+    background-position: center; /* Center the image in the container */
+    height: 101vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    position: relative; /* Ensure child elements are positioned relative to .mainland */
+    overflow: hidden; /* Clip any overflowing content */
+    margin-top: -190px; /* Adjust the positioning of the container */
 }
+
+.landuimg {
+    position: absolute; /* Position the image relative to .mainland */
+    bottom: 0; /* Align the bottom of the image with the bottom of .mainland */
+    left: 70%; /* Center the image horizontally */
+    transform: translateX(-50%); 
+    height: auto; /* Maintain the aspect ratio of the image */
+    max-width: 100%; /* Ensure the image does not exceed the width of the container */
+    max-height: 100%; /* Ensure the image does not exceed the height of the container */
+    z-index: 0; /* Keep it behind other content */
+}
+
 
 @media (max-width:990px) {
     .landuimg {
-        display: none;
+        filter: blur(1px);
     }
 
     .boxy4 {
