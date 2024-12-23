@@ -1,5 +1,5 @@
 .dhnititle {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
   color: #811622;
@@ -246,7 +246,23 @@
   flex-wrap: wrap;
 }
 
+.switch-res {
+  display: none;
+}
+
 @media (max-width:973px) {
+
+
+
+
+  .intial-switch {
+    display: none;
+  }
+
+  .switch-res {
+    display: flex;
+  }
+
   .mformimg {
     transform: scale(0.7);
   }

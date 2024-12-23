@@ -5,6 +5,7 @@
   align-items: center;
   display: flex;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tab-button {
