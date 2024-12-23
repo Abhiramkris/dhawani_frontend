@@ -277,7 +277,9 @@ body {
 }
 
 .contentcontainer {
-    margin-left: 60px;
+    margin-left: 10%;
+    width: 80%;
+    max-width: 700px;
 }
 
 .grand-img-bg {
@@ -337,7 +339,7 @@ body {
     .contentcontainer {
         scale: .7;
         margin: 0;
-        padding-top: -130px;
+        margin-top: 100px;
     }
 
     .boxy6,
@@ -415,15 +417,18 @@ body {
     color: #811622;
     font-size: 45px;
     line-height: 45px;
-    padding-top: 180px;
+    padding-top: 150px;
     width: 70%;
 }
-
 .mainland {
-    background-image: url(/public/img/Group\ 225.png);
-    height: 101vh;
-    width: 100%;
-    margin-top: -128px;
+    background-image: url(/public/img/Group%20225.png); /* Updated URL encoding for space */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover; /* Make the image cover the entire container */
+    background-position: center; /* Center the image in the container */
+    height: 101vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    margin-top: -128px; /* Negative margin to adjust the position */
+    margin: auto;
 }
 
 .contentcontainer h3 {
@@ -478,12 +483,12 @@ body {
 }
 
 .landuimg {
-    top: 175px;
-    right: -200px;
+    top: 30%;
+    left: 40%;
     position: absolute;
     overflow: hidden;
     z-index: 0;
-    height: 78%;
+    height: 100%;
     width: 70vw;
 }
 

@@ -10,6 +10,9 @@ body {
     padding: 20px 10px;
     z-index: 0;
     background-image: url("/public/img/foot.png");
+     background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover; /* Make the image cover the entire container */
+    background-position: center; /* Center the image in the container */
 }
 .footer::before{
     background-color: #811622D9;

@@ -733,8 +733,11 @@ li::before {
     }
 
     .countelement1 {
-        font-size: 35px;
+        font-size: 55px;
 
+    }
+    .top3-right{
+        gap: 56px;
     }
 
     .counttext {
