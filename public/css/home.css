@@ -427,8 +427,7 @@ body {
     background-position: center; /* Center the image in the container */
     height: 101vh; /* Full height of the viewport */
     width: 100vw; /* Full width of the viewport */
-    margin-top: -128px; /* Negative margin to adjust the position */
-    margin: auto;
+    margin-top:-100px; /* Negative margin to adjust the position */
 }
 
 .contentcontainer h3 {
@@ -483,13 +482,13 @@ body {
 }
 
 .landuimg {
-    top: 30%;
+    top: 20%;
     left: 40%;
     position: absolute;
     overflow: hidden;
     z-index: 0;
     height: 100%;
-    width: 70vw;
+    width: 60%;
 }
 
 @media (max-width:990px) {
