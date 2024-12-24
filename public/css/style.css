@@ -126,7 +126,6 @@
 
 .c1ard {
   width: 50%;
-  margin-top: 50px;
 }
 
 .c2ard {
@@ -139,7 +138,9 @@
 .c2 {
   display: flex;
   width: 50%;
-  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .mformcard {
@@ -355,7 +356,7 @@
 
 .icns {
   max-width: 1600px;
-
+  row-gap: 30px !important;
 }
 
 .icnss1 {
@@ -367,6 +368,17 @@
   width: 80%;
   height: 100% !important;
 }
+
+.mformcard2 h3{
+  width: 80%;
+  height: 100% !important;
+  font-weight: 600;
+  font-size: var(--sub);
+  width: 100%;
+  color: #53435B;
+  font-family: "Manrope", sans-serif;
+}
+
 @media (max-width:973px) {
 .others-down{
   flex-direction: column;
@@ -410,7 +422,8 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-left: 5%;
   }
 
   .c2 ul {
@@ -419,7 +432,8 @@
   }
 
   .icns {
-    display: block;
+display: block;
+gap: 70px;
   }
 
   .icns>div {

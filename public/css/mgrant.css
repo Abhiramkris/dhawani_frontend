@@ -3,7 +3,12 @@
 * {
     font-family: poppins;
 }
-
+:root {
+    --head: 35px;
+    --sub:28px;
+    --boddy:20px;
+  }
+  
 .solutionlanding {
     height: 100%;
     padding-bottom: 800px;
@@ -200,7 +205,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
+    gap: 20px;
     position: relative;
     margin: auto;
     justify-content: center;
@@ -228,18 +233,21 @@
 }
 
 .keycard h3 {
-
+    font-family: poppins;
     margin-top: 60px;
     color: #F58634;
-    line-height: 30px;
+    line-height: 50px;
     margin-top: 20px;
+    font-weight: 600;
+    font-size: var(--boddy);
 }
 
 
 .keycard h8 {
     position: absolute;
-    font-size: 12px;
+    font-size: 15px;
     text-align: left;
+    width: 300px;
 }
 
 @media (max-width: 1300px) {
@@ -255,14 +263,21 @@
     }
 
     .keycard h3 {
-        font-size: 18px;
+        font-size: var(--sub);
         line-height: 18px;
+        line-height: 28px !important;
     }
 
     .keycard h8 {
-        width: 30%;
+        width: 20%;
         font-size: 12px;
-        line-height: 12px;
+        line-height: 15px;
+        width: 300px;
+        margin-top: 8px;
+    }
+
+    .keycard{
+        border: none !important;
     }
 }
 
@@ -276,6 +291,9 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
         padding-bottom: 25px;
+    }
+    .keycard{
+        border: none !important;
     }
 }
 
