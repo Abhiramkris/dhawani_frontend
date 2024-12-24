@@ -339,6 +339,15 @@ max-width: 1200px;
 
 }
 
+.icnss1{
+  max-width: 1600px;
+ gap: 80px;
+}
+
+.mformcard2 {
+  width: 80%;
+}
+
 @media (max-width: 850px) {
   .solutiontitle {
     margin-top: 180px;
@@ -380,9 +389,37 @@ max-width: 1200px;
   .icns {
     display: block;
   }
-
+  
   .icns>div {
     width: 90%;
   }
 
+}
+
+@media (max-width: 1050px) {
+  .icnss1 {
+    flex-wrap: wrap;        /* Allow wrapping of items */
+    flex-direction: row;  
+    align-items: center;   /* Center align items */
+    gap: 20px;             /* Add some spacing between items */
+  }
+
+  .icnss1 > div {
+    width: 100%; /* Make each item take the full width */
+    height: auto; /* Adjust height dynamically */
+    display: flex;
+    align-items: center; /* Center content within each item */
+    justify-content: center;
+  }
+
+  .mformimg {
+    width: 20%; /* Adjust image size */
+    margin-right: 10px; /* Add spacing between image and text */
+  }
+
+  .mformcard2 {
+    width: 100%; /* Adjust text container width */
+    border-left: none; /* Optionally remove the left border */
+    text-align: left; /* Align text */
+  }
 }
