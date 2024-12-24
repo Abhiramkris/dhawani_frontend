@@ -225,3 +225,13 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Active link styles */
+.nav-links a.active {
+    color: #811622;
+    font-weight: bold;
+    border-top: 3px solid #811622;
+    /* Adds a bar above */
+    border-bottom: 3px solid #811622;
+    /* Adds a bar below */
+}
