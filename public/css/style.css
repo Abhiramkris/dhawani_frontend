@@ -1,12 +1,18 @@
+:root {
+  --head: 35px;
+  --sub:28px;
+  --boddy:20px;
+}
+
 .dhnititle {
-  font-size: 40px;
+  font-size: var(--head);
   font-weight: 700;
   text-align: center;
   color: #811622;
-  width: 100%;
+  width: 94%;
 }
 .dhnititle1 {
-  font-size: 40px;
+  font-size: var(--head);
   font-weight: 700;
   text-align: center;
   color: #811622;
@@ -28,7 +34,7 @@
   text-align: center;
   color: #53435B;
   width: 80%;
-  font-size: 15px;
+  font-size: var(--sub);
   margin: auto;
   margin-top: 30px;
   max-width: 1100px;

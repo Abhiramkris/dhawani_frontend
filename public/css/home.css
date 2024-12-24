@@ -300,7 +300,7 @@ body {
 
 .counttext {
     font-weight: 500;
-    font-size: 20px;
+    font-size: var(--boddy);
     margin-top: 20px;
     font-family: "Manrope", sans-serif;
     font-weight: 700;
@@ -553,6 +553,7 @@ body {
         padding-left: 20px;
         color: #53435B;
         padding-bottom: 10px;
+        width: 95%;
     }
 
 }

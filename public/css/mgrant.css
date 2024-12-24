@@ -180,7 +180,6 @@
 
 .keyfeatures {
     width: 100%;
-    background-image: url("/public/img/mgrant/Frame.png");
     /* bg url here */
 }
 
@@ -243,7 +242,7 @@
     text-align: left;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
     .keycontainer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -267,7 +266,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .keycontainer {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -411,7 +410,7 @@
 
     .selectorimg {
         width: 100%;
-        height: 300px;
+        height: 200px;
         margin-top: 20px;
     }
 
@@ -680,17 +679,29 @@
     position: relative;
     bottom: 30px;
     left: 5px;
+    width: 100%;
+}
+
+.counttext1 {
+    font-size: 28px;
+    margin-left: 180px;
+    position: relative;
+    bottom: 30px;
+    left: 5px;
+    width: 100%;
+    top: -10px;
 }
 
 
 .solcard {
     background-color: #F7E2D1;
     width: 100%;
-    gap: 100px;
+    gap: 120px;
     height: auto;
     display: flex;
     margin: auto;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 
@@ -699,13 +710,13 @@
     width: 25%;
     height: 500px;
     background-color: white;
-    margin-top: 175px;
+    margin-top: 215px;
     border-radius: 20px;
     font-family: "Manrope", sans-serif;
     margin-bottom: 20px;
     max-width: 500px;
     min-width: 300px;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
     overflow: hidden;
 }
 
@@ -741,6 +752,7 @@ li {
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
+
 }
 
 li::before {
@@ -782,8 +794,11 @@ li::before {
     .muft {
         position: relative;
     }
-    .solnimg{
+    .solnimg1{
         height: 33%;
+    }
+    .solnimg{
+        height: 35%;
     }
 
     .countelement {
@@ -796,13 +811,20 @@ li::before {
     }
 
     .top3-right {
-        gap: 56px;
+        gap: 30px;
     }
 
     .counttext {
-        font-size: 20px;
+        font-size:var(--boddy);
+        left: 15px;
+        width: 100px;
+    }
+    .counttext1 {
+        font-size:var(--boddy);
+        left: -10px;
 
     }
+
 
     .serviceconatiners {
         display: none;
@@ -822,8 +844,9 @@ li::before {
         margin: auto;
         max-width: 350px;
         padding-bottom: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
+  
 
     .keyfeatures1 {
         align-items: center;
