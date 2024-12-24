@@ -800,10 +800,11 @@
           const moveCarousel = (direction) => {
             const items = document.querySelectorAll(`#carousel-${category} .team-member`);
             const totalItems = items.length;
-            const itemWidth = items[0].offsetWidth + 20; // Including gap
+            const itemWidth = items[0].getBoundingClientRect().width + 20; // Include margin/gap
             currentIndex = (currentIndex + direction + totalItems) % totalItems;
             document.querySelector(`#carousel-${category}`).style.transform = `translateX(-${currentIndex * itemWidth}px)`;
           };
+
 
           prevBtn.addEventListener('click', () => moveCarousel(-1));
           nextBtn.addEventListener('click', () => moveCarousel(1));

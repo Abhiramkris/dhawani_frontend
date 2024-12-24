@@ -43,7 +43,7 @@
     }
 }
 
-.twocard{
+.twocard {
     display: flex;
     gap: 40px;
     margin: auto;
@@ -156,7 +156,8 @@
     .card2 {
         margin-top: 20px;
     }
-    .twocard{
+
+    .twocard {
         flex-direction: row;
         width: 100%;
     }
@@ -265,6 +266,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
+
     .keycontainer1 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -361,7 +363,7 @@
     margin-top: 40px;
 }
 
-.selectorcard h5{
+.selectorcard h5 {
     width: 70%;
     font-size: 15px;
     margin: auto;
@@ -380,23 +382,28 @@
 
     .selector {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        grid-template-rows: repeat(2, auto);  /* 2 rows */
-        width: 100%;
-    }
-    .selectorcard{
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns */
+        grid-template-rows: repeat(2, auto);
+        /* 2 rows */
         width: 100%;
     }
 
-    .selectorcard h5{
+    .selectorcard {
+        width: 100%;
+    }
+
+    .selectorcard h5 {
         width: 70%;
         font-size: 10px;
         margin: auto;
     }
-    .selector2{
+
+    .selector2 {
         width: 100%;
     }
-    .selectorimg{
+
+    .selectorimg {
         width: 100%;
         height: 200px;
         margin-top: 20px;
@@ -904,7 +911,7 @@ li::before {
 
 .last-left {
     font-size: 65px;
-    display: flex;
+
     align-items: flex-end;
     height: 100%;
     width: 40%;
@@ -917,7 +924,7 @@ li::before {
     justify-content: center;
     height: 600px;
     width: 60%;
-    padding-right: 30px;
+    padding-right: 10%;
 
 }
 
@@ -1011,4 +1018,20 @@ li::before {
 .blur-layer.right {
     right: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+
+.responsive-container {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    .lastcontainer {
+        display: none;
+    }
+
+    .responsive-container {
+        display: block;
+
+    }
 }
