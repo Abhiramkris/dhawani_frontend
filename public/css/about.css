@@ -110,7 +110,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #811622;
+    background-color: rgba(129, 22, 34, 0.5);
 }
 
 /* Position the control buttons below the carousels */
@@ -211,7 +211,7 @@
 
     .dhnititle p {
         margin-top: -20px;
-        font-size: 10px;
+
     }
 
     .cvalue {}
@@ -241,6 +241,69 @@
     }
 }
 
+.cvalue {
+    color: white;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 45.5vh;
+    background-image: url(/public/img/codifyformatter\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .cvalue {
+        height: auto;
+        /* Allow the height to adjust with content */
+        padding: 20px;
+        /* Add some padding for better spacing */
+        background-size: cover;
+        /* Ensure the background scales proportionally */
+        background-position: center;
+        /* Keep it centered */
+    }
+
+    .iconsvalue {
+        display: grid;
+        /* Grid layout for mobile */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+        gap: 20px;
+        /* Space between items */
+        justify-items: center;
+        align-items: center;
+        margin-top: -10px;
+    }
+
+    .icoon {
+        transform: scale(1);
+        /* Proper scaling */
+        display: flex;
+        flex-direction: column;
+        /* Stack icon and text */
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .icoon img {
+        width: 50px;
+        /* Adjust icon size */
+        height: 50px;
+    }
+
+    .icoon p {
+        font-size: 12px;
+        /* Adjust font size */
+        margin-top: 8px;
+        text-align: center;
+    }
+}
 
 
 .bg4 {
@@ -428,6 +491,11 @@
 
 }
 
+
+.found-img-circle {
+    display: none;
+}
+
 @media(max-width:890px) {
     .aboutcarousel {
         scale: .8;
@@ -470,5 +538,9 @@
         margin-left: 0%;
         height: 100%;
         width: 100%;
+    }
+
+    .found-img-circle {
+        display: block;
     }
 }

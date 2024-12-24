@@ -73,9 +73,9 @@
     rgba(51, 40, 41, 0.61),
     rgba(51, 40, 41, 0.61)), url(/public/img/4c1ea56a076ec0b3882ca5e1d9a56201.jpeg); height: 75vh; ">
     <div class=" headers aligncenterclassic"
-      style="display: flex; flex-direction: column; justify-content: center; width: 70%; padding-top: 10%; font-size: 65px;">
+      style="display: flex; flex-direction: column; justify-content: center; width: 70%; padding-top: 10%; ">
       About Us
-      <p style="font-size: 24px; font-weight: 400;">At Dhwani, we believe technology can be a game-changer for social
+      <p style="font-size:28px; font-weight: 400;">At Dhwani, we believe technology can be a game-changer for social
         impact. That's why
         we're dedicated to
         delivering innovative solutions that address the unique challenges of the development sector. </p>
@@ -113,6 +113,11 @@
     </div>
 
   </div>
+
+
+
+
+
 
   <!--  landin2 -->
   <div class="bg2">
@@ -459,6 +464,7 @@
   </div>
 
 
+
   <!-- landing4 -->
 
   <div class="bg4">
@@ -467,374 +473,352 @@
       <div class="andi1" style="width: 100%;"><em> “Let the words that you speak, the actions that you take and the work
           that you do define you. At Dhwani
           RIS, the
-          dedication towards serving our purpose speaks for itself.”</em><br><br>
+          dedication towards serving our purpose speaks for itself.”</em>
+        <br><br>
         <strong> - Sunandan Madan </strong><br>&nbsp;&nbsp;(Co-founder)
+        <div class="found-img-circle"
+          style="width: 15%; height: 15%; background-color: blue; border-radius: 50%; position: absolute; right: 30%;">
+          hi</div>
       </div>
-    </div>
-    <div class="bix2">
 
+
+    </div>
+
+    <div class="bix2">
     </div>
     <div class="bix3">
       <div style="position: relative;bottom: -80px;margin-top: -30px; width: 80%;" id="dialougs2">
-         <em>“At Dhwani RIS, the force that binds us together is our collective purpose towards technology for social
+        <em>“At Dhwani RIS, the force that binds us together is our collective purpose towards technology for social
           good.
           Social good is our goal, and technology supports our journey towards the goal.”</em><br> <br><strong> -
           Swapnil
           Agarwal </strong><br> &nbsp; &nbsp;(Co-founder)
+
+        <div class="found-img-circle"
+          style="background-color:blue; border-radius: 50%; height: 30%; width: 30%; position: absolute;right: 0%; top: 80%;">
+          hi
+        </div>
       </div>
+
     </div>
   </div>
-  </div>
 
-  <div class="dhnititle">
-    <p>Meet Our Team</p>
-    <div class="titlehr"></div>
-  </div>
-  <br> <br> <br> <br>
-  <div class="carousel-wrapper">
-    <button class="nav-btn" id="prevBtn">
-      <i data-lucide="chevron-left"></i>
-    </button>
-    <div class="carousel-container">
-      <div class="carousel" id="teamCarousel">
-        <!-- Team members will be dynamically inserted here -->
-      </div>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team</title>
+    <style>
+      .dhnititle {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .titlehr {
+        width: 60px;
+        height: 3px;
+        background-color: #FFA500;
+        margin: 0 auto;
+      }
+
+      .team-sections {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .team-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .category-heading {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .category-heading h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .carousel-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        margin: auto;
+      }
+
+      .carousel-container {
+        position: relative;
+        width: 70%;
+        height: 500px;
+        overflow: hidden;
+      }
+
+      .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 20px;
+      }
+
+      .team-member {
+        flex: 0 0 calc(25% - 15px);
+        position: relative;
+        text-align: center;
+      }
+
+      .image-wrapper {
+        position: relative;
+        overflow: hidden;
+        height: 350px;
+      }
+
+      .team-member img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+        /* Set images to grayscale by default */
+        transition: filter 0.3s ease, transform 0.3s ease;
+        /* Smooth transition for color change */
+        border-radius: 18px;
+      }
+
+      .team-member:hover img {
+        filter: grayscale(0%);
+        /* Remove grayscale (color) on hover */
+        transform: scale(1.05);
+        /* Optional: Slight zoom effect on hover */
+      }
+
+      .image-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(245, 134, 52, 1), transparent 70%);
+        pointer-events: none;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        border-radius: 18px;
+      }
+
+
+
+
+
+      .team-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: 10px;
+        text-align: left;
+      }
+
+      .team-info h2 {
+        color: white;
+        text-align: left;
+      }
+
+      .nav-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: rgba(245, 134, 52, 0.5);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-btn:hover {
+        background: rgba(245, 134, 52, 1);
+        transform: scale(1.1);
+      }
+
+      .nav-btn i {
+        color: white;
+        font-size: 24px;
+      }
+
+      @media (max-width: 768px) {
+        .team-member {
+          flex: 0 0 100%;
+          /* Show one image at a time on mobile */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="dhnititle">
+      <p>Meet Our Team</p>
+      <div class="titlehr"></div>
     </div>
-    <button class="nav-btn" id="nextBtn">
-      <i data-lucide="chevron-right"></i>
-    </button>
-  </div>
+    <br><br><br><br>
+
+    <div class="team-sections">
+      <!-- Team sections will be dynamically inserted here -->
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+
+      const teamMembers = [
+        { name: "Abhishek Jain", designation: "Chief Strategy & Growth Officer", image: "/public/img/leadership/Abhishek Jain.jpg", category: "Leadership" },
+        { name: "Deepak Batra", designation: "VP - Engineering", image: "/public/img/leadership/Deepak.jpg", category: "Leadership" },
+        { name: "Nidhi Arora", designation: "Process Consultant", image: "/public/img/leadership/Nidhi.jpg", category: "Leadership" },
+        { name: "Seema Bhardwaj", designation: "Chief Delivery Officer", image: "/public/img/leadership/Seema.png", category: "Leadership" },
+        { name: "Shobhit Mathur", designation: "Director - Partnerships", image: "/public/img/leadership/Shobhit Mathur (Director - Partnerships).JPG", category: "Leadership" },
+        { name: "Siddharth Bhargava", designation: "Chief Operating Officer", image: "/public/img/leadership/Siddharth .jpg", category: "Leadership" },
 
 
 
-  <style>
-    .carousel-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      justify-items: center;
-      justify-content: center;
-      margin: auto;
-    }
-
-    .carousel-container {
-      position: relative;
-      width: 70%;
-      height: 500px;
-      overflow: hidden;
-    }
-
-    .carousel {
-      display: flex;
-      transition: transform 0.5s ease;
-      gap: 20px;
-
-    }
-
-    .team-member {
-      flex: 0 0 calc(25% - 15px);
-      position: relative;
-      text-align: center;
+        { name: "Aashima Takkar", designation: "Engagement Manager", image: "/public/img/management/Aashima.png", category: "Management" },
+        { name: "Shristi Sharma", designation: "Program Manager", image: "/public/img/management/Shristi.png", category: "Management" },
+        { name: "Abhijit Nair", designation: "Engineering Manager", image: "/public/img/management/Abhijit.jpeg", category: "Management" },
+        { name: "Harshdeep Singh Mokha", designation: "Technical Project Manager", image: "/public/img/management/Harshdeep.JPG", category: "Management" },
+        { name: "Kalavati Singh", designation: "Sr. Delivery Manager", image: "/public/img/management/Kalavati.jpeg", category: "Management" },
+        { name: "Kashika Chadha", designation: "Senior Project Manager", image: "/public/img/management/Kashika Chadha ( PM).JPG", category: "Management" },
+        { name: "Mayank Gandhi", designation: "Project Manager", image: "/public/img/management/Mayank Gandhi (Analyst).JPG", category: "Management" },
+        { name: "Nihaan Mohammed", designation: "Associate Product Manager", image: "/public/img/management/Nihaan Mohammed Analyst.png", category: "Management" },
+        { name: "Nivedita Gupta", designation: "HR Lead", image: "/public/img/management/Nivedita.jpeg", category: "Management" },
+        { name: "Parul Chuchra", designation: "Sr. Project Manager", image: "/public/img/management/Parul.jpg", category: "Management" },
+        { name: "Prachi Gupta", designation: "Program Manager", image: "/public/img/management/Prachi.jpg", category: "Management" },
+        { name: "Ravi Jangir", designation: "Strategy Manager", image: "/public/img/management/Ravi Jangir ( Strategy Manager).JPG", category: "Management" },
+        { name: "Shikha Pant", designation: "Product Manager", image: "/public/img/management/Shikha d.JPG", category: "Management" },
+        { name: "Shweta Singh", designation: "Senior Project Manager", image: "/public/img/management/shweta.jpeg", category: "Management" },
+        { name: "Sonal Awasthi", designation: "Project Manager", image: "/public/img/management/Sonal.png", category: "Management" },
+        { name: "Vepasa", designation: "Project Manager", image: "/public/img/management/Vepasa.jpeg", category: "Management" },
 
 
-    }
-
-    .image-wrapper {
-      position: relative;
-      overflow: hidden;
-      height: 350px;
-    }
-
-    .team-member img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(0);
-      transition: filter 0.3s ease, transform 0.3s ease;
-      border-radius: 18px;
-    }
-
-    .image-gradient {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to top, rgba(255, 165, 0, 0.7), transparent 70%);
-      pointer-events: none;
-      opacity: 1;
-      transition: opacity 0.3s ease;
-      border-radius: 18px;
-    }
-
-    .team-member:hover img {
-      filter: grayscale(100%);
-      transform: scale(1.05);
-    }
-
-    .team-member:hover .image-gradient {
-      opacity: 0.5;
-    }
-
-    .team-info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 10px;
-      color: white;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      font-size: 10px;
-      text-align: left;
-    }
-
-    .team-info h2 {
-      color: white;
-      text-align: left;
-    }
-
-    .nav-btn {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: rgba(255, 165, 0, 0.7);
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-btn:hover {
-      background: rgba(255, 165, 0, 1);
-      transform: scale(1.1);
-    }
-
-    .nav-btn i {
-      color: white;
-      font-size: 24px;
-    }
-  </style>
-
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script>
-    // Lucide icon initialization
-    lucide.createIcons();
-
-    const teamMembers = [
-      {
-        name: "Aashima Takkar",
-        designation: "Engagement Manager",
-        image: "/public/img/man/man1.png"
-      },
-      {
-        name: "Kalavati Singh",
-        designation: "Sr. Delivery Manager",
-        image: "/public/img/man/man2.jpeg"
-      },
-      {
-        name: "Parul Chuchra",
-        designation: "Sr. Project Manager",
-        image: "/public/img/man/man3.jpg"
-      },
-      {
-        name: "Shristi Sharma",
-        designation: "Program Manager",
-        image: "/public/img/man/man4.png"
-      },
-      {
-        name: "Sonal Awasthi",
-        designation: "Project Manager",
-        image: "/public/img/man/man5.png"
-      },
-      {
-        name: "Vepasa",
-        designation: "Program Manager",
-        image: "/public/img/man/man6.jpeg"
-      },
-      {
-        name: "Nivedita Gupta",
-        designation: "HR Lead",
-        image: "/public/img/man/man7.jpeg"
-      },
-
-      {
-        name: "Ravi Jangir",
-        designation: "Strategy Manager",
-        image: "/public/img/man/man8.jpg"
-      },
-      {
-        name: "Harshdeep Singh Mokha",
-        designation: "Technical Project Manager",
-        image: "/public/img/man/man9.jpg"
-      },
-      {
-        name: "Kashika Chadha",
-        designation: "Senior Project Manager",
-        image: "/public/img/man/man10.jpg"
-      },
-      {
-        name: "Mayank Gandhi",
-        designation: "SProject Manager",
-        image: "/public/img/man/man11.jpg"
-      }, {
-        name: "Prachi Gupta",
-        designation: "Program Manager",
-        image: "/public/img/man/man12.jpg"
-      }, {
-        name: "Shikha Pant",
-        designation: "Project Manager",
-        image: "/public/img/man/man13.jpg"
-      }, {
-        name: "Shweta Singh",
-        designation: "Senior Project Manager",
-        image: "/public/img/man/man14.jpeg"
-      },
-      {
-        name: "Nihaan Mohammed",
-        designation: "Associate Product Manager",
-        image: "/public/img/man/man15.png"
-      },
-      {
-        name: "Abhijit Nair",
-        designation: "Engineering Manager",
-        image: "/public/img/man/man16.jpeg"
-      },
-
-      {
-        name: "Manish Kumar Roy",
-        designation: "Team Lead - Backend",
-        image: "/public/img/tech/tech1.jpeg"
-      },
-      {
-        name: "Manju Lata Soreng",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech2.JPG"
-      },
-      {
-        name: "Pragat Singh",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech3.JPG"
-      },
-      {
-        name: "Rohit Singh",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech4.JPG"
-      },
-
-      {
-        name: "Satyam Yadav",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech5.jpg"
-      },
-      {
-        name: "Shrey Jain",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech6.JPG"
-      },
-      {
-        name: "Vivek Kumar Singh",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech7.JPG"
-      },
-      {
-        name: "Ankit Jangir",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech8.JPG"
-      },
-      {
-        name: "Mohd Talha",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/tech9.JPG"
-      },
-      {
-        name: "Abhishek Jain",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/leader1.jpg"
-      },
-      {
-        name: "Deepak Batra",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/leader2.jpg"
-      },
-      {
-        name: "Seema Bhardwaj",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/leader3.png"
-      },
-      {
-        name: "Shobhit Mathur",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/leader4.JPG"
-      },
-      {
-        name: "Siddharth Bhargava",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/leader5.jpg"
-      },
-      {
-        name: "Nidhi Arora",
-        designation: "Team Lead - PHP",
-        image: "/public/img/tech/leader6.jpg"
-      },
 
 
-    ];
+        { name: "Ankit Jangir", designation: "DevOps Engineer", image: "/public/img/New folder/Ankit Jangir (Jr. DevOps Engineer).JPG", category: "Tech Team" },
+        { name: "Manish Kumar Roy", designation: "Team Lead - Backend", image: "/public/img/New folder/Manish kumar roy.jpeg", category: "Tech Team" },
+        { name: "Manju Lata Soreng", designation: "Team Lead - PHP", image: "/public/img/New folder/Manju ( Team Lead - PHP).JPG", category: "Tech Team" },
+        { name: "Mohd Talha", designation: "SDE 2 - Flutter", image: "/public/img/New folder/Mohd. talha.jpg", category: "Tech Team" },
+        { name: "Pragat Singh", designation: "Team Lead - Java", image: "/public/img/New folder/Pragat.JPG", category: "Tech Team" },
+        { name: "Rohit Singh", designation: "Sr. Data Engineer", image: "/public/img/New folder/Rohit Singh ( Sr. DE).JPG", category: "Tech Team" },
+        { name: "Satyam Yadav", designation: "Sr. QA Engineer", image: "/public/img/New folder/satyam.jpg", category: "Tech Team" },
+        { name: "Shrey Jain", designation: "Team Lead", image: "/public/img/New folder/Shrey Jain ( SDE2- Android).JPG", category: "Tech Team" },
+        { name: "Vivek Kumar Singh", designation: "Team Lead - Full stack", image: "/public/img/New folder/Vivek Singh (Team Lead- Front End).JPG", category: "Tech Team" },
 
-    const carousel = document.getElementById('teamCarousel');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentIndex = 0;
+      ];
 
-    function renderTeamMembers() {
-      carousel.innerHTML = teamMembers.map((member, index) => `
-            <div class="team-member">
-                <div class="image-wrapper">
-                    <img src="${member.image}" alt="${member.name}">
-                    <div class="image-gradient"></div>
-                </div>
-                <div class="team-info">
-                    <h2>${member.name}</h2>
-                    <p>${member.designation}</p>
-                </div>
-            </div>
-        `).join('');
-    }
+      const teamSectionsContainer = document.querySelector('.team-sections');
 
-    function moveCarousel() {
-      carousel.style.transform = `translateX(-${currentIndex * (100 / 4 + 5)}%)`;
-    }
+      function renderTeamMembers() {
+        // Group team members by category
+        const groupedMembers = teamMembers.reduce((acc, member) => {
+          if (!acc[member.category]) {
+            acc[member.category] = [];
+          }
+          acc[member.category].push(member);
+          return acc;
+        }, {});
 
-    nextBtn.addEventListener('click', () => {
-      if (currentIndex < teamMembers.length - 4) {
-        currentIndex++;
-        moveCarousel();
+        // Render each category with its members
+        for (const category in groupedMembers) {
+          const section = document.createElement('div');
+          section.classList.add('team-section');
+
+          // Add category heading
+          const categoryHeading = document.createElement('div');
+          categoryHeading.classList.add('category-heading');
+          categoryHeading.innerHTML = `<h2>${category}</h2>`;
+          section.appendChild(categoryHeading);
+
+          // Create carousel for team members in this category
+          const carouselWrapper = document.createElement('div');
+          carouselWrapper.classList.add('carousel-wrapper');
+
+          const prevBtn = document.createElement('button');
+          prevBtn.classList.add('nav-btn');
+          prevBtn.id = `prevBtn-${category}`;
+          prevBtn.innerHTML = `<i data-lucide="chevron-left"></i>`;
+          carouselWrapper.appendChild(prevBtn);
+
+          const carouselContainer = document.createElement('div');
+          carouselContainer.classList.add('carousel-container');
+          const carousel = document.createElement('div');
+          carousel.classList.add('carousel');
+          carousel.id = `carousel-${category}`;
+
+          groupedMembers[category].forEach(member => {
+            const memberElement = document.createElement('div');
+            memberElement.classList.add('team-member');
+            memberElement.innerHTML = `
+                        <div class="image-wrapper">
+                            <img src="${member.image}" alt="${member.name}">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="team-info">
+                            <h2>${member.name}</h2>
+                            <p>${member.designation}</p>
+                        </div>
+                    `;
+            carousel.appendChild(memberElement);
+          });
+
+          carouselContainer.appendChild(carousel);
+          carouselWrapper.appendChild(carouselContainer);
+
+          const nextBtn = document.createElement('button');
+          nextBtn.classList.add('nav-btn');
+          nextBtn.id = `nextBtn-${category}`;
+          nextBtn.innerHTML = `<i data-lucide="chevron-right"></i>`;
+          carouselWrapper.appendChild(nextBtn);
+
+          section.appendChild(carouselWrapper);
+          teamSectionsContainer.appendChild(section);
+
+          // Add carousel functionality
+          let currentIndex = 0;
+
+          const moveCarousel = (direction) => {
+            const items = document.querySelectorAll(`#carousel-${category} .team-member`);
+            const totalItems = items.length;
+            const itemWidth = items[0].offsetWidth + 20; // Including gap
+            currentIndex = (currentIndex + direction + totalItems) % totalItems;
+            document.querySelector(`#carousel-${category}`).style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+          };
+
+          prevBtn.addEventListener('click', () => moveCarousel(-1));
+          nextBtn.addEventListener('click', () => moveCarousel(1));
+
+          // Auto-advance every 2 seconds
+          setInterval(() => moveCarousel(1), 2000);
+        }
       }
-    });
 
-    prevBtn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        moveCarousel();
-      }
-    });
+      renderTeamMembers();
+    </script>
 
-    // Auto-advance every 2 seconds
-    setInterval(() => {
-      if (currentIndex < teamMembers.length - 4) {
-        currentIndex++;
-        moveCarousel();
-      } else {
-        currentIndex = 0;
-        moveCarousel();
-      }
-    }, 2000);
+  </body>
 
-    renderTeamMembers();
-  </script>
-
+  </html>
 
   <br> <br>
   <br> <br>
