@@ -61,17 +61,49 @@
 
     </div>
   </div>
-  <div class="newsletter-container">
-    <div class="left-container">
-      <h1>Newsletter</h1>
-      <p>Dhwani RIS' monthly newsletter Tech for Impact is designed to keep you informed and inspired! Each edition will
-        bring you updates on our latest projects, success stories from the field, expert insights, and a glimpse into
-        the culture and creativity that drive our work.
-        Stay connected with our journey as we leverage technology for social good and amplify impact across communities.
-        Together, let’s turn ideas into action and data into meaningful change!</p>
+  <div class="newsletter-wrapper">
+    <div class="newsletter-container">
+      <div class="left-container">
+        <h1>Newsletter</h1>
+        <p>Dhwani RIS' monthly newsletter Tech for Impact is designed to keep you informed and inspired! Each edition
+          will
+          bring you updates on our latest projects, success stories from the field, expert insights, and a glimpse into
+          the culture and creativity that drive our work.
+          Stay connected with our journey as we leverage technology for social good and amplify impact across
+          communities.
+          Together, let’s turn ideas into action and data into meaningful change!</p>
+      </div>
     </div>
-    <div class="right-container" id="rightContainer"></div>
+    <div class="right-container" id="rightContainer">
+      <div class="card">
+        <img src="image1.jpg" alt="Card Image 1">
+        <div class="card-text">
+          <h4>Card Title 1</h4>
+          <p>Card description goes here.</p>
+          <span class="card-tag">Tag 1</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image2.jpg" alt="Card Image 2">
+        <div class="card-text">
+          <h4>Card Title 2</h4>
+          <p>Card description goes here.</p>
+          <span class="card-tag">Tag 2</span>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image3.jpg" alt="Card Image 3">
+        <div class="card-text">
+          <h4>Card Title 3</h4>
+          <p>Card description goes here.</p>
+          <span class="card-tag">Tag 3</span>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
   </div>
+
   <div class="pagination">
     <button id="prevPage">Previous</button>
     <span id="page-numbers"></span>
@@ -83,15 +115,26 @@
     const nextPage = document.getElementById("nextPage");
 
     let currentPage = 1;
-    const cardsPerPage = 3;
+    const cardsPerPage = 6; // Adjust based on how many cards you want to display per page
 
+    // Function to fetch data from the JSON file
     async function fetchData() {
-      const response = await fetch("/datanews.json");
-      return response.json();
+      try {
+        const response = await fetch("/datanews.json");
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        return response.json();
+      } catch (error) {
+        console.error(error);
+        return []; // Return an empty array if fetching fails
+      }
     }
 
+    // Function to render the cards in the container
     function renderCards(data) {
-      rightContainer.innerHTML = "";
+      rightContainer.innerHTML = ""; // Clear the container
+
       const start = (currentPage - 1) * cardsPerPage;
       const end = start + cardsPerPage;
       const currentCards = data.slice(start, end);
@@ -99,54 +142,64 @@
       currentCards.forEach((item) => {
         const card = document.createElement("div");
         card.className = "card";
-        const hrr = document.createElement("div");
-        hrr.className = "hrr";
         card.onclick = () => {
-          window.location.href = item.url;
+          window.location.href = item.url; // Redirect to the URL on click
         };
 
         card.innerHTML = `
       <img src="${item.image}" alt="Image">
       <div class="card-text">
-            <h4>${item.title}</h4>
-      </div> 
+        <h4>${item.title}</h4>
+        <p>${item.date}</p> <!-- Display the date here -->
+        <p>${item.tag}</p> <!-- Display the tag here -->
+      </div>
     `;
-        hrr.innerHTML = `<hr>`;
 
-        rightContainer.appendChild(card);
-        rightContainer.appendChild(hrr);
+        rightContainer.appendChild(card); // Append the card to the container
       });
     }
 
+    // Function to update the pagination controls
     function updatePagination(data) {
-      prevPage.disabled = currentPage === 1;
-      nextPage.disabled = currentPage === Math.ceil(data.length / cardsPerPage);
+      prevPage.disabled = currentPage === 1; // Disable "Previous" button on the first page
+      nextPage.disabled = currentPage === Math.ceil(data.length / cardsPerPage); // Disable "Next" button on the last page
     }
 
+    // Initialization function to set up the cards and pagination
     async function init() {
-      const data = await fetchData();
+      const data = await fetchData(); // Fetch the data from the JSON file
 
-      renderCards(data);
-      updatePagination(data);
+      if (data.length === 0) {
+        rightContainer.innerHTML = "<p>No data available</p>"; // Show message if no data
+        return;
+      }
 
+      renderCards(data); // Render the initial set of cards
+      updatePagination(data); // Update the pagination controls
+
+      // Event listener for the "Previous" button
       prevPage.addEventListener("click", () => {
         if (currentPage > 1) {
-          currentPage--;
-          renderCards(data);
-          updatePagination(data);
+          currentPage--; // Move to the previous page
+          renderCards(data); // Re-render the cards
+          updatePagination(data); // Update the pagination controls
         }
       });
 
+      // Event listener for the "Next" button
       nextPage.addEventListener("click", () => {
         if (currentPage < Math.ceil(data.length / cardsPerPage)) {
-          currentPage++;
-          renderCards(data);
-          updatePagination(data);
+          currentPage++; // Move to the next page
+          renderCards(data); // Re-render the cards
+          updatePagination(data); // Update the pagination controls
         }
       });
     }
 
+    // Call the initialization function
     init();
+
+
   </script>
 
   <iframe id="footer" src="/footer.html?active=aboutus" style="width: 100%; border: none;"
