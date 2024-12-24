@@ -11,6 +11,12 @@
     overflow: hidden;
 }
 
+.timage{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
 .solutioncontainer {
     display: flex;
     align-items: center;
@@ -405,7 +411,7 @@
 
     .selectorimg {
         width: 100%;
-        height: 200px;
+        height: 300px;
         margin-top: 20px;
     }
 
@@ -678,7 +684,6 @@
 
 
 .solcard {
-    padding-top: 1%;
     background-color: #F7E2D1;
     width: 100%;
     gap: 100px;
@@ -701,6 +706,7 @@
     max-width: 500px;
     min-width: 300px;
     padding-bottom: 10px;
+    overflow: hidden;
 }
 
 .solcont {
@@ -734,6 +740,7 @@ li {
     position: absolute;
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 li::before {
@@ -749,12 +756,20 @@ li::before {
 
 .solnimg {
     width: 85%;
-    height: 170px;
+    height: 40%;
     background-color: black;
     margin: auto;
     border-radius: 15px;
-
 }
+
+.solnimg1 {
+    width: 85%;
+    height: 33%;
+    background-color: black;
+    margin: auto;
+    border-radius: 15px;
+}
+
 
 
 
@@ -766,6 +781,9 @@ li::before {
 @media (max-width: 800px) {
     .muft {
         position: relative;
+    }
+    .solnimg{
+        height: 33%;
     }
 
     .countelement {
@@ -803,7 +821,8 @@ li::before {
         justify-content: flex-start;
         margin: auto;
         max-width: 350px;
-        padding-bottom: 2 0px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .keyfeatures1 {
@@ -873,7 +892,7 @@ li::before {
     /* at 860 make icons haveapding  */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
 
     .launchicons1,
     .launchicons2 {
