@@ -164,7 +164,7 @@ max-width: 1200px;
 
 .tabs3 {
   display: flex;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 30px;
   gap: 6px;
 }
@@ -333,6 +333,9 @@ max-width: 1200px;
   height: 100%;
   width: 30%;
 
+}
+.icns{
+  max-width: 1600px;
 }
 
 @media (max-width: 850px) {
