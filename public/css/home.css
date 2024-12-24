@@ -417,7 +417,6 @@ body {
     color: #811622;
     font-size: 45px;
     line-height: 45px;
-    padding-top: 150px;
     width: 70%;
 }
 
@@ -482,7 +481,7 @@ body {
     width: 100vw; /* Full width of the viewport */
     position: relative; /* Ensure child elements are positioned relative to .mainland */
     overflow: hidden; /* Clip any overflowing content */
-    margin-top: -190px; /* Adjust the positioning of the container */
+    margin-top: -70px; /* Adjust the positioning of the container */
 }
 
 .landuimg {

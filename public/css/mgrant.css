@@ -150,7 +150,7 @@
 
     .card1,
     .card2 {
-        width: 90%;
+        width: 300px;
     }
 
     .card2 {
@@ -158,6 +158,7 @@
     }
     .twocard{
         flex-direction: row;
+        width: 100%;
     }
 }
 
@@ -185,6 +186,7 @@
     position: relative;
     margin: auto;
     justify-content: center;
+    max-width: 1100px;
 }
 
 .keycontainer1 {
@@ -263,6 +265,11 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
+    .keycontainer1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding-bottom: 25px;
+    }
 }
 
 .feature {
@@ -279,6 +286,7 @@
     width: 80%;
     margin: auto;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .selector {
@@ -382,7 +390,7 @@
 
     .selectorcard h5{
         width: 70%;
-        font-size: 13px;
+        font-size: 10px;
         margin: auto;
     }
     .selector2{
@@ -679,16 +687,16 @@
     width: 25%;
     height: 500px;
     background-color: white;
-    margin-top: 150px;
+    margin-top: 175px;
     border-radius: 20px;
     font-family: "Manrope", sans-serif;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     max-width: 500px;
     min-width: 300px;
+    padding-bottom: 10px;
 }
 
 .solcont {
-
     font-weight: 700;
     margin-left: 30px;
     margin-top: 30px;
@@ -696,11 +704,11 @@
 
 .solcont::after {
     content: '';
-    width: 30px;
+    width: 3%;
     height: 5px;
     background-color: #F58634;
     position: absolute;
-    margin-top: -14px;
+    margin-top: -1px;
 }
 
 ul {
